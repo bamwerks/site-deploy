@@ -1,0 +1,275 @@
+{
+  "generated_at": "2026-02-28T02:00:02.029389Z",
+  "weekly": {
+    "period": "2026-02-21 to 2026-02-27",
+    "sessions": 53,
+    "messages": 2870,
+    "by_model": {
+      "claude-opus-4-6": {
+        "input": 3805,
+        "output": 769396,
+        "cache": 296389048,
+        "calls": 2659,
+        "est_cost": 167.45
+      },
+      "claude-sonnet-4-6": {
+        "input": 691,
+        "output": 43077,
+        "cache": 1645551,
+        "calls": 108,
+        "est_cost": 1.14
+      },
+      "claude-haiku-4-5-20251001": {
+        "input": 371,
+        "output": 8633,
+        "cache": 1171705,
+        "calls": 103,
+        "est_cost": 0.16
+      }
+    },
+    "by_date": {
+      "2026-02-21": {
+        "input": 582,
+        "output": 127764,
+        "cache": 32563087,
+        "calls": 385
+      },
+      "2026-02-22": {
+        "input": 859,
+        "output": 116511,
+        "cache": 43202677,
+        "calls": 415
+      },
+      "2026-02-23": {
+        "input": 623,
+        "output": 85947,
+        "cache": 17825515,
+        "calls": 249
+      },
+      "2026-02-24": {
+        "input": 567,
+        "output": 105183,
+        "cache": 47367222,
+        "calls": 393
+      },
+      "2026-02-25": {
+        "input": 351,
+        "output": 57268,
+        "cache": 27686614,
+        "calls": 243
+      },
+      "2026-02-26": {
+        "input": 960,
+        "output": 181258,
+        "cache": 78716101,
+        "calls": 660
+      },
+      "2026-02-27": {
+        "input": 925,
+        "output": 147175,
+        "cache": 51845088,
+        "calls": 525
+      }
+    }
+  },
+  "monthly": {
+    "period": "2026-01-29 to 2026-02-27",
+    "sessions": 778,
+    "messages": 10832,
+    "by_model": {
+      "claude-opus-4-6": {
+        "input": 12639,
+        "output": 2398515,
+        "cache": 805791942,
+        "calls": 8297,
+        "est_cost": 462.92
+      },
+      "claude-opus-4-5": {
+        "input": 1909,
+        "output": 223314,
+        "cache": 41421325,
+        "calls": 1321,
+        "est_cost": 26.3
+      },
+      "claude-haiku-4-5-20251001": {
+        "input": 3472,
+        "output": 220360,
+        "cache": 14500447,
+        "calls": 760,
+        "est_cost": 2.56
+      },
+      "claude-sonnet-4-5-20250929": {
+        "input": 3066,
+        "output": 84619,
+        "cache": 8623968,
+        "calls": 333,
+        "est_cost": 3.87
+      },
+      "claude-sonnet-4-6": {
+        "input": 691,
+        "output": 43077,
+        "cache": 1645551,
+        "calls": 108,
+        "est_cost": 1.14
+      },
+      "qwen3:8b": {
+        "input": 50706,
+        "output": 6414,
+        "cache": 0,
+        "calls": 13,
+        "est_cost": 0.41
+      }
+    },
+    "by_date": {
+      "2026-02-02": {
+        "input": 42514,
+        "output": 5068,
+        "cache": 0,
+        "calls": 11
+      },
+      "2026-02-03": {
+        "input": 8192,
+        "output": 1346,
+        "cache": 0,
+        "calls": 2
+      },
+      "2026-02-06": {
+        "input": 483,
+        "output": 67631,
+        "cache": 14429811,
+        "calls": 186
+      },
+      "2026-02-07": {
+        "input": 1363,
+        "output": 84384,
+        "cache": 27703541,
+        "calls": 549
+      },
+      "2026-02-08": {
+        "input": 1172,
+        "output": 157715,
+        "cache": 49123265,
+        "calls": 560
+      },
+      "2026-02-09": {
+        "input": 1243,
+        "output": 197137,
+        "cache": 68039646,
+        "calls": 731
+      },
+      "2026-02-10": {
+        "input": 795,
+        "output": 119034,
+        "cache": 34485103,
+        "calls": 448
+      },
+      "2026-02-11": {
+        "input": 815,
+        "output": 98901,
+        "cache": 23147767,
+        "calls": 426
+      },
+      "2026-02-12": {
+        "input": 567,
+        "output": 66542,
+        "cache": 15256359,
+        "calls": 317
+      },
+      "2026-02-13": {
+        "input": 1433,
+        "output": 147031,
+        "cache": 51357385,
+        "calls": 633
+      },
+      "2026-02-14": {
+        "input": 2524,
+        "output": 252961,
+        "cache": 76490986,
+        "calls": 1037
+      },
+      "2026-02-15": {
+        "input": 1572,
+        "output": 242145,
+        "cache": 76122438,
+        "calls": 851
+      },
+      "2026-02-16": {
+        "input": 1754,
+        "output": 274895,
+        "cache": 77858782,
+        "calls": 934
+      },
+      "2026-02-17": {
+        "input": 886,
+        "output": 111436,
+        "cache": 14305373,
+        "calls": 323
+      },
+      "2026-02-18": {
+        "input": 830,
+        "output": 101636,
+        "cache": 9702245,
+        "calls": 281
+      },
+      "2026-02-19": {
+        "input": 945,
+        "output": 132336,
+        "cache": 15760915,
+        "calls": 401
+      },
+      "2026-02-20": {
+        "input": 528,
+        "output": 94995,
+        "cache": 18993313,
+        "calls": 272
+      },
+      "2026-02-21": {
+        "input": 582,
+        "output": 127764,
+        "cache": 32563087,
+        "calls": 385
+      },
+      "2026-02-22": {
+        "input": 859,
+        "output": 116511,
+        "cache": 43202677,
+        "calls": 415
+      },
+      "2026-02-23": {
+        "input": 623,
+        "output": 85947,
+        "cache": 17825515,
+        "calls": 249
+      },
+      "2026-02-24": {
+        "input": 567,
+        "output": 105183,
+        "cache": 47367222,
+        "calls": 393
+      },
+      "2026-02-25": {
+        "input": 351,
+        "output": 57268,
+        "cache": 27686614,
+        "calls": 243
+      },
+      "2026-02-26": {
+        "input": 960,
+        "output": 181258,
+        "cache": 78716101,
+        "calls": 660
+      },
+      "2026-02-27": {
+        "input": 925,
+        "output": 147175,
+        "cache": 51845088,
+        "calls": 525
+      }
+    }
+  },
+  "subscription": {
+    "plan": "Claude Max",
+    "cost": 100,
+    "extra_limit": 50
+  }
+}

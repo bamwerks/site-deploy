@@ -1,0 +1,19 @@
+{
+  "taskVelocity": {
+    "value": 2.3,
+    "trend": -12,
+    "period": "7d"
+  },
+  "costPerCompletion": {
+    "value": 1.47,
+    "trend": -8,
+    "period": "7d"
+  },
+  "vulnerabilities": {
+    "critical": 0,
+    "high": 0,
+    "medium": 2,
+    "low": 5
+  },
+  "generatedAt": "2026-02-28T12:28:34.981Z"
+}

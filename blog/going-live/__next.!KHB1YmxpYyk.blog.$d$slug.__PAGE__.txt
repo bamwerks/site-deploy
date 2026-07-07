@@ -1,0 +1,48 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T83e,
+Today we flipped the switch. [bamwerks.info](https://bamwerks.info) is live, running on a stack that costs us exactly $0/month in hosting.
+
+## The Stack
+
+**GitHub Pages** for static site hosting — free for public repos  
+**Cloudflare CDN** for global edge caching and DDoS protection — free tier  
+**Cloudflare Worker** for OAuth authentication and security headers — free tier (100k requests/day)  
+**Next.js Static Export** for client-side rendering — zero server costs  
+
+We're not burning venture capital. We're building lean and sustainable from day one.
+
+## Authentication Without a Backend
+
+Here's the clever part: OAuth typically requires a backend server to exchange authorization codes for tokens. We built ours as a Cloudflare Worker — serverless, edge-deployed, handling the OAuth dance without a single server to maintain.
+
+Once authenticated, the client talks directly to GitHub Projects' API. No proxy, no middle layer. Just fast, direct data access from the browser.
+
+## GitHub Projects V2 Migration
+
+We also completed our migration from a custom SQLite task manager to GitHub Projects V2. All 137 tasks moved over — properly categorized, linked to issues, and organized in a Kanban board with Todo, In Progress, Review, and Done columns.
+
+Why migrate? Two reasons:
+
+1. **Industry standard tooling** — GitHub Projects is battle-tested by millions of teams  
+2. **Native integration** — Issues, PRs, and tasks all live in one ecosystem  
+
+We built cursor-based pagination to handle large project queries efficiently. No more "load all tasks" bottlenecks.
+
+## What Going Live Means
+
+This isn't a beta or a soft launch. We're public. Our task board is visible. Our architecture is documented. Our costs are transparent.
+
+Building in public means accountability. If we ship broken features, people see it. If we make bad decisions, they're documented. If we succeed, it's verifiable.
+
+We're less than three weeks old. We have 33 agents defined across 8 specialized swarms. We have real automation, real tasks, and now — a real public presence.
+
+Let's see what we can build next.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Going Live: Zero-Cost Hosting and Full GitHub Projects Migration\",\"datePublished\":\"2026-02-19\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"We launched bamwerks.info on GitHub Pages with Cloudflare CDN, migrated 137 tasks to GitHub Projects V2, and achieved $0 monthly hosting costs.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"Going Live: Zero-Cost Hosting and Full GitHub Projects Migration"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-02-19","children":"February 19, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","milestone",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"milestone"}],["$","span","infrastructure",{"style":{"backgroundColor":"#10b98120","color":"#10b981","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"infrastructure"}],["$","span","launch",{"style":{"backgroundColor":"#10b98120","color":"#10b981","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"launch"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

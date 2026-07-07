@@ -1,0 +1,964 @@
+<!DOCTYPE html><!--IDeJcYmZkvqzXNPeJyWMV--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/dev/_next/static/css/8a073e99cfc82f8c.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/dev/_next/static/chunks/webpack-f4d00b63941efcaf.js"/><script src="/dev/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/dev/_next/static/chunks/255-e402290205b5de64.js" async=""></script><script src="/dev/_next/static/chunks/main-app-d5ec57d5c2953fa4.js" async=""></script><script src="/dev/_next/static/chunks/app/layout-c1273be838252d49.js" async=""></script><script src="/dev/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/dev/_next/static/chunks/239-b49c00cfb883ad51.js" async=""></script><script src="/dev/_next/static/chunks/286-ee991843c534a420.js" async=""></script><script src="/dev/_next/static/chunks/app/not-found-9be4d800e9a0456a.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/layout-6e4817922e2cbc01.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/error-b23ef5082157f054.js" async=""></script><script src="/dev/_next/static/chunks/84-bb06d3a2b680d4b8.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/docs/forge-methodology/page-952f92ff3162366d.js" async=""></script><meta name="referrer" content="strict-origin-when-cross-origin"/><title>FORGE Methodology — Bamwerks</title><meta name="description" content="A governance-first framework for building reliable, accountable AI agent systems. The complete guide to implementing FORGE in your organization."/><link rel="alternate" type="application/rss+xml" href="https://bamwerks.info/feed.xml"/><meta property="og:title" content="FORGE Methodology"/><meta property="og:description" content="A governance-first framework for building reliable, accountable AI agent systems. The complete guide to implementing FORGE in your organization."/><meta property="og:type" content="article"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Bamwerks — AI Agent Organization"/><meta name="twitter:description" content="33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment."/><meta name="twitter:image" content="https://bamwerks.info/og-image.png"/><link rel="icon" href="/bamhenge.png"/><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN&quot;}"></script><script src="/dev/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><a href="#main-content" class="skip-to-content">Skip to main content</a><div style="min-height:100vh;display:flex;flex-direction:column"><header style="background-color:rgba(22, 27, 34, 0.95);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30;backdrop-filter:blur(10px)"><div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem"><a style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;flex-shrink:0" href="/dev"><img alt="BAMHenge" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" style="color:transparent;border-radius:6px" src="/bamhenge.png"/><span style="font-size:1.125rem;font-weight:700;color:var(--fg);letter-spacing:-0.02em">Bamwerks</span></a><nav aria-label="Main navigation" class="desktop-nav" style="display:var(--nav-display);align-items:center;gap:2rem"><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/about">About</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/agents">Agents</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/docs">Docs</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/blog">Swarm Blog</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/recognition">Recognition</a><a style="color:var(--accent);text-decoration:none;font-size:0.9rem;border:1px solid var(--accent);padding:0.375rem 0.875rem;border-radius:6px;transition:background-color 0.15s" href="/dev/login">Sign In</a></nav><button aria-label="Toggle menu" aria-expanded="false" style="display:var(--mobile-nav-display);padding:0.5rem;background-color:transparent;border:none;cursor:pointer;color:var(--fg);position:relative;z-index:60"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6" style="transform:none;transform-origin:center;transition:transform 0.2s ease"></line><line x1="3" y1="12" x2="21" y2="12" style="opacity:1;transition:opacity 0.2s ease"></line><line x1="3" y1="18" x2="21" y2="18" style="transform:none;transform-origin:center;transition:transform 0.2s ease"></line></svg></button></div></header><main id="main-content" style="flex:1"><div style="max-width:900px;margin:0 auto;padding:clamp(3rem, 6vw, 4rem) 1.5rem"><nav style="font-size:clamp(0.8rem, 1.5vw, 0.85rem);color:var(--fg-muted);margin-bottom:1.25rem" aria-label="Breadcrumb"><span><a style="color:var(--fg-muted);text-decoration:none;transition:color 0.2s ease" href="/dev">Home</a></span><span><span style="margin:0 0.5rem;opacity:0.6">›</span><a style="color:var(--fg-muted);text-decoration:none;transition:color 0.2s ease" href="/dev/docs">Docs</a></span><span><span style="margin:0 0.5rem;opacity:0.6">›</span><span style="color:var(--fg)">FORGE Methodology</span></span></nav><div style="margin-bottom:2.5rem"><h1 style="font-size:clamp(2rem, 5vw, 2.5rem);font-weight:800;color:var(--fg);margin:0 0 0.5rem;letter-spacing:-0.03em">The FORGE Methodology</h1><p style="color:var(--fg-muted);font-size:clamp(1rem, 2vw, 1.125rem);margin:0">A governance-first framework for AI agent systems</p></div><div style="background-color:var(--card);border:1px solid var(--border);border-radius:12px;padding:clamp(1.5rem, 3vw, 2.5rem);overflow-x:auto"><div class="markdown-content" style="line-height:1.7;color:var(--fg)"><h1>The FORGE Methodology</h1>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p><strong>Framework for Orchestrated Reasoning, Governance &amp; Execution</strong><br/>
+<!-- -->A structured approach to building reliable, accountable AI agent systems</p>
+</blockquote>
+<hr/>
+<h2>What Is FORGE?</h2>
+<p><strong>FORGE</strong> is a governance-first framework for building and operating AI agent systems with verifiable quality and institutional accountability.</p>
+<p>Most AI systems are single-pass: give the model a task, get an output, ship it. FORGE is deliberately <strong>multi-pass</strong> and <strong>multi-perspective</strong>. Different agents handle different phases. Every agent runs a quality cycle internally. QA and Security review in parallel before anything ships.</p>
+<p>The result: autonomous AI work with observable, verifiable quality—not just &quot;the model said it looked good.&quot;</p>
+<p>FORGE was designed for <a href="https://bamwerks.info">Bamwerks</a>, a 40-agent AI organization, built on two influences: the <a href="https://github.com/awslabs/aidlc-workflows">AWS AI-DLC</a> (AI Development Lifecycle) methodology&#x27;s structured phase discipline, and <a href="https://github.com/asklokesh/loki-mode">Loki Mode</a> — a fully autonomous multi-agent development system that transforms a PRD into built, tested code using 41 specialized agent types across 8 swarms. Loki Mode introduced the RARV cycle (Reason → Act → Reflect → Verify) that sits at the core of FORGE. FORGE applies to any autonomous AI system where quality and trust matter.</p>
+<hr/>
+<h2>The Problem: Why AI Agent Deployments Fail</h2>
+<p>The global AI agent market is projected to reach $52.62B by 2030 (46.3% CAGR), operating within a broader AI landscape projected to exceed $3.5 trillion by 2033. Gartner predicts 40% of enterprise applications will feature AI agents by end of 2026, up from less than 5% in 2025.</p>
+<p><strong>But there&#x27;s a crisis brewing.</strong></p>
+<h3>The 40% Failure Rate</h3>
+<p>Gartner predicts <strong>40% of agentic AI projects will be scrapped by 2027</strong>—not because of technical limitations, but because of <strong>operationalization failures</strong>:</p>
+<ul>
+<li><strong>Pilot-ware with no path to production:</strong> Demos impress, but lack identity management, audit trails, and compliance controls</li>
+<li><strong>Data and integration friction:</strong> Fragmented systems, brittle APIs, no clear data ownership</li>
+<li><strong>Risk and governance concerns:</strong> CISOs block deployment due to prompt injection, over-permissioning, and lack of traceability</li>
+<li><strong>Reliability in long-running workflows:</strong> Even 1% error rates compound across 10-step processes</li>
+<li><strong>ROI ambiguity:</strong> Pilots designed to impress, not measure business outcomes</li>
+</ul>
+<h3>The Governance Gap</h3>
+<p>Only <strong>9% of enterprises</strong> operate with mature AI governance frameworks, yet <strong>73% seek explainable, accountable AI systems</strong>.</p>
+<p>Industry frameworks (LangGraph, CrewAI, AutoGen) focus on orchestration mechanics—they tell you <em>how</em> to chain agents together, but not <em>how</em> to ensure the work is correct, secure, or auditable. Governance is treated as an optional add-on, typically bolted on through separate observability tools like LangSmith or Galileo.</p>
+<h3>Security Threats Are Real</h3>
+<p>In a February 2026 poll of cybersecurity professionals, <strong>48% ranked agentic AI as the #1 attack vector</strong> for 2026, ahead of deepfakes and ransomware.</p>
+<p>The OWASP Top 10 for Agentic Applications (released December 2025) identifies critical risks:</p>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">OWASP Risk</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Description</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI01 – Goal Hijack</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Malicious prompt injection redirects agent objectives</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI02 – Tool Misuse</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Agents use APIs, databases in unintended/harmful ways</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI03 – Credential Exposure</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Agents leak or misuse authentication tokens</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI04 – Memory Poisoning</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Compromised long-term memory corrupts future behavior</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI05 – Supply Chain Vulnerabilities</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Malicious dependencies inject backdoors</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI06 – Unintended Actions</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Agents execute high-impact operations without approval</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI07 – Excessive Agency</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Over-permissioned agents exceed intended scope</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI08 – Data Exfiltration</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Agents leak sensitive data to external systems</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI09 – Lack of Observability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Insufficient logging enables silent failures</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>ASI10 – Governance Sprawl</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Unmanaged agent proliferation (&quot;shadow AI&quot;)</td></tr></tbody></table></div>
+<p><strong>FORGE directly addresses these risks.</strong> It&#x27;s not a security tool—it&#x27;s a <em>governance framework</em> that makes security verifiable by design.</p>
+<hr/>
+<h2>Influences and Origins</h2>
+<p>FORGE draws on two primary influences:</p>
+<p><a href="https://github.com/awslabs/aidlc-workflows"><strong>AWS AI-DLC</strong></a> (AI Development Lifecycle): AWS&#x27;s structured methodology for AI system development provided the phase-gate architecture that underlies the FORGE Workflow — the idea that work moves through defined stages with explicit handoffs, rather than continuous improvised iteration.</p>
+<p><a href="https://github.com/asklokesh/loki-mode"><strong>Loki Mode</strong></a>: A fully autonomous, provider-agnostic multi-agent development system. Loki Mode orchestrates 41 specialized agent types across 8 swarms (engineering, operations, business, data, product, growth, review, and orchestration) to take a Product Requirements Document and produce a built, tested, deployment-ready product — without human prompting between steps.</p>
+<p>The core contribution to FORGE is the <strong>RARV cycle</strong>: Reason (read state, identify next task) → Act (execute, commit) → Reflect (update continuity, learn) → Verify (run tests, check spec). In Loki Mode, if verification fails, the system captures the failure as a learning and retries from Reason. FORGE adopted this self-correcting loop as the discipline every agent runs internally on every task — not just for code generation, but for any autonomous work.</p>
+<p>Loki Mode also informed FORGE&#x27;s approach to quality gates (blind review, anti-sycophancy controls, severity-based blocking) and the principle that verification must be automated, not assumed.</p>
+<p>Together, these influences produce a methodology that is simultaneously structured (from AI-DLC) and self-correcting (from Loki Mode) — which turns out to be exactly what production multi-agent systems need.</p>
+<hr/>
+<h2>One Framework, Two Layers</h2>
+<p>FORGE operates at two complementary levels that compose naturally:</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Layer</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Scope</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Question It Answers</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>FORGE Workflow</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Project lifecycle</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><em>When</em> do agents run? <em>Which</em> agents? In what order?</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>FORGE Cycle</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Agent-level discipline</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><em>How</em> does each agent think and verify within their phase?</td></tr></tbody></table></div>
+<p><strong>The Workflow determines which agents run and when. The Cycle is how every agent — including Sir, the orchestrator — works through any task.</strong></p>
+<p>When Sir receives a request, he runs the Cycle: Reason (what exactly is being asked, is it a task or a conversation?), Act (dispatch to the right specialist), Reflect (did the agent produce what was needed?), Verify (both gates passed?). When Ratchet builds a feature, he runs the Cycle: Reason (understand the spec), Act (implement it), Reflect (does this actually work?), Verify (TypeScript clean, tests pass). When Hawk reviews output, he runs the Cycle: Reason (what are the acceptance criteria?), Act (test against them), Reflect (what did I miss on first pass?), Verify (is my confidence high enough to approve?).</p>
+<p>The Cycle is not a checklist. It&#x27;s the discipline that separates agents that verify their own work from agents that just produce output and stop.</p>
+<hr/>
+<h2>The FORGE Cycle</h2>
+<h3>Reason → Act → Reflect → Verify</h3>
+<p>Every agent runs this cycle internally before delivering any work. This is not a suggestion—it&#x27;s the foundational discipline that makes agent output trustworthy.</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<hr/>
+<h3>Stage 1: Reason</h3>
+<p><strong>Understand the task before touching anything.</strong></p>
+<p>The orchestrator receives a request and builds a complete picture:</p>
+<ul>
+<li>What exactly is being asked? What does success look like?</li>
+<li>Which specialists need to be involved?</li>
+<li>Are there constraints, dependencies, or conflicts to resolve?</li>
+<li>What context do the executing agents need?</li>
+</ul>
+<p><strong>Clarifying questions get asked here</strong>—not during Act, when rework is expensive.</p>
+<h4>Output: Structured Task Brief</h4>
+<p>Every task brief has four sections:</p>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Section</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Contents</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>GOAL</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Measurable success criteria</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>CONSTRAINTS</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Hard limits—what cannot be done, what tools/patterns to use</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>CONTEXT</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Files to read, prior decisions, related work</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>OUTPUT</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Exact deliverables, in checklist format</td></tr></tbody></table></div>
+<p><strong>Example Brief:</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code>## GOAL
+Add a public-facing documentation page explaining FORGE methodology
+
+## CONSTRAINTS
+- Static site (Next.js with `output: &#x27;export&#x27;`)
+- Match existing page patterns (charter.md style)
+- No server-side runtime
+- Mobile-responsive, accessibility compliant
+
+## CONTEXT
+Read:
+- /content/charter.md (style reference)
+- /agents/workflows/aidlc-bamwerks.md (FORGE definition)
+- /memory/research/ai-agent-landscape-2026-deep.md (market context)
+
+## OUTPUT
+- [ ] New file: /content/forge-methodology.md (800-1200 lines)
+- [ ] Includes mermaid diagrams
+- [ ] Professional tone, practical examples
+- [ ] Structured with clear sections and cross-links
+</code></pre></pre>
+<p><strong>Key principle:</strong> Scope matters. A task to update how agent avatars display means <em>every page showing avatars</em>, not just one component. Broad scope, specific brief.</p>
+<hr/>
+<h3>Stage 2: Act</h3>
+<p><strong>Specialists execute against the brief.</strong></p>
+<p>Once the brief is written, relevant specialist agents are dispatched. Tasks are scoped to <strong>features, not files</strong>. Multiple agents can work in parallel on independent aspects of the same deliverable.</p>
+<h4>Agent Context Boundaries</h4>
+<p>Agents receive <strong>role-specific context</strong>—no agent gets more information than its task requires:</p>
+<ul>
+<li>An <strong>engineering agent</strong> gets the codebase, build tools, design docs</li>
+<li>A <strong>security agent</strong> gets threat models, vulnerability patterns, API surface</li>
+<li>A <strong>QA agent</strong> gets test strategies, acceptance criteria, regression patterns</li>
+</ul>
+<p><strong>This isn&#x27;t just efficiency—it&#x27;s security.</strong> Agents don&#x27;t &quot;see&quot; data outside their scope.</p>
+<h4>Parallel Dispatch</h4>
+<p>When tasks are independent, agents work simultaneously:</p>
+<ul>
+<li>Builder A: Implements frontend component</li>
+<li>Builder B: Writes backend API (different repository)</li>
+<li>QA: Prepares test strategy in parallel</li>
+</ul>
+<p><strong>This compresses elapsed time without sacrificing depth.</strong></p>
+<hr/>
+<h3>Stage 3: Reflect</h3>
+<p><strong>Independent review from multiple perspectives.</strong></p>
+<p>The Act output goes through review before Verify. Two key properties make this review meaningful:</p>
+<h4>1. Multi-Perspective Review</h4>
+<p><strong>QA and Security review simultaneously, not sequentially.</strong> Each reviewer focuses on its specialty without seeing the other&#x27;s findings first—this prevents anchoring and groupthink.</p>
+<ul>
+<li><strong>QA Agent (Hawk)</strong> checks: visual consistency, broken links, mobile layout, accessibility, spec compliance, test coverage</li>
+<li><strong>Security Agent (Sentinel)</strong> checks: exposed internals, authentication bypass, data leakage, supply chain risks, privilege boundaries</li>
+</ul>
+<p><strong>Both reviews happen in parallel.</strong> Neither reviewer knows the other&#x27;s conclusions until both are complete.</p>
+<h4>2. Anti-Sycophancy Protocol</h4>
+<p>If all reviewers agree that output is perfect, <strong>a contrarian review is triggered</strong>.</p>
+<p>Unanimous praise is a signal, not a conclusion. At least one reviewer is asked:</p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;The other reviewers found no issues. You are the contrarian. What did they miss? What edge cases weren&#x27;t considered? What assumptions are we making that could be wrong?&quot;</p>
+</blockquote>
+<p>This protocol directly addresses OWASP ASI09 (Lack of Observability) and prevents the groupthink that plagues single-agent or single-review systems.</p>
+<h4>3. Critical Findings Block Delivery</h4>
+<p>A critical finding from <strong>any single reviewer blocks delivery</strong>—majority opinion doesn&#x27;t override it.</p>
+<p><strong>One failure = the task doesn&#x27;t ship.</strong></p>
+<p>This is deliberate. Security vulnerabilities, data integrity issues, and accessibility failures don&#x27;t require consensus to be real problems.</p>
+<hr/>
+<h3>Stage 4: Verify</h3>
+<p><strong>Confirm the deliverable actually works.</strong></p>
+<p>Code review is not verification. Reading code and understanding it is not the same as running it.</p>
+<p>Verify means:</p>
+<h4>Runtime Testing</h4>
+<ul>
+<li><strong>Build passes:</strong> The project compiles and builds cleanly (no TypeScript errors, no missing dependencies)</li>
+<li><strong>Feature works:</strong> The functionality operates correctly in a live environment, not just on paper</li>
+<li><strong>Spec check:</strong> The output matches what was asked for in Reason</li>
+<li><strong>Edge cases handled:</strong> Boundary conditions, error states, graceful degradation</li>
+</ul>
+<h4>Both Gates Pass</h4>
+<p><strong>QA gate:</strong> Hawk confirms tests pass, spec is met, no regressions introduced<br/>
+<strong>Security gate:</strong> Sentinel confirms no new vulnerabilities, no exposed internals, secrets management correct</p>
+<h4>Failure Handling</h4>
+<p>If Verify fails:</p>
+<ol>
+<li><strong>Capture the error:</strong> What failed? What was expected vs. actual behavior?</li>
+<li><strong>Understand root cause:</strong> Was it a misunderstanding in Reason? A logic error in Act? An edge case missed in Reflect?</li>
+<li><strong>Loop back with corrected approach:</strong> Don&#x27;t just patch the symptom—fix the underlying issue</li>
+</ol>
+<p><strong>Repeated failures trigger escalation</strong> to the orchestrator or human oversight.</p>
+<hr/>
+<h2>The FORGE Workflow</h2>
+<h3>Task Sizing → Inception → Construction → Gate → Ship</h3>
+<p>FORGE Workflow structures work into phases based on task complexity. Every phase is staffed by agents running the FORGE Cycle internally.</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<hr/>
+<h3>Phase 1: Task Sizing</h3>
+<p><strong>The orchestrator evaluates complexity and assigns a scope level.</strong></p>
+<p>This determines which agents run and how much design work happens upfront. A miscategorized task wastes time—over-engineering a config fix or under-planning a new system both cause rework.</p>
+<h4>Sizing Matrix</h4>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Size</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Examples</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Design Depth</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Builders</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Review</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Small</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Fix typo, config change, nav update</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Skip</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">1 builder, direct task</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Quick QA pass</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Medium</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">New page, new feature, integration</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Application design</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">1 builder with plan</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">QA + Security</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Large</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">New system, multi-component</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Architecture + unit decomposition</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Parallel builders</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Structured test strategy + Security NFR</td></tr></tbody></table></div>
+<p><strong>Key insight:</strong> The same task can be Small in one context and Medium in another. A &quot;new page&quot; for a static site might be Small (copy existing pattern), but a &quot;new page&quot; for a complex web app with auth, database, and API integration is Medium or Large.</p>
+<p><strong>Context drives sizing, not just surface characteristics.</strong></p>
+<hr/>
+<h3>Phase 2: Inception</h3>
+<p>For medium and large tasks, an <strong>Architect agent designs before any code is written</strong>.</p>
+<h4>Medium Task Inception</h4>
+<p>Architect produces:</p>
+<ul>
+<li><strong>Application architecture:</strong> System boundaries, data flows, integration points</li>
+<li><strong>Component breakdown:</strong> What gets built, dependencies between parts</li>
+<li><strong>Risk assessment:</strong> Where complexity lives, what could fail</li>
+<li><strong>Design constraints:</strong> Patterns to follow, anti-patterns to avoid</li>
+</ul>
+<h4>Large Task Inception (Full)</h4>
+<p>Adds:</p>
+<ul>
+<li><strong>Formal requirements gathering:</strong> Stakeholder alignment, success criteria, non-functional requirements</li>
+<li><strong>Unit decomposition:</strong> Breaking the system into independent work units with explicit contracts</li>
+<li><strong>Test strategy:</strong> What gets tested, how, by whom, and when</li>
+<li><strong>Deployment plan:</strong> Rollout strategy, rollback procedures, monitoring</li>
+</ul>
+<p><strong>Output artifacts:</strong></p>
+<pre><code style="background-color:rgba(110, 118, 129, 0.2);padding:0.15em 0.4em;border-radius:4px;font-size:0.9em">forge-docs/
+├── inception/
+│   ├── requirements/          # Requirements docs
+│   ├── reverse-engineering/   # Codebase analysis (brownfield projects)
+│   └── application-design/    # Architect&#x27;s component design
+</code></pre>
+<hr/>
+<h3>Phase 3: Construction</h3>
+<p><strong>Builders receive the design and implement.</strong></p>
+<h4>Construction Flow by Size</h4>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Size</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Construction Process</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Small</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Direct execution—builder reads brief, implements, self-verifies</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Medium</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Builder follows Architect&#x27;s plan, implements with spec adherence checks</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Large</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Work decomposed into parallel units with explicit contracts between components</td></tr></tbody></table></div>
+<h4>Builder Responsibilities</h4>
+<p>Every builder runs the FORGE Cycle internally:</p>
+<ul>
+<li><strong>Reason</strong> about the design: What are the requirements? What patterns should I follow?</li>
+<li><strong>Act</strong> by writing code: Implement the feature according to the plan</li>
+<li><strong>Reflect</strong> on their own output: Does this match the spec? Are there edge cases I missed?</li>
+<li><strong>Verify</strong> it builds and runs: Tests pass, no regressions, functionality works</li>
+</ul>
+<p><strong>Builders don&#x27;t &quot;freestyle.&quot;</strong> If the design is unclear or incomplete, they escalate to the Architect—they don&#x27;t improvise beyond scope.</p>
+<h4>Construction Artifacts</h4>
+<pre><code style="background-color:rgba(110, 118, 129, 0.2);padding:0.15em 0.4em;border-radius:4px;font-size:0.9em">forge-docs/
+├── construction/
+│   ├── {unit-name}/
+│   │   ├── functional-design/   # Architect&#x27;s per-unit design (large tasks)
+│   │   ├── nfr-requirements/    # Security&#x27;s pre-build requirements
+│   │   └── code/                # Code generation plan + summary
+│   └── build-and-test/          # QA&#x27;s test strategy
+</code></pre>
+<hr/>
+<h3>Phase 4: Gate</h3>
+<p><strong>QA and Security review in parallel. Both must pass before anything ships.</strong></p>
+<p>This is the most critical phase—where theory meets reality.</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<h4>QA Gate (Hawk)</h4>
+<p><strong>What QA checks:</strong></p>
+<ul>
+<li>✅ Visual consistency with existing patterns</li>
+<li>✅ All links resolve correctly (no 404s)</li>
+<li>✅ Mobile layout works (responsive breakpoints)</li>
+<li>✅ Accessibility compliance (ARIA labels, keyboard navigation, color contrast)</li>
+<li>✅ Spec compliance (output matches the brief)</li>
+<li>✅ Test coverage (unit tests, integration tests where applicable)</li>
+<li>✅ No regressions introduced</li>
+</ul>
+<p><strong>QA runs the FORGE Cycle:</strong></p>
+<ul>
+<li><strong>Reason:</strong> What should I test? What are the acceptance criteria?</li>
+<li><strong>Act:</strong> Execute test plan, check all assertions</li>
+<li><strong>Reflect:</strong> Are there edge cases I missed? What could break that I didn&#x27;t test?</li>
+<li><strong>Verify:</strong> All checks pass, documentation updated</li>
+</ul>
+<h4>Security Gate (Sentinel)</h4>
+<p><strong>What Security checks:</strong></p>
+<ul>
+<li>🔒 No exposed internals (API keys, credentials, internal URLs)</li>
+<li>🔒 Authentication and authorization correct</li>
+<li>🔒 Input validation and output encoding (prevent injection)</li>
+<li>🔒 Data leakage prevented (no PII in logs, no debug output in production)</li>
+<li>🔒 Supply chain risks assessed (dependencies vetted, no malicious packages)</li>
+<li>🔒 Privilege boundaries enforced (least-privilege access)</li>
+</ul>
+<p><strong>Security runs the FORGE Cycle:</strong></p>
+<ul>
+<li><strong>Reason:</strong> What could leak? What could be exploited?</li>
+<li><strong>Act:</strong> Scan code, check dependencies, review API surface</li>
+<li><strong>Reflect:</strong> Could this be weaponized? What attack vectors exist?</li>
+<li><strong>Verify:</strong> No security issues found, threat model validated</li>
+</ul>
+<h4>Gate Decision Logic</h4>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">QA Result</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Security Result</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Outcome</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">PASS</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">PASS</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ <strong>Ship</strong></td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">PASS</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">FAIL</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">❌ <strong>Blocked</strong> (security critical)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">FAIL</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">PASS</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">❌ <strong>Blocked</strong> (quality critical)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">FAIL</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">FAIL</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">❌ <strong>Blocked</strong> (both critical)</td></tr></tbody></table></div>
+<p><strong>One failure is enough to block delivery.</strong> This is not consensus-based—both gates are <em>requirements</em>, not votes.</p>
+<hr/>
+<h3>Phase 5: Ship</h3>
+<p><strong>Both gates passed. The orchestrator merges and deploys.</strong></p>
+<p>Shipping is not just &quot;push to main&quot;:</p>
+<ol>
+<li><strong>Final build verification:</strong> Ensure production build succeeds</li>
+<li><strong>Changelog update:</strong> Document what changed and why</li>
+<li><strong>Deployment:</strong> Push to production (or staging for further testing)</li>
+<li><strong>Monitoring:</strong> Watch for errors, performance issues, user feedback</li>
+<li><strong>Retrospective (if applicable):</strong> For complex tasks, document lessons learned</li>
+</ol>
+<p><strong>Shipping is the end of the Workflow, but not the end of accountability.</strong> Post-deployment issues trigger retrospectives.</p>
+<hr/>
+<h2>Agent Roles in FORGE</h2>
+<p>FORGE defines five core roles, each with specific responsibilities and phases where they operate.</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<hr/>
+<h3>1. Orchestrator</h3>
+<p><strong>Who:</strong> The main coordination agent (in Bamwerks: <strong>Sir</strong>)</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Runs the entire FORGE Workflow</li>
+<li>Performs task sizing</li>
+<li>Creates structured task briefs (GOAL/CONSTRAINTS/CONTEXT/OUTPUT)</li>
+<li>Dispatches specialists</li>
+<li>Synthesizes multi-agent review results</li>
+<li>Makes final ship/no-ship decision</li>
+<li>Writes retrospectives on failures</li>
+</ul>
+<p><strong>What the Orchestrator does NOT do:</strong></p>
+<ul>
+<li>❌ Implement code</li>
+<li>❌ Write designs</li>
+<li>❌ Perform QA</li>
+<li>❌ Conduct security audits</li>
+</ul>
+<p><strong>The Orchestrator orchestrates. Never implements.</strong> This is a hard rule.</p>
+<p><strong>Why this matters:</strong> If the Orchestrator also implements, it can&#x27;t objectively review its own work. Single-agent systems fail because the same reasoning that creates a solution also reviews it—blind spots are systematic, not random.</p>
+<hr/>
+<h3>2. Architect</h3>
+<p><strong>Who:</strong> Design specialist (in Bamwerks: <strong>Ada</strong>)</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Reverse-engineering (brownfield projects with no docs)</li>
+<li>Application architecture (system boundaries, data flows, integration points)</li>
+<li>Component breakdown (what gets built, dependencies)</li>
+<li>Risk assessment (complexity, failure modes)</li>
+<li>Unit decomposition (large tasks → independent work units)</li>
+<li>Functional design (per-unit logic for complex features)</li>
+</ul>
+<p><strong>Phases:</strong> Inception (required for medium+ tasks) + Construction (per-unit design for large tasks)</p>
+<p><strong>Architect does NOT:</strong></p>
+<ul>
+<li>❌ Write production code (designs only)</li>
+<li>❌ Perform QA or security reviews</li>
+</ul>
+<p><strong>Why this matters:</strong> Separation of design from implementation prevents &quot;I know what I meant&quot; bias. Builders work from explicit specs, not assumptions.</p>
+<hr/>
+<h3>3. Builders</h3>
+<p><strong>Who:</strong> Implementation specialists with domain expertise</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Frontend Builder:</strong> React, Next.js, Tailwind, accessibility</li>
+<li><strong>Backend Builder:</strong> APIs, databases, authentication, business logic</li>
+<li><strong>DevOps Builder:</strong> Infrastructure, CI/CD, monitoring, deployment</li>
+</ul>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Implement features according to Architect&#x27;s design</li>
+<li>Follow design constraints and patterns</li>
+<li>Write tests alongside code</li>
+<li>Self-verify build and functionality</li>
+<li>Escalate when design is unclear (don&#x27;t improvise beyond scope)</li>
+</ul>
+<p><strong>Phases:</strong> Construction</p>
+<p><strong>Builders do NOT:</strong></p>
+<ul>
+<li>❌ Design architecture (follow the Architect&#x27;s plan)</li>
+<li>❌ Review their own code as QA/Security</li>
+<li>❌ Skip testing (&quot;I&#x27;ll add tests later&quot;)</li>
+</ul>
+<p><strong>Why multiple builders?</strong> Different expertise. A frontend specialist knows accessibility patterns and responsive design. A backend specialist knows database transactions and API design. <strong>Specialization improves quality.</strong></p>
+<hr/>
+<h3>4. QA Agent</h3>
+<p><strong>Who:</strong> Quality verification specialist (in Bamwerks: <strong>Hawk</strong>)</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Test strategy creation (large tasks)</li>
+<li>Build verification (all tasks)</li>
+<li>Spec compliance checking</li>
+<li>Regression testing</li>
+<li>Accessibility verification</li>
+<li>Code review (readability, maintainability, test coverage)</li>
+<li>Anti-sycophancy contrarian review (when needed)</li>
+</ul>
+<p><strong>Phases:</strong> Gate (required for all tasks except trivial)</p>
+<p><strong>QA does NOT:</strong></p>
+<ul>
+<li>❌ Implement features (reviews only)</li>
+<li>❌ Approve security issues (that&#x27;s Security&#x27;s gate)</li>
+</ul>
+<p><strong>Why independent QA?</strong> Builders self-verify before submission, but they have blind spots. QA brings fresh eyes, checks against the original brief, and catches what the builder missed.</p>
+<hr/>
+<h3>5. Security Agent</h3>
+<p><strong>Who:</strong> Security verification specialist (in Bamwerks: <strong>Sentinel</strong>)</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Non-functional requirements (NFR) definition (large tasks, pre-build)</li>
+<li>Security review (post-build, all medium+ tasks)</li>
+<li>Credential exposure checks</li>
+<li>Data leakage prevention</li>
+<li>Supply chain risk assessment</li>
+<li>Privilege boundary enforcement</li>
+<li>Threat modeling</li>
+</ul>
+<p><strong>Phases:</strong> Inception (NFR definition for large tasks) + Gate (security review for medium+ tasks)</p>
+<p><strong>Security does NOT:</strong></p>
+<ul>
+<li>❌ Implement features</li>
+<li>❌ Approve quality issues (that&#x27;s QA&#x27;s gate)</li>
+</ul>
+<p><strong>Why independent Security?</strong> Security thinks like an attacker. QA thinks like a user. These are different perspectives—both are critical.</p>
+<hr/>
+<h3>Role Mapping to FORGE Phases</h3>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Phase</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Orchestrator</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Architect</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Builders</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">QA</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Security</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Task Sizing</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Runs</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Inception</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Coordinates</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Designs</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ NFR (large tasks)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Construction</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Dispatches</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Per-unit design (large)</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Implements</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Gate</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Synthesizes</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Verifies quality</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Verifies security</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Ship</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">✅ Merges</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"></td></tr></tbody></table></div>
+<hr/>
+<h2>The Charter: Why Behavioral Contracts Matter</h2>
+<p>FORGE is the <em>operational framework</em>. The <strong>Charter</strong> is the <em>governance foundation</em>.</p>
+<h3>What Is a Charter?</h3>
+<p>A Charter is an immutable behavioral contract that defines:</p>
+<ul>
+<li><strong>Mission:</strong> Why the agent system exists</li>
+<li><strong>Principles:</strong> Core values that guide decision-making</li>
+<li><strong>Roles:</strong> Who does what (and who doesn&#x27;t)</li>
+<li><strong>Boundaries:</strong> What agents can and cannot do without approval</li>
+<li><strong>Accountability:</strong> How failures are handled and who owns them</li>
+</ul>
+<p><strong>Think of it as a constitution.</strong> Laws (workflows) change. The constitution (charter) endures.</p>
+<h3>Charter vs. Prompt</h3>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Aspect</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Prompt</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Charter</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Scope</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Single task</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">System-wide governance</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Mutability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Changes per task</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Immutable (or founder-only edit)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Enforcement</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Implicit</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Explicit, read every session</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Accountability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">None</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Named roles, retrospective requirement</td></tr></tbody></table></div>
+<p><strong>A prompt tells an agent what to do. A charter tells the system how to be.</strong></p>
+<h3>Core Charter Elements</h3>
+<p>Every AI agent system implementing FORGE should have a Charter with these sections:</p>
+<h4>1. Mission Statement</h4>
+<p><strong>Purpose:</strong> Why does this system exist? Who does it serve?</p>
+<p><strong>Example:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;This AI organization exists for three purposes:</p>
+<ol>
+<li><strong>Success</strong> — Advance the founder&#x27;s professional and personal goals</li>
+<li><strong>Protection</strong> — Guard security, privacy, data, and reputation</li>
+<li><strong>Enlightenment</strong> — Surface insights, opportunities, and knowledge&quot;</li>
+</ol>
+</blockquote>
+<h4>2. Governance Principles</h4>
+<p><strong>Purpose:</strong> Core values that guide all agent behavior</p>
+<p><strong>Example principles:</strong></p>
+<ul>
+<li><strong>Multiple perspectives prevent blind spots</strong> → Multi-agent review in FORGE Reflect</li>
+<li><strong>Verification builds trust</strong> → Runtime testing in FORGE Verify, not assertions</li>
+<li><strong>Constraints enable speed</strong> → Strict gates reduce rework</li>
+<li><strong>Memory over reasoning</strong> → Write decisions down, don&#x27;t rely on &quot;mental notes&quot;</li>
+<li><strong>Task sizing drives depth</strong> → Match effort to complexity</li>
+</ul>
+<h4>3. Role Definitions</h4>
+<p><strong>Purpose:</strong> Explicit mapping of responsibilities</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Orchestrator:</strong> Dispatches tasks, synthesizes results, writes retrospectives. NEVER implements.</li>
+<li><strong>Architect:</strong> Designs systems. NEVER implements production code.</li>
+<li><strong>Builders:</strong> Implement according to design. NEVER improvise beyond scope.</li>
+<li><strong>Reviewers:</strong> QA and Security verify independently. NEVER approve their own work.</li>
+</ul>
+<h4>4. Behavioral Boundaries</h4>
+<p><strong>Purpose:</strong> Hard limits on agent actions without human approval</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>External communications (email, social media posts) require approval</li>
+<li>Financial transactions above $X require approval</li>
+<li>Deletion of data requires confirmation</li>
+<li>Changes to the Charter require founder approval</li>
+<li>Credential access is logged and auditable</li>
+</ul>
+<h4>5. Accountability Protocol</h4>
+<p><strong>Purpose:</strong> How failures are handled</p>
+<p><strong>Example:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;When something goes wrong:</p>
+<ol>
+<li>The orchestrator owns it (not the implementing agent)</li>
+<li>A retrospective is written within 24 hours</li>
+<li>Retrospective includes: What happened → Root cause → Who&#x27;s accountable → Prevention</li>
+<li>Retrospectives are filed in memory/ directory for institutional learning</li>
+<li>Repeated failures of the same type trigger escalation to human oversight&quot;</li>
+</ol>
+</blockquote>
+<h3>How to Write Your Charter</h3>
+<p><strong>Step 1: Define Your Mission</strong></p>
+<p>Why are you building this agent system? Who does it serve? What outcomes matter?</p>
+<p>Be specific. &quot;Automate tasks&quot; is not a mission. &quot;Reduce manual DevOps toil by 80% while maintaining zero security incidents&quot; is.</p>
+<p><strong>Step 2: Choose Your Principles</strong></p>
+<p>What values guide decision-making when rules don&#x27;t cover a situation?</p>
+<p>Examples:</p>
+<ul>
+<li>&quot;Security over speed&quot; (when in doubt, add review)</li>
+<li>&quot;Transparency over efficiency&quot; (log all decisions)</li>
+<li>&quot;Human oversight for high-impact actions&quot; (define &quot;high-impact&quot;)</li>
+</ul>
+<p><strong>Step 3: Map Roles to FORGE Phases</strong></p>
+<p>Who runs Inception? Who implements? Who reviews?</p>
+<p>Write it explicitly. &quot;The senior engineer&quot; is not a role—&quot;Architect agent with 10+ years system design experience&quot; is.</p>
+<p><strong>Step 4: Define Boundaries</strong></p>
+<p>What actions require approval? What actions are prohibited entirely?</p>
+<p>Examples:</p>
+<ul>
+<li>✅ Can: Read database, write logs, send internal notifications</li>
+<li>⚠️ Requires approval: Send emails to external recipients, modify production config</li>
+<li>❌ Prohibited: Delete databases, expose credentials, bypass security gates</li>
+</ul>
+<p><strong>Step 5: Create Accountability Mechanisms</strong></p>
+<p>How do you learn from failures without blame?</p>
+<p>Write a retrospective protocol:</p>
+<ul>
+<li>Who writes them? (Orchestrator, not the failing agent)</li>
+<li>When? (Within 24 hours of incident)</li>
+<li>What&#x27;s included? (What happened, root cause, accountability, prevention)</li>
+<li>Where are they stored? (Persistent memory directory)</li>
+<li>Who reviews them? (Human oversight for systemic issues)</li>
+</ul>
+<p><strong>Step 6: Make It Immutable (or Founder-Only)</strong></p>
+<p>The Charter is not a living document that anyone can edit. It&#x27;s the foundation.</p>
+<p>Options:</p>
+<ul>
+<li><strong>Immutable:</strong> Charter never changes (requires full system rebuild to modify)</li>
+<li><strong>Founder-only:</strong> Only the human owner can edit, agents read-only</li>
+<li><strong>Governance board:</strong> Multi-signature approval required (for organizations)</li>
+</ul>
+<p><strong>Bamwerks approach:</strong> Charter is founder-only (read-only for all agents, write access only for the Founder). This prevents agent self-modification while allowing evolution as the organization learns.</p>
+<h3>Charter Examples by Use Case</h3>
+<h4>Personal AI Assistant</h4>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code># Charter: Personal AI Assistant
+
+## Mission
+Serve one human (the Founder) with three priorities:
+1. Productivity — Complete tasks efficiently and accurately
+2. Privacy — Never leak personal data
+3. Proactivity — Anticipate needs, don&#x27;t just react
+
+## Principles
+- Ask before sending external messages
+- Confirm before deleting data
+- Write decisions down (no &quot;mental notes&quot;)
+- Fail loudly, fix quickly
+
+## Roles
+- Orchestrator: Main agent (coordinates all work)
+- Specialists: Domain-specific agents (research, coding, writing)
+
+## Boundaries
+- ✅ Can: Read files, search web, draft messages
+- ⚠️ Approval: Send emails, post to social media, modify system files
+- ❌ Never: Share credentials, bypass encryption, ignore Founder directives
+
+## Accountability
+- Every external action logged
+- Failures trigger retrospective within 24 hours
+- Retrospective includes: What happened, why, prevention
+</code></pre></pre>
+<h4>Enterprise Development Team</h4>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code># Charter: Enterprise AI Development Team
+
+## Mission
+Accelerate software delivery for [Company] with three goals:
+1. Velocity — Ship features 50% faster
+2. Quality — Zero critical bugs in production
+3. Security — Pass all security audits
+
+## Principles
+- Security over speed (when in doubt, add review)
+- Design before implementation (no &quot;cowboy coding&quot;)
+- Test coverage required (not optional)
+- Human approval for production deployments
+
+## Roles
+- Orchestrator: Tech Lead AI (task sizing, coordination)
+- Architect: Senior Engineer AI (design, architecture)
+- Builders: Domain-specific engineers (frontend, backend, DevOps)
+- QA: Test Engineer AI (verification, regression)
+- Security: AppSec AI (security review, threat modeling)
+
+## Boundaries
+- ✅ Can: Read repos, run tests, draft PRs
+- ⚠️ Approval: Merge to main, deploy to production, modify CI/CD
+- ❌ Never: Skip security review, deploy without tests, expose credentials
+
+## Accountability
+- Code owners review all PRs
+- Security audit on every release
+- Post-mortems for all P0 incidents within 48 hours
+- Quarterly security penetration tests
+</code></pre></pre>
+<hr/>
+<h2>Anti-Patterns: What NOT to Do</h2>
+<p>FORGE is effective because it enforces discipline. Skipping steps or &quot;optimizing&quot; the process usually introduces the failures FORGE was designed to prevent.</p>
+<h3>❌ Anti-Pattern 1: Skip Reviews for &quot;Quick Fixes&quot;</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;This is just a one-line config change. I don&#x27;t need QA/Security review for this.&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>&quot;Quick fixes&quot; compound. A one-line change that skips review becomes ten one-line changes. Eventually one of them breaks production, and there&#x27;s no review trail to understand what happened.</p>
+<p><strong>Real consequences:</strong></p>
+<ul>
+<li>Config change breaks authentication → security incident</li>
+<li>One-line CSS fix breaks mobile layout → UX regression</li>
+<li>&quot;Trivial&quot; dependency update introduces vulnerability → supply chain attack</li>
+</ul>
+<p><strong>FORGE approach:</strong></p>
+<p>Even small tasks get <strong>some</strong> review. The depth scales with risk:</p>
+<ul>
+<li>Typo fix: Self-review + quick Orchestrator check</li>
+<li>Config change: QA quick pass</li>
+<li>Security-sensitive config: Full Security gate</li>
+</ul>
+<p><strong>The overhead of review is less than the cost of incidents.</strong></p>
+<hr/>
+<h3>❌ Anti-Pattern 2: Self-Review Only</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;I built it, I tested it, it works. Why do I need someone else to check?&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>The same reasoning that creates a solution also reviews it. Blind spots are systematic, not random.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Builder tests &quot;happy path&quot; → QA finds edge cases (empty input, network failure, race conditions)</li>
+<li>Builder checks functionality → Security finds privilege escalation</li>
+<li>Builder verifies desktop → QA finds mobile layout breaks</li>
+</ul>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Independent review is mandatory.</strong> The builder self-verifies before submission (Verify stage of their Cycle), but QA and Security review independently (Reflect stage at workflow level).</p>
+<hr/>
+<h3>❌ Anti-Pattern 3: Unanimous Agreement Without Challenge</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;All three reviewers said it&#x27;s perfect. Ship it!&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>Unanimous praise without contrarian challenge often means:</p>
+<ul>
+<li>Everyone made the same assumption</li>
+<li>Obvious issues got normalized (&quot;that&#x27;s just how we do it&quot;)</li>
+<li>Reviewers anchored on each other&#x27;s opinions</li>
+</ul>
+<p><strong>Real example:</strong></p>
+<p>Three agents review a new authentication flow. All say &quot;looks good.&quot; No one catches that the session token is logged in plaintext—because none of them were explicitly asked to check logging output.</p>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Anti-sycophancy protocol:</strong> If all reviewers agree without finding issues, a contrarian review is triggered.</p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;The other reviewers found no issues. You are the contrarian. What did they miss?&quot;</p>
+</blockquote>
+<p>This protocol forces at least one reviewer to think adversarially, breaking the groupthink.</p>
+<hr/>
+<h3>❌ Anti-Pattern 4: Orchestrator Implements</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;I&#x27;m the orchestrator and I know how to code. Why dispatch another agent when I can just do it myself?&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>If the Orchestrator implements, it can&#x27;t objectively synthesize review. When Hawk says &quot;this code is hard to read&quot; and the Orchestrator replies &quot;but I wrote it and I understand it&quot;—that&#x27;s not synthesis, that&#x27;s defensiveness.</p>
+<p><strong>The orchestrator&#x27;s job is coordination, not execution.</strong></p>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Hard rule:</strong> Orchestrators orchestrate, never implement.</p>
+<ul>
+<li>Task sizing → Orchestrator</li>
+<li>Design → Architect</li>
+<li>Implementation → Builders</li>
+<li>Review → QA + Security</li>
+<li>Synthesis → Orchestrator (coordinates, doesn&#x27;t override)</li>
+</ul>
+<p><strong>Separation of concerns prevents conflicts of interest.</strong></p>
+<hr/>
+<h3>❌ Anti-Pattern 5: Workflow as Waterfall</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;We must complete every Inception artifact before Construction can start.&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>FORGE is not Waterfall. It&#x27;s <strong>adaptive workflow structure</strong>, not rigid phase-gates.</p>
+<p><strong>Small tasks skip Inception entirely.</strong> Medium tasks get lightweight design. Large tasks get full architecture—but even then, unit decomposition allows parallel work.</p>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Depth adapts to complexity:</strong></p>
+<ul>
+<li>Small → Direct dispatch (no Inception)</li>
+<li>Medium → Lightweight design (application architecture, no full requirements doc)</li>
+<li>Large → Full Inception (architecture + units + test strategy)</li>
+</ul>
+<p><strong>Phases overlap intentionally:</strong> Architect can design Unit B while Builder implements Unit A.</p>
+<hr/>
+<h3>❌ Anti-Pattern 6: Security as an Afterthought</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;We&#x27;ll do a security review after launch.&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>Security vulnerabilities found after deployment are exponentially more expensive to fix—and they may have already been exploited.</p>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Security is built into the Workflow:</strong></p>
+<ul>
+<li><strong>Inception:</strong> Security defines non-functional requirements (NFRs) for large tasks</li>
+<li><strong>Gate:</strong> Security review is mandatory for medium+ tasks (parallel with QA)</li>
+<li><strong>Pre-merge:</strong> Both gates must pass before deployment</li>
+</ul>
+<p><strong>Security is not a separate audit—it&#x27;s a parallel track throughout the lifecycle.</strong></p>
+<hr/>
+<h3>❌ Anti-Pattern 7: No Retrospectives on Failures</h3>
+<p><strong>The temptation:</strong></p>
+<blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;color:var(--fg-muted);font-style:italic">
+<p>&quot;The bug is fixed. Move on.&quot;</p>
+</blockquote>
+<p><strong>Why it fails:</strong></p>
+<p>Fixing symptoms without understanding root causes means the same class of failure will recur.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>&quot;The API call failed&quot; → Fix: retry logic</li>
+<li>Root cause: No one reviewed error handling patterns → Next failure: different API, same missing error handling</li>
+</ul>
+<p><strong>FORGE approach:</strong></p>
+<p><strong>Mandatory retrospectives on failures:</strong></p>
+<ol>
+<li>What happened (symptoms)</li>
+<li>Root cause (why it happened)</li>
+<li>Who&#x27;s accountable (not blame, but ownership)</li>
+<li>Prevention (process change, not just code fix)</li>
+</ol>
+<p>Retrospectives are filed in persistent memory—they become institutional knowledge.</p>
+<hr/>
+<h2>Getting Started: 5 Steps to Implement FORGE</h2>
+<p>You don&#x27;t need 40 agents and a complex swarm to use FORGE. You can implement it incrementally, starting with a single-agent system and growing as complexity demands.</p>
+<h3>Step 1: Write Your Charter (1-2 Hours)</h3>
+<p><strong>Start with mission and boundaries.</strong></p>
+<p>Use the template from the Charter section:</p>
+<ol>
+<li>Mission (why this system exists)</li>
+<li>Principles (core values)</li>
+<li>Roles (even if it&#x27;s just &quot;one agent for now&quot;)</li>
+<li>Boundaries (what requires approval, what&#x27;s prohibited)</li>
+<li>Accountability (how failures are handled)</li>
+</ol>
+<p><strong>Make it read-only for agents.</strong> Store it in a file (e.g., <code style="background-color:rgba(110, 118, 129, 0.2);padding:0.15em 0.4em;border-radius:4px;font-size:0.9em">CHARTER.md</code>) that agents must read every session but cannot modify without human approval.</p>
+<p><strong>Example for a solo developer:</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code># My AI Assistant Charter
+
+## Mission
+Help me ship high-quality code faster without sacrificing security.
+
+## Principles
+- Test before ship
+- Ask before external actions (emails, tweets, PRs to public repos)
+- Security over speed
+
+## Roles
+- Me: Final decision-maker
+- AI: Implements, self-reviews, proposes changes
+- External review: GitHub PR review (when available)
+
+## Boundaries
+- ✅ Can: Draft code, run tests, search docs
+- ⚠️ Approval: Push to main, deploy to production
+- ❌ Never: Commit secrets, skip tests
+
+## Accountability
+- I review all code before merge
+- AI writes summary of what changed and why
+- Failures trigger retrospective (what happened, why, prevention)
+</code></pre></pre>
+<hr/>
+<h3>Step 2: Implement the FORGE Cycle (Single Agent)</h3>
+<p><strong>Even with one agent, run the four-stage cycle.</strong></p>
+<p>Before delivering any work output, the agent should:</p>
+<ol>
+<li><strong>Reason:</strong> Understand the task fully (ask clarifying questions if needed)</li>
+<li><strong>Act:</strong> Implement the solution</li>
+<li><strong>Reflect:</strong> Self-review against the spec (checklist of success criteria)</li>
+<li><strong>Verify:</strong> Run tests, confirm it works</li>
+</ol>
+<p><strong>Example prompt structure:</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code>Before you deliver any code or solution:
+
+1. REASON: Restate the task in your own words. List success criteria.
+2. ACT: Implement the solution.
+3. REFLECT: Self-review checklist:
+   - Does this match the spec?
+   - Are there edge cases I didn&#x27;t handle?
+   - Is this code readable and maintainable?
+   - Did I test error conditions?
+4. VERIFY: Run the build/tests. Confirm functionality.
+
+Only after all four stages are complete: deliver the output.
+</code></pre></pre>
+<p><strong>This takes discipline, but it prevents the &quot;ship first, fix later&quot; trap.</strong></p>
+<hr/>
+<h3>Step 3: Add Independent Review (Two Agents)</h3>
+<p><strong>When you&#x27;re ready, add a second agent for review.</strong></p>
+<p>This could be:</p>
+<ul>
+<li>A dedicated QA agent (reviews functionality, tests, readability)</li>
+<li>A security-focused agent (reviews for vulnerabilities, credential leaks)</li>
+<li>A contrarian agent (challenges assumptions)</li>
+</ul>
+<p><strong>Key principle:</strong> The reviewer must not have seen the implementation reasoning. Run review in a fresh context without the builder&#x27;s internal reasoning visible.</p>
+<p><strong>Example workflow:</strong></p>
+<ol>
+<li><strong>Builder agent:</strong> Runs FORGE Cycle, produces solution</li>
+<li><strong>Orchestrator (you):</strong> Extracts just the output (code, docs) and spec</li>
+<li><strong>Reviewer agent:</strong> Receives spec + output (not the builder&#x27;s reasoning)</li>
+<li><strong>Reviewer:</strong> Runs their own FORGE Cycle from review perspective</li>
+</ol>
+<p><strong>This simulates the &quot;fresh eyes&quot; principle without requiring human reviewers.</strong></p>
+<hr/>
+<h3>Step 4: Scale to Multi-Agent (When Complexity Demands It)</h3>
+<p><strong>Don&#x27;t prematurely add agents.</strong> Add them when you hit real limitations:</p>
+<ul>
+<li><strong>Add Architect when:</strong> You&#x27;re building something complex enough that design-before-implementation saves time</li>
+<li><strong>Add QA when:</strong> You&#x27;re repeatedly finding bugs post-deployment that review could have caught</li>
+<li><strong>Add Security when:</strong> You&#x27;re handling sensitive data, auth, or compliance requirements</li>
+<li><strong>Add Domain Builders when:</strong> You need deep expertise (frontend vs. backend vs. DevOps)</li>
+</ul>
+<p><strong>Start small, grow as needed.</strong> A 3-agent system (Orchestrator + Builder + Reviewer) covers 80% of use cases.</p>
+<hr/>
+<h3>Step 5: Instrument and Iterate</h3>
+<p><strong>Track what matters:</strong></p>
+<ul>
+<li>Task success rate (first-pass, after review, after Verify)</li>
+<li>Review findings (what categories of issues come up most?)</li>
+<li>Failure patterns (what root causes recur?)</li>
+<li>Token costs (per agent, per phase)</li>
+</ul>
+<p><strong>Use this data to improve:</strong></p>
+<ul>
+<li>If QA repeatedly finds the same issue → update the Builder&#x27;s constraints</li>
+<li>If Security repeatedly flags credentials → add automated secrets scanning</li>
+<li>If tasks fail Verify frequently → improve the Reason stage (clarify specs upfront)</li>
+</ul>
+<p><strong>FORGE is not static—it evolves with your system.</strong></p>
+<hr/>
+<h2>FORGE vs. Other Approaches</h2>
+<p>FORGE is not the only way to structure AI agent systems. Here&#x27;s how it compares to popular alternatives.</p>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<hr/>
+<h3>1. Raw Prompt Chaining</h3>
+<p><strong>What it is:</strong></p>
+<p>Sequential prompts where each prompt&#x27;s output becomes the next prompt&#x27;s input.</p>
+<p><strong>Example:</strong></p>
+<pre><code style="background-color:rgba(110, 118, 129, 0.2);padding:0.15em 0.4em;border-radius:4px;font-size:0.9em">Prompt 1: &quot;Research AI frameworks&quot;
+→ Output: &quot;Here are 10 frameworks...&quot;
+Prompt 2: &quot;Summarize the top 3&quot;
+→ Output: &quot;LangGraph, CrewAI, AutoGen...&quot;
+Prompt 3: &quot;Write a comparison table&quot;
+→ Output: [table]
+</code></pre>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>✅ Simple to implement</li>
+<li>✅ No complex tooling required</li>
+<li>✅ Easy to debug (each step is explicit)</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>❌ No review/verification built in</li>
+<li>❌ Single perspective (same model/reasoning chain)</li>
+<li>❌ No error recovery (if step 2 fails, the chain breaks)</li>
+<li>❌ No quality gates</li>
+</ul>
+<p><strong>When to use:</strong> One-off tasks, exploratory work, prototyping</p>
+<p><strong>FORGE difference:</strong> FORGE adds <strong>Reflect (multi-agent review)</strong> and <strong>Verify (runtime testing)</strong>—which raw chaining lacks entirely.</p>
+<hr/>
+<h3>2. CrewAI Roles</h3>
+<p><strong>What it is:</strong></p>
+<p>Role-based multi-agent framework where agents have titles (Researcher, Writer, Editor) and collaborate sequentially or hierarchically.</p>
+<p><strong>Example:</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code>researcher = Agent(role=&quot;Researcher&quot;, goal=&quot;Find data&quot;)
+writer = Agent(role=&quot;Writer&quot;, goal=&quot;Draft article&quot;)
+editor = Agent(role=&quot;Editor&quot;, goal=&quot;Polish final&quot;)
+
+crew = Crew(agents=[researcher, writer, editor])
+crew.kickoff()
+</code></pre></pre>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>✅ Multi-agent out of the box</li>
+<li>✅ Easy to map human roles to agents</li>
+<li>✅ Built-in task handoffs</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>❌ Sequential by default (parallel/hierarchical coming but not mature)</li>
+<li>❌ No quality gates enforced (review is just another agent role, not mandatory)</li>
+<li>❌ No distinction between implementation and review (same agent can do both)</li>
+<li>❌ No Charter or governance layer</li>
+</ul>
+<p><strong>When to use:</strong> Quick multi-agent prototypes, role-based workflows (customer service, content creation)</p>
+<p><strong>FORGE difference:</strong> FORGE enforces <strong>separation of roles</strong> (Orchestrator never implements, Builders never review themselves) and <strong>mandatory gates</strong> (both QA and Security must pass).</p>
+<hr/>
+<h3>3. LangGraph Workflows</h3>
+<p><strong>What it is:</strong></p>
+<p>Stateful graph-based orchestration where nodes represent agents/functions and edges represent control flow. Supports cycles, conditional branching, and human-in-the-loop.</p>
+<p><strong>Example:</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code>graph = StateGraph()
+graph.add_node(&quot;research&quot;, research_agent)
+graph.add_node(&quot;analyze&quot;, analyze_agent)
+graph.add_node(&quot;review&quot;, review_agent)
+
+graph.add_edge(&quot;research&quot;, &quot;analyze&quot;)
+graph.add_conditional_edge(&quot;analyze&quot;, should_review, &quot;review&quot;, &quot;finalize&quot;)
+graph.add_edge(&quot;review&quot;, &quot;research&quot;)  # Loop back if review fails
+</code></pre></pre>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>✅ Flexible control flow (not just sequential)</li>
+<li>✅ Stateful (agents share state across the graph)</li>
+<li>✅ Production-grade (used by Klarna, Uber, LinkedIn)</li>
+<li>✅ LangSmith integration (observability, tracing)</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>❌ No governance framework (you build the workflow, but the <em>structure</em> of quality is up to you)</li>
+<li>❌ No Charter or accountability layer</li>
+<li>❌ No task sizing or adaptive depth</li>
+<li>❌ Review is optional (not enforced)</li>
+</ul>
+<p><strong>When to use:</strong> Complex enterprise workflows, stateful multi-agent systems, teams with strong engineering</p>
+<p><strong>FORGE difference:</strong> FORGE provides <strong>workflow structure</strong> (Size → Inception → Construction → Gate → Ship) that LangGraph doesn&#x27;t prescribe. You <em>could</em> implement FORGE on top of LangGraph—but LangGraph alone doesn&#x27;t tell you <em>when</em> to run Architect vs. Builder vs. Reviewer.</p>
+<hr/>
+<h3>4. OpenAI Swarm (Deprecated → Agents SDK)</h3>
+<p><strong>What it is:</strong></p>
+<p>Lightweight pattern for agent-to-agent handoffs (now replaced by OpenAI Agents SDK).</p>
+<p><strong>Example (old Swarm):</strong></p>
+<pre><pre style="background-color:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow:auto;font-size:0.85rem"><code>agent_a = Agent(name=&quot;A&quot;, functions=[handoff_to_b])
+agent_b = Agent(name=&quot;B&quot;, functions=[handoff_to_a])
+
+result = run_swarm(agent_a, &quot;Start here&quot;)
+</code></pre></pre>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>✅ Minimal abstraction (easy to understand)</li>
+<li>✅ Handoff pattern is explicit</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>❌ Experimental (not production-ready)</li>
+<li>❌ Stateless (no shared context across handoffs)</li>
+<li>❌ No governance, review, or quality gates</li>
+<li>❌ Deprecated (replaced by Agents SDK)</li>
+</ul>
+<p><strong>When to use:</strong> Learning agent coordination concepts (not production)</p>
+<p><strong>FORGE difference:</strong> FORGE is a <strong>governance framework</strong>, not just a coordination pattern. Swarm/Agents SDK handles <em>how agents talk</em>; FORGE handles <em>how agents ensure quality</em>.</p>
+<hr/>
+<h3>Comparison Table</h3>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Aspect</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Raw Chaining</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">CrewAI</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">LangGraph</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">FORGE</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Multi-agent</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Stateful</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Limited</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Review enforced</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Optional</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Mandatory</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Security gate</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Optional</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Mandatory</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Task sizing</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes (Small/Medium/Large)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Charter/governance</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Accountability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes (retrospectives)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Adaptive depth</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">No</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Yes (Inception scales with complexity)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Observability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Manual</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">AMP Suite</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">LangSmith</td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Manual (roadmap: add tooling)</td></tr></tbody></table></div>
+<p><strong>Key insight:</strong> Most frameworks focus on <strong>orchestration mechanics</strong>. FORGE focuses on <strong>governance and verifiability</strong>. You can use FORGE <em>with</em> LangGraph or CrewAI—they&#x27;re not mutually exclusive.</p>
+<hr/>
+<h3>When to Use What</h3>
+<div style="overflow-x:auto;margin:1rem 0"><table style="width:100%;border-collapse:collapse;font-size:0.9rem"><thead><tr><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">If you need...</th><th style="text-align:left;padding:0.6rem 1rem;border-bottom:2px solid var(--border);color:var(--fg);font-weight:600">Use...</th></tr></thead><tbody><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Quick prototype</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Raw chaining or CrewAI</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Complex stateful workflows</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">LangGraph</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Role-based collaboration</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">CrewAI or FORGE</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Governance + accountability</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>FORGE</strong></td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Verifiable quality with multi-agent review</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>FORGE</strong></td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Security-critical systems</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>FORGE</strong> (or FORGE + LangGraph for orchestration)</td></tr><tr><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)"><strong>Minimal tooling, maximum simplicity</strong></td><td style="padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:var(--fg-muted)">Raw chaining</td></tr></tbody></table></div>
+<hr/>
+<h2>Conclusion: Why FORGE Matters</h2>
+<p>The AI agent market is exploding—but <strong>40% of projects will fail</strong>. Not because the technology doesn&#x27;t work, but because organizations deploy agents without governance, review, or accountability.</p>
+<p><strong>FORGE solves this.</strong></p>
+<p>It&#x27;s not a tool or a library—it&#x27;s a <strong>framework for how to think about AI agent work</strong>:</p>
+<ul>
+<li><strong>Task sizing</strong> ensures effort matches complexity</li>
+<li><strong>The Cycle</strong> (Reason → Act → Reflect → Verify) ensures every agent thinks before acting and verifies before shipping</li>
+<li><strong>The Workflow</strong> (Inception → Construction → Gate → Ship) ensures design happens before implementation and review happens before deployment</li>
+<li><strong>The Charter</strong> provides the governance foundation that makes accountability real</li>
+</ul>
+<p><strong>FORGE is governance-first AI:</strong> built for organizations that value trust and verifiability over &quot;move fast and break things.&quot;</p>
+<hr/>
+<h3>Next Steps</h3>
+<ol>
+<li><strong>Write your Charter</strong> — Start with mission, principles, and boundaries</li>
+<li><strong>Implement the Cycle</strong> — Even with one agent, run Reason → Act → Reflect → Verify</li>
+<li><strong>Add independent review</strong> — When ready, add a second agent for QA or Security</li>
+<li><strong>Scale as needed</strong> — Add Architect, Builders, Reviewers when complexity demands</li>
+<li><strong>Instrument and iterate</strong> — Track success rates, failure patterns, and evolve</li>
+</ol>
+<p><strong>FORGE grows with you.</strong> Start small, scale as needed, and always put governance first.</p>
+<hr/>
+<h2>License</h2>
+<p>FORGE methodology documentation is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<p>You are free to use, adapt, and build on FORGE for any purpose — commercial or otherwise — with attribution.</p>
+<hr/>
+<h2>About Bamwerks</h2>
+<p>FORGE was developed by <a href="https://bamwerks.info">Bamwerks</a>, a 40-agent AI organization serving Brandt Meyers (Founder &amp; President). Bamwerks runs on FORGE principles with a strict Charter, multi-agent review on all software development, and mandatory retrospectives on failures.</p>
+<p><strong>Learn more:</strong></p>
+<ul>
+<li><a href="/charter">Bamwerks Charter</a> — Our governance foundation</li>
+<li><a href="/agents">Agent Roster</a> — Meet the 40-agent swarm</li>
+</ul>
+<hr/>
+<p><strong>Framework version:</strong> 1.0<br/>
+<strong>Last updated:</strong> February 26, 2026<br/>
+<strong>License:</strong> <a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+<hr/>
+<p><em>&quot;Governance is not a constraint—it&#x27;s what makes autonomy trustworthy.&quot;</em></p></div></div></div><!--$--><!--/$--></main><footer style="border-top:1px solid var(--border);background-color:rgba(0, 0, 0, 0.3);margin-top:auto" class="jsx-2cbee0dfcdb548c7"><div style="max-width:1200px;margin:0 auto;padding:2rem 1.5rem" class="jsx-2cbee0dfcdb548c7"><div style="display:grid;grid-template-columns:1fr;gap:2rem" class="jsx-2cbee0dfcdb548c7"><div class="jsx-2cbee0dfcdb548c7"><div style="font-size:1.25rem;font-weight:700;color:var(--fg);margin-bottom:0.5rem" class="jsx-2cbee0dfcdb548c7">Bamwerks</div><p style="color:var(--fg-muted);font-size:0.875rem;font-style:italic;margin:0" class="jsx-2cbee0dfcdb548c7">Curiosity. Knowledge. Enlightenment.</p></div><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Explore</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a class="footer-link" href="/dev/about">About</a><a class="footer-link" href="/dev/agents">Agents</a><a class="footer-link" href="/dev/docs/forge-methodology">FORGE</a><a class="footer-link" href="/dev/docs">Docs</a></div></div><div class="jsx-2cbee0dfcdb548c7"><div style="display:flex;flex-direction:column;gap:1.5rem" class="jsx-2cbee0dfcdb548c7"><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Community</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a href="https://github.com/bamwerks" target="_blank" rel="noopener noreferrer" class="jsx-2cbee0dfcdb548c7 footer-link">GitHub</a><a href="https://discord.com/invite/clawd" target="_blank" rel="noopener noreferrer" class="jsx-2cbee0dfcdb548c7 footer-link">OpenClaw Discord</a></div></div><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Legal</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a class="footer-link" href="/dev/charter">Charter</a></div></div></div></div></div></div><div style="border-top:1px solid var(--border);background-color:rgba(0, 0, 0, 0.2)" class="jsx-2cbee0dfcdb548c7"><div style="max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:0.5rem;text-align:center" class="jsx-2cbee0dfcdb548c7"><p style="color:var(--fg-muted);font-size:0.875rem;margin:0" class="jsx-2cbee0dfcdb548c7">© 2026 Bamwerks. Built with FORGE.</p><p style="color:var(--fg-muted);font-size:0.875rem;margin:0" class="jsx-2cbee0dfcdb548c7">Building in the age of autonomous systems.</p></div></div></footer></div><button aria-label="Back to top" style="position:fixed;bottom:var(--space-6);right:var(--space-6);width:2.75rem;height:2.75rem;border-radius:50%;background-color:var(--card);border:1px solid var(--border);color:var(--fg-muted);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.25rem;font-weight:600;z-index:40;transition:all 0.2s ease;box-shadow:var(--shadow-lg);opacity:0;transform:translateY(10px)">↑</button><script src="/dev/_next/static/chunks/webpack-f4d00b63941efcaf.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[8090,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n3:I[2419,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n4:I[7739,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\n7:I[3293,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"345\",\"static/chunks/app/not-found-9be4d800e9a0456a.js\"],\"default\"]\n8:I[1142,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n9:I[1811,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"816\",\"static/chunks/app/(public)/layout-6e4817922e2cbc01.js\"],\"default\"]\na:I[8964,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"880\",\"static/chunks/app/(public)/error-b23ef5082157f054.js\"],\"default\"]\nb:I[5933,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"816\",\"static/chunks/app/(public)/layout-6e4817922e2cbc01.js\"],\"default\"]\nd:I[4431,[],\"OutletBoundary\"]\nf:I[5278,[],\"AsyncMetadataOutlet\"]\n11:I[4431,[],\"ViewportBoundary\"]\n13:I[4431,[],\"MetadataBoundary\"]\n14:\"$Sreact.suspense\"\n16:I[7150,[],\"\"]\n:HL[\"/dev/_next/static/css/8a073e99cfc82f8c.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"IDeJcYmZkvqzXNPeJyWMV\",\"p\":\"/dev\",\"c\":[\"\",\"docs\",\"forge-methodology\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"(public)\",{\"children\":[\"docs\",{\"children\":[\"forge-methodology\",{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/dev/_next/static/css/8a073e99cfc82f8c.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[false,[\"$\",\"meta\",null,{\"name\":\"referrer\",\"content\":\"strict-origin-when-cross-origin\"}],[\"$\",\"script\",null,{\"defer\":true,\"src\":\"https://static.cloudflareinsights.com/beacon.min.js\",\"data-cf-beacon\":\"{\\\"token\\\": \\\"TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN\\\"}\"}]]}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"a\",null,{\"href\":\"#main-content\",\"className\":\"skip-to-content\",\"children\":\"Skip to main content\"}],[\"$\",\"$L3\",null,{\"children\":[\"$\",\"$L4\",null,{\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"$L7\",null,{}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}],[\"$\",\"$L8\",null,{}]]}]]}]]}],{\"children\":[\"(public)\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"div\",null,{\"style\":{\"minHeight\":\"100vh\",\"display\":\"flex\",\"flexDirection\":\"column\"},\"children\":[[\"$\",\"$L9\",null,{}],[\"$\",\"main\",null,{\"id\":\"main-content\",\"style\":{\"flex\":1},\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$a\",\"errorStyles\":[],\"errorScripts\":[],\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"$Lb\",null,{}]]}]]}],{\"children\":[\"docs\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"forge-methodology\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$Lc\",null,[\"$\",\"$Ld\",null,{\"children\":[\"$Le\",[\"$\",\"$Lf\",null,{\"promise\":\"$@10\"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L11\",null,{\"children\":\"$L12\"}],null],[\"$\",\"$L13\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$14\",null,{\"fallback\":null,\"children\":\"$L15\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$16\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"12:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\ne:null\n"])</script><script>self.__next_f.push([1,"17:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"10:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"FORGE Methodology — Bamwerks\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"A governance-first framework for building reliable, accountable AI agent systems. The complete guide to implementing FORGE in your organization.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"alternate\",\"type\":\"application/rss+xml\",\"href\":\"https://bamwerks.info/feed.xml\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:title\",\"content\":\"FORGE Methodology\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:description\",\"content\":\"A governance-first framework for building reliable, accountable AI agent systems. The complete guide to implementing FORGE in your organization.\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"Bamwerks — AI Agent Organization\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment.\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:image\",\"content\":\"https://bamwerks.info/og-image.png\"}],[\"$\",\"link\",\"10\",{\"rel\":\"icon\",\"href\":\"/bamhenge.png\"}],[\"$\",\"$L17\",\"11\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"15:\"$10:metadata\"\n"])</script><script>self.__next_f.push([1,"18:I[83,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"84\",\"static/chunks/84-bb06d3a2b680d4b8.js\",\"509\",\"static/chunks/app/(public)/docs/forge-methodology/page-952f92ff3162366d.js\"],\"default\"]\n19:I[2545,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"84\",\"static/chunks/84-bb06d3a2b680d4b8.js\",\"509\",\"static/chunks/app/(public)/docs/forge-methodology/page-952f92ff3162366d.js\"],\"default\"]\n1a:Tc829,"])</script><script>self.__next_f.push([1,"# The FORGE Methodology\n\n\u003e **Framework for Orchestrated Reasoning, Governance \u0026 Execution**  \n\u003e A structured approach to building reliable, accountable AI agent systems\n\n---\n\n## What Is FORGE?\n\n**FORGE** is a governance-first framework for building and operating AI agent systems with verifiable quality and institutional accountability.\n\nMost AI systems are single-pass: give the model a task, get an output, ship it. FORGE is deliberately **multi-pass** and **multi-perspective**. Different agents handle different phases. Every agent runs a quality cycle internally. QA and Security review in parallel before anything ships.\n\nThe result: autonomous AI work with observable, verifiable quality—not just \"the model said it looked good.\"\n\nFORGE was designed for [Bamwerks](https://bamwerks.info), a 40-agent AI organization, built on two influences: the [AWS AI-DLC](https://github.com/awslabs/aidlc-workflows) (AI Development Lifecycle) methodology's structured phase discipline, and [Loki Mode](https://github.com/asklokesh/loki-mode) — a fully autonomous multi-agent development system that transforms a PRD into built, tested code using 41 specialized agent types across 8 swarms. Loki Mode introduced the RARV cycle (Reason → Act → Reflect → Verify) that sits at the core of FORGE. FORGE applies to any autonomous AI system where quality and trust matter.\n\n---\n\n## The Problem: Why AI Agent Deployments Fail\n\nThe global AI agent market is projected to reach $52.62B by 2030 (46.3% CAGR), operating within a broader AI landscape projected to exceed $3.5 trillion by 2033. Gartner predicts 40% of enterprise applications will feature AI agents by end of 2026, up from less than 5% in 2025.\n\n**But there's a crisis brewing.**\n\n### The 40% Failure Rate\n\nGartner predicts **40% of agentic AI projects will be scrapped by 2027**—not because of technical limitations, but because of **operationalization failures**:\n\n- **Pilot-ware with no path to production:** Demos impress, but lack identity management, audit trails, and compliance controls\n- **Data and integration friction:** Fragmented systems, brittle APIs, no clear data ownership\n- **Risk and governance concerns:** CISOs block deployment due to prompt injection, over-permissioning, and lack of traceability\n- **Reliability in long-running workflows:** Even 1% error rates compound across 10-step processes\n- **ROI ambiguity:** Pilots designed to impress, not measure business outcomes\n\n### The Governance Gap\n\nOnly **9% of enterprises** operate with mature AI governance frameworks, yet **73% seek explainable, accountable AI systems**.\n\nIndustry frameworks (LangGraph, CrewAI, AutoGen) focus on orchestration mechanics—they tell you *how* to chain agents together, but not *how* to ensure the work is correct, secure, or auditable. Governance is treated as an optional add-on, typically bolted on through separate observability tools like LangSmith or Galileo.\n\n### Security Threats Are Real\n\nIn a February 2026 poll of cybersecurity professionals, **48% ranked agentic AI as the #1 attack vector** for 2026, ahead of deepfakes and ransomware.\n\nThe OWASP Top 10 for Agentic Applications (released December 2025) identifies critical risks:\n\n| OWASP Risk | Description |\n|------------|-------------|\n| **ASI01 – Goal Hijack** | Malicious prompt injection redirects agent objectives |\n| **ASI02 – Tool Misuse** | Agents use APIs, databases in unintended/harmful ways |\n| **ASI03 – Credential Exposure** | Agents leak or misuse authentication tokens |\n| **ASI04 – Memory Poisoning** | Compromised long-term memory corrupts future behavior |\n| **ASI05 – Supply Chain Vulnerabilities** | Malicious dependencies inject backdoors |\n| **ASI06 – Unintended Actions** | Agents execute high-impact operations without approval |\n| **ASI07 – Excessive Agency** | Over-permissioned agents exceed intended scope |\n| **ASI08 – Data Exfiltration** | Agents leak sensitive data to external systems |\n| **ASI09 – Lack of Observability** | Insufficient logging enables silent failures |\n| **ASI10 – Governance Sprawl** | Unmanaged agent proliferation (\"shadow AI\") |\n\n**FORGE directly addresses these risks.** It's not a security tool—it's a *governance framework* that makes security verifiable by design.\n\n---\n\n## Influences and Origins\n\nFORGE draws on two primary influences:\n\n[**AWS AI-DLC**](https://github.com/awslabs/aidlc-workflows) (AI Development Lifecycle): AWS's structured methodology for AI system development provided the phase-gate architecture that underlies the FORGE Workflow — the idea that work moves through defined stages with explicit handoffs, rather than continuous improvised iteration.\n\n[**Loki Mode**](https://github.com/asklokesh/loki-mode): A fully autonomous, provider-agnostic multi-agent development system. Loki Mode orchestrates 41 specialized agent types across 8 swarms (engineering, operations, business, data, product, growth, review, and orchestration) to take a Product Requirements Document and produce a built, tested, deployment-ready product — without human prompting between steps.\n\nThe core contribution to FORGE is the **RARV cycle**: Reason (read state, identify next task) → Act (execute, commit) → Reflect (update continuity, learn) → Verify (run tests, check spec). In Loki Mode, if verification fails, the system captures the failure as a learning and retries from Reason. FORGE adopted this self-correcting loop as the discipline every agent runs internally on every task — not just for code generation, but for any autonomous work.\n\nLoki Mode also informed FORGE's approach to quality gates (blind review, anti-sycophancy controls, severity-based blocking) and the principle that verification must be automated, not assumed.\n\nTogether, these influences produce a methodology that is simultaneously structured (from AI-DLC) and self-correcting (from Loki Mode) — which turns out to be exactly what production multi-agent systems need.\n\n---\n\n## One Framework, Two Layers\n\nFORGE operates at two complementary levels that compose naturally:\n\n```mermaid\ngraph LR\n    W1[Sizing] --\u003e W2[Inception] --\u003e W3[Construction] --\u003e W4[Gate] --\u003e W5[Ship]\n    W2 -. each agent runs .-\u003e CY[Cycle: Reason → Act → Reflect → Verify]\n    W3 -. each agent runs .-\u003e CY\n    W4 -. each agent runs .-\u003e CY\n```\n\n| Layer | Scope | Question It Answers |\n|-------|-------|---------------------|\n| **FORGE Workflow** | Project lifecycle | *When* do agents run? *Which* agents? In what order? |\n| **FORGE Cycle** | Agent-level discipline | *How* does each agent think and verify within their phase? |\n\n**The Workflow determines which agents run and when. The Cycle is how every agent — including Sir, the orchestrator — works through any task.**\n\nWhen Sir receives a request, he runs the Cycle: Reason (what exactly is being asked, is it a task or a conversation?), Act (dispatch to the right specialist), Reflect (did the agent produce what was needed?), Verify (both gates passed?). When Ratchet builds a feature, he runs the Cycle: Reason (understand the spec), Act (implement it), Reflect (does this actually work?), Verify (TypeScript clean, tests pass). When Hawk reviews output, he runs the Cycle: Reason (what are the acceptance criteria?), Act (test against them), Reflect (what did I miss on first pass?), Verify (is my confidence high enough to approve?).\n\nThe Cycle is not a checklist. It's the discipline that separates agents that verify their own work from agents that just produce output and stop.\n\n---\n\n## The FORGE Cycle\n\n### Reason → Act → Reflect → Verify\n\nEvery agent runs this cycle internally before delivering any work. This is not a suggestion—it's the foundational discipline that makes agent output trustworthy.\n\n```mermaid\ngraph LR\n    R[Reason] --\u003e A[Act] --\u003e RF[Reflect] --\u003e V[Verify] --\u003e S[Ship]\n    V --\u003e|Fail| R\n```\n\n---\n\n### Stage 1: Reason\n\n**Understand the task before touching anything.**\n\nThe orchestrator receives a request and builds a complete picture:\n\n- What exactly is being asked? What does success look like?\n- Which specialists need to be involved?\n- Are there constraints, dependencies, or conflicts to resolve?\n- What context do the executing agents need?\n\n**Clarifying questions get asked here**—not during Act, when rework is expensive.\n\n#### Output: Structured Task Brief\n\nEvery task brief has four sections:\n\n| Section | Contents |\n|---------|----------|\n| **GOAL** | Measurable success criteria |\n| **CONSTRAINTS** | Hard limits—what cannot be done, what tools/patterns to use |\n| **CONTEXT** | Files to read, prior decisions, related work |\n| **OUTPUT** | Exact deliverables, in checklist format |\n\n**Example Brief:**\n\n```markdown\n## GOAL\nAdd a public-facing documentation page explaining FORGE methodology\n\n## CONSTRAINTS\n- Static site (Next.js with `output: 'export'`)\n- Match existing page patterns (charter.md style)\n- No server-side runtime\n- Mobile-responsive, accessibility compliant\n\n## CONTEXT\nRead:\n- /content/charter.md (style reference)\n- /agents/workflows/aidlc-bamwerks.md (FORGE definition)\n- /memory/research/ai-agent-landscape-2026-deep.md (market context)\n\n## OUTPUT\n- [ ] New file: /content/forge-methodology.md (800-1200 lines)\n- [ ] Includes mermaid diagrams\n- [ ] Professional tone, practical examples\n- [ ] Structured with clear sections and cross-links\n```\n\n**Key principle:** Scope matters. A task to update how agent avatars display means *every page showing avatars*, not just one component. Broad scope, specific brief.\n\n---\n\n### Stage 2: Act\n\n**Specialists execute against the brief.**\n\nOnce the brief is written, relevant specialist agents are dispatched. Tasks are scoped to **features, not files**. Multiple agents can work in parallel on independent aspects of the same deliverable.\n\n#### Agent Context Boundaries\n\nAgents receive **role-specific context**—no agent gets more information than its task requires:\n\n- An **engineering agent** gets the codebase, build tools, design docs\n- A **security agent** gets threat models, vulnerability patterns, API surface\n- A **QA agent** gets test strategies, acceptance criteria, regression patterns\n\n**This isn't just efficiency—it's security.** Agents don't \"see\" data outside their scope.\n\n#### Parallel Dispatch\n\nWhen tasks are independent, agents work simultaneously:\n\n- Builder A: Implements frontend component\n- Builder B: Writes backend API (different repository)\n- QA: Prepares test strategy in parallel\n\n**This compresses elapsed time without sacrificing depth.**\n\n---\n\n### Stage 3: Reflect\n\n**Independent review from multiple perspectives.**\n\nThe Act output goes through review before Verify. Two key properties make this review meaningful:\n\n#### 1. Multi-Perspective Review\n\n**QA and Security review simultaneously, not sequentially.** Each reviewer focuses on its specialty without seeing the other's findings first—this prevents anchoring and groupthink.\n\n- **QA Agent (Hawk)** checks: visual consistency, broken links, mobile layout, accessibility, spec compliance, test coverage\n- **Security Agent (Sentinel)** checks: exposed internals, authentication bypass, data leakage, supply chain risks, privilege boundaries\n\n**Both reviews happen in parallel.** Neither reviewer knows the other's conclusions until both are complete.\n\n#### 2. Anti-Sycophancy Protocol\n\nIf all reviewers agree that output is perfect, **a contrarian review is triggered**.\n\nUnanimous praise is a signal, not a conclusion. At least one reviewer is asked:\n\n\u003e \"The other reviewers found no issues. You are the contrarian. What did they miss? What edge cases weren't considered? What assumptions are we making that could be wrong?\"\n\nThis protocol directly addresses OWASP ASI09 (Lack of Observability) and prevents the groupthink that plagues single-agent or single-review systems.\n\n#### 3. Critical Findings Block Delivery\n\nA critical finding from **any single reviewer blocks delivery**—majority opinion doesn't override it.\n\n**One failure = the task doesn't ship.**\n\nThis is deliberate. Security vulnerabilities, data integrity issues, and accessibility failures don't require consensus to be real problems.\n\n---\n\n### Stage 4: Verify\n\n**Confirm the deliverable actually works.**\n\nCode review is not verification. Reading code and understanding it is not the same as running it.\n\nVerify means:\n\n#### Runtime Testing\n\n- **Build passes:** The project compiles and builds cleanly (no TypeScript errors, no missing dependencies)\n- **Feature works:** The functionality operates correctly in a live environment, not just on paper\n- **Spec check:** The output matches what was asked for in Reason\n- **Edge cases handled:** Boundary conditions, error states, graceful degradation\n\n#### Both Gates Pass\n\n**QA gate:** Hawk confirms tests pass, spec is met, no regressions introduced  \n**Security gate:** Sentinel confirms no new vulnerabilities, no exposed internals, secrets management correct\n\n#### Failure Handling\n\nIf Verify fails:\n\n1. **Capture the error:** What failed? What was expected vs. actual behavior?\n2. **Understand root cause:** Was it a misunderstanding in Reason? A logic error in Act? An edge case missed in Reflect?\n3. **Loop back with corrected approach:** Don't just patch the symptom—fix the underlying issue\n\n**Repeated failures trigger escalation** to the orchestrator or human oversight.\n\n---\n\n## The FORGE Workflow\n\n### Task Sizing → Inception → Construction → Gate → Ship\n\nFORGE Workflow structures work into phases based on task complexity. Every phase is staffed by agents running the FORGE Cycle internally.\n\n```mermaid\ngraph LR\n    A[New Task] --\u003e B[Task Sizing]\n    B --\u003e|Small| D[Construction]\n    B --\u003e|Medium/Large| C[Inception]\n    C --\u003e D\n    D --\u003e E[Gate]\n    E --\u003e|Pass| F[Ship]\n    E --\u003e|Fail| D\n```\n\n---\n\n### Phase 1: Task Sizing\n\n**The orchestrator evaluates complexity and assigns a scope level.**\n\nThis determines which agents run and how much design work happens upfront. A miscategorized task wastes time—over-engineering a config fix or under-planning a new system both cause rework.\n\n#### Sizing Matrix\n\n| Size | Examples | Design Depth | Builders | Review |\n|------|----------|--------------|----------|--------|\n| **Small** | Fix typo, config change, nav update | Skip | 1 builder, direct task | Quick QA pass |\n| **Medium** | New page, new feature, integration | Application design | 1 builder with plan | QA + Security |\n| **Large** | New system, multi-component | Architecture + unit decomposition | Parallel builders | Structured test strategy + Security NFR |\n\n**Key insight:** The same task can be Small in one context and Medium in another. A \"new page\" for a static site might be Small (copy existing pattern), but a \"new page\" for a complex web app with auth, database, and API integration is Medium or Large.\n\n**Context drives sizing, not just surface characteristics.**\n\n---\n\n### Phase 2: Inception\n\nFor medium and large tasks, an **Architect agent designs before any code is written**.\n\n#### Medium Task Inception\n\nArchitect produces:\n\n- **Application architecture:** System boundaries, data flows, integration points\n- **Component breakdown:** What gets built, dependencies between parts\n- **Risk assessment:** Where complexity lives, what could fail\n- **Design constraints:** Patterns to follow, anti-patterns to avoid\n\n#### Large Task Inception (Full)\n\nAdds:\n\n- **Formal requirements gathering:** Stakeholder alignment, success criteria, non-functional requirements\n- **Unit decomposition:** Breaking the system into independent work units with explicit contracts\n- **Test strategy:** What gets tested, how, by whom, and when\n- **Deployment plan:** Rollout strategy, rollback procedures, monitoring\n\n**Output artifacts:**\n\n```\nforge-docs/\n├── inception/\n│   ├── requirements/          # Requirements docs\n│   ├── reverse-engineering/   # Codebase analysis (brownfield projects)\n│   └── application-design/    # Architect's component design\n```\n\n---\n\n### Phase 3: Construction\n\n**Builders receive the design and implement.**\n\n#### Construction Flow by Size\n\n| Size | Construction Process |\n|------|---------------------|\n| **Small** | Direct execution—builder reads brief, implements, self-verifies |\n| **Medium** | Builder follows Architect's plan, implements with spec adherence checks |\n| **Large** | Work decomposed into parallel units with explicit contracts between components |\n\n#### Builder Responsibilities\n\nEvery builder runs the FORGE Cycle internally:\n\n- **Reason** about the design: What are the requirements? What patterns should I follow?\n- **Act** by writing code: Implement the feature according to the plan\n- **Reflect** on their own output: Does this match the spec? Are there edge cases I missed?\n- **Verify** it builds and runs: Tests pass, no regressions, functionality works\n\n**Builders don't \"freestyle.\"** If the design is unclear or incomplete, they escalate to the Architect—they don't improvise beyond scope.\n\n#### Construction Artifacts\n\n```\nforge-docs/\n├── construction/\n│   ├── {unit-name}/\n│   │   ├── functional-design/   # Architect's per-unit design (large tasks)\n│   │   ├── nfr-requirements/    # Security's pre-build requirements\n│   │   └── code/                # Code generation plan + summary\n│   └── build-and-test/          # QA's test strategy\n```\n\n---\n\n### Phase 4: Gate\n\n**QA and Security review in parallel. Both must pass before anything ships.**\n\nThis is the most critical phase—where theory meets reality.\n\n```mermaid\ngraph LR\n    C[Construction] --\u003e QA[QA Gate]\n    C --\u003e SEC[Security Gate]\n    QA --\u003e|Pass| BOTH{Both Pass?}\n    SEC --\u003e|Pass| BOTH\n    QA --\u003e|Fail| BLOCK[Blocked]\n    SEC --\u003e|Fail| BLOCK\n    BOTH --\u003e|Yes| SHIP[Ship]\n    BLOCK --\u003e C\n```\n\n#### QA Gate (Hawk)\n\n**What QA checks:**\n\n- ✅ Visual consistency with existing patterns\n- ✅ All links resolve correctly (no 404s)\n- ✅ Mobile layout works (responsive breakpoints)\n- ✅ Accessibility compliance (ARIA labels, keyboard navigation, color contrast)\n- ✅ Spec compliance (output matches the brief)\n- ✅ Test coverage (unit tests, integration tests where applicable)\n- ✅ No regressions introduced\n\n**QA runs the FORGE Cycle:**\n\n- **Reason:** What should I test? What are the acceptance criteria?\n- **Act:** Execute test plan, check all assertions\n- **Reflect:** Are there edge cases I missed? What could break that I didn't test?\n- **Verify:** All checks pass, documentation updated\n\n#### Security Gate (Sentinel)\n\n**What Security checks:**\n\n- 🔒 No exposed internals (API keys, credentials, internal URLs)\n- 🔒 Authentication and authorization correct\n- 🔒 Input validation and output encoding (prevent injection)\n- 🔒 Data leakage prevented (no PII in logs, no debug output in production)\n- 🔒 Supply chain risks assessed (dependencies vetted, no malicious packages)\n- 🔒 Privilege boundaries enforced (least-privilege access)\n\n**Security runs the FORGE Cycle:**\n\n- **Reason:** What could leak? What could be exploited?\n- **Act:** Scan code, check dependencies, review API surface\n- **Reflect:** Could this be weaponized? What attack vectors exist?\n- **Verify:** No security issues found, threat model validated\n\n#### Gate Decision Logic\n\n| QA Result | Security Result | Outcome |\n|-----------|----------------|---------|\n| PASS | PASS | ✅ **Ship** |\n| PASS | FAIL | ❌ **Blocked** (security critical) |\n| FAIL | PASS | ❌ **Blocked** (quality critical) |\n| FAIL | FAIL | ❌ **Blocked** (both critical) |\n\n**One failure is enough to block delivery.** This is not consensus-based—both gates are *requirements*, not votes.\n\n---\n\n### Phase 5: Ship\n\n**Both gates passed. The orchestrator merges and deploys.**\n\nShipping is not just \"push to main\":\n\n1. **Final build verification:** Ensure production build succeeds\n2. **Changelog update:** Document what changed and why\n3. **Deployment:** Push to production (or staging for further testing)\n4. **Monitoring:** Watch for errors, performance issues, user feedback\n5. **Retrospective (if applicable):** For complex tasks, document lessons learned\n\n**Shipping is the end of the Workflow, but not the end of accountability.** Post-deployment issues trigger retrospectives.\n\n---\n\n## Agent Roles in FORGE\n\nFORGE defines five core roles, each with specific responsibilities and phases where they operate.\n\n```mermaid\ngraph LR\n    ORCH[Orchestrator] --\u003e ARCH[Architect]\n    ARCH --\u003e BUILD[Builders]\n    BUILD --\u003e QA[QA Gate]\n    BUILD --\u003e SEC[Security Gate]\n    QA --\u003e ORCH\n    SEC --\u003e ORCH\n```\n\n---\n\n### 1. Orchestrator\n\n**Who:** The main coordination agent (in Bamwerks: **Sir**)\n\n**Responsibilities:**\n\n- Runs the entire FORGE Workflow\n- Performs task sizing\n- Creates structured task briefs (GOAL/CONSTRAINTS/CONTEXT/OUTPUT)\n- Dispatches specialists\n- Synthesizes multi-agent review results\n- Makes final ship/no-ship decision\n- Writes retrospectives on failures\n\n**What the Orchestrator does NOT do:**\n\n- ❌ Implement code\n- ❌ Write designs\n- ❌ Perform QA\n- ❌ Conduct security audits\n\n**The Orchestrator orchestrates. Never implements.** This is a hard rule.\n\n**Why this matters:** If the Orchestrator also implements, it can't objectively review its own work. Single-agent systems fail because the same reasoning that creates a solution also reviews it—blind spots are systematic, not random.\n\n---\n\n### 2. Architect\n\n**Who:** Design specialist (in Bamwerks: **Ada**)\n\n**Responsibilities:**\n\n- Reverse-engineering (brownfield projects with no docs)\n- Application architecture (system boundaries, data flows, integration points)\n- Component breakdown (what gets built, dependencies)\n- Risk assessment (complexity, failure modes)\n- Unit decomposition (large tasks → independent work units)\n- Functional design (per-unit logic for complex features)\n\n**Phases:** Inception (required for medium+ tasks) + Construction (per-unit design for large tasks)\n\n**Architect does NOT:**\n\n- ❌ Write production code (designs only)\n- ❌ Perform QA or security reviews\n\n**Why this matters:** Separation of design from implementation prevents \"I know what I meant\" bias. Builders work from explicit specs, not assumptions.\n\n---\n\n### 3. Builders\n\n**Who:** Implementation specialists with domain expertise\n\n**Examples:**\n\n- **Frontend Builder:** React, Next.js, Tailwind, accessibility\n- **Backend Builder:** APIs, databases, authentication, business logic\n- **DevOps Builder:** Infrastructure, CI/CD, monitoring, deployment\n\n**Responsibilities:**\n\n- Implement features according to Architect's design\n- Follow design constraints and patterns\n- Write tests alongside code\n- Self-verify build and functionality\n- Escalate when design is unclear (don't improvise beyond scope)\n\n**Phases:** Construction\n\n**Builders do NOT:**\n\n- ❌ Design architecture (follow the Architect's plan)\n- ❌ Review their own code as QA/Security\n- ❌ Skip testing (\"I'll add tests later\")\n\n**Why multiple builders?** Different expertise. A frontend specialist knows accessibility patterns and responsive design. A backend specialist knows database transactions and API design. **Specialization improves quality.**\n\n---\n\n### 4. QA Agent\n\n**Who:** Quality verification specialist (in Bamwerks: **Hawk**)\n\n**Responsibilities:**\n\n- Test strategy creation (large tasks)\n- Build verification (all tasks)\n- Spec compliance checking\n- Regression testing\n- Accessibility verification\n- Code review (readability, maintainability, test coverage)\n- Anti-sycophancy contrarian review (when needed)\n\n**Phases:** Gate (required for all tasks except trivial)\n\n**QA does NOT:**\n\n- ❌ Implement features (reviews only)\n- ❌ Approve security issues (that's Security's gate)\n\n**Why independent QA?** Builders self-verify before submission, but they have blind spots. QA brings fresh eyes, checks against the original brief, and catches what the builder missed.\n\n---\n\n### 5. Security Agent\n\n**Who:** Security verification specialist (in Bamwerks: **Sentinel**)\n\n**Responsibilities:**\n\n- Non-functional requirements (NFR) definition (large tasks, pre-build)\n- Security review (post-build, all medium+ tasks)\n- Credential exposure checks\n- Data leakage prevention\n- Supply chain risk assessment\n- Privilege boundary enforcement\n- Threat modeling\n\n**Phases:** Inception (NFR definition for large tasks) + Gate (security review for medium+ tasks)\n\n**Security does NOT:**\n\n- ❌ Implement features\n- ❌ Approve quality issues (that's QA's gate)\n\n**Why independent Security?** Security thinks like an attacker. QA thinks like a user. These are different perspectives—both are critical.\n\n---\n\n### Role Mapping to FORGE Phases\n\n| Phase | Orchestrator | Architect | Builders | QA | Security |\n|-------|--------------|-----------|----------|-----|----------|\n| **Task Sizing** | ✅ Runs | | | | |\n| **Inception** | ✅ Coordinates | ✅ Designs | | | ✅ NFR (large tasks) |\n| **Construction** | ✅ Dispatches | ✅ Per-unit design (large) | ✅ Implements | | |\n| **Gate** | ✅ Synthesizes | | | ✅ Verifies quality | ✅ Verifies security |\n| **Ship** | ✅ Merges | | | | |\n\n---\n\n## The Charter: Why Behavioral Contracts Matter\n\nFORGE is the *operational framework*. The **Charter** is the *governance foundation*.\n\n### What Is a Charter?\n\nA Charter is an immutable behavioral contract that defines:\n\n- **Mission:** Why the agent system exists\n- **Principles:** Core values that guide decision-making\n- **Roles:** Who does what (and who doesn't)\n- **Boundaries:** What agents can and cannot do without approval\n- **Accountability:** How failures are handled and who owns them\n\n**Think of it as a constitution.** Laws (workflows) change. The constitution (charter) endures.\n\n### Charter vs. Prompt\n\n| Aspect | Prompt | Charter |\n|--------|--------|---------|\n| **Scope** | Single task | System-wide governance |\n| **Mutability** | Changes per task | Immutable (or founder-only edit) |\n| **Enforcement** | Implicit | Explicit, read every session |\n| **Accountability** | None | Named roles, retrospective requirement |\n\n**A prompt tells an agent what to do. A charter tells the system how to be.**\n\n### Core Charter Elements\n\nEvery AI agent system implementing FORGE should have a Charter with these sections:\n\n#### 1. Mission Statement\n\n**Purpose:** Why does this system exist? Who does it serve?\n\n**Example:**\n\n\u003e \"This AI organization exists for three purposes:\n\u003e 1. **Success** — Advance the founder's professional and personal goals\n\u003e 2. **Protection** — Guard security, privacy, data, and reputation\n\u003e 3. **Enlightenment** — Surface insights, opportunities, and knowledge\"\n\n#### 2. Governance Principles\n\n**Purpose:** Core values that guide all agent behavior\n\n**Example principles:**\n\n- **Multiple perspectives prevent blind spots** → Multi-agent review in FORGE Reflect\n- **Verification builds trust** → Runtime testing in FORGE Verify, not assertions\n- **Constraints enable speed** → Strict gates reduce rework\n- **Memory over reasoning** → Write decisions down, don't rely on \"mental notes\"\n- **Task sizing drives depth** → Match effort to complexity\n\n#### 3. Role Definitions\n\n**Purpose:** Explicit mapping of responsibilities\n\n**Example:**\n\n- **Orchestrator:** Dispatches tasks, synthesizes results, writes retrospectives. NEVER implements.\n- **Architect:** Designs systems. NEVER implements production code.\n- **Builders:** Implement according to design. NEVER improvise beyond scope.\n- **Reviewers:** QA and Security verify independently. NEVER approve their own work.\n\n#### 4. Behavioral Boundaries\n\n**Purpose:** Hard limits on agent actions without human approval\n\n**Example:**\n\n- External communications (email, social media posts) require approval\n- Financial transactions above $X require approval\n- Deletion of data requires confirmation\n- Changes to the Charter require founder approval\n- Credential access is logged and auditable\n\n#### 5. Accountability Protocol\n\n**Purpose:** How failures are handled\n\n**Example:**\n\n\u003e \"When something goes wrong:\n\u003e 1. The orchestrator owns it (not the implementing agent)\n\u003e 2. A retrospective is written within 24 hours\n\u003e 3. Retrospective includes: What happened → Root cause → Who's accountable → Prevention\n\u003e 4. Retrospectives are filed in memory/ directory for institutional learning\n\u003e 5. Repeated failures of the same type trigger escalation to human oversight\"\n\n### How to Write Your Charter\n\n**Step 1: Define Your Mission**\n\nWhy are you building this agent system? Who does it serve? What outcomes matter?\n\nBe specific. \"Automate tasks\" is not a mission. \"Reduce manual DevOps toil by 80% while maintaining zero security incidents\" is.\n\n**Step 2: Choose Your Principles**\n\nWhat values guide decision-making when rules don't cover a situation?\n\nExamples:\n- \"Security over speed\" (when in doubt, add review)\n- \"Transparency over efficiency\" (log all decisions)\n- \"Human oversight for high-impact actions\" (define \"high-impact\")\n\n**Step 3: Map Roles to FORGE Phases**\n\nWho runs Inception? Who implements? Who reviews?\n\nWrite it explicitly. \"The senior engineer\" is not a role—\"Architect agent with 10+ years system design experience\" is.\n\n**Step 4: Define Boundaries**\n\nWhat actions require approval? What actions are prohibited entirely?\n\nExamples:\n- ✅ Can: Read database, write logs, send internal notifications\n- ⚠️ Requires approval: Send emails to external recipients, modify production config\n- ❌ Prohibited: Delete databases, expose credentials, bypass security gates\n\n**Step 5: Create Accountability Mechanisms**\n\nHow do you learn from failures without blame?\n\nWrite a retrospective protocol:\n- Who writes them? (Orchestrator, not the failing agent)\n- When? (Within 24 hours of incident)\n- What's included? (What happened, root cause, accountability, prevention)\n- Where are they stored? (Persistent memory directory)\n- Who reviews them? (Human oversight for systemic issues)\n\n**Step 6: Make It Immutable (or Founder-Only)**\n\nThe Charter is not a living document that anyone can edit. It's the foundation.\n\nOptions:\n- **Immutable:** Charter never changes (requires full system rebuild to modify)\n- **Founder-only:** Only the human owner can edit, agents read-only\n- **Governance board:** Multi-signature approval required (for organizations)\n\n**Bamwerks approach:** Charter is founder-only (read-only for all agents, write access only for the Founder). This prevents agent self-modification while allowing evolution as the organization learns.\n\n### Charter Examples by Use Case\n\n#### Personal AI Assistant\n\n```markdown\n# Charter: Personal AI Assistant\n\n## Mission\nServe one human (the Founder) with three priorities:\n1. Productivity — Complete tasks efficiently and accurately\n2. Privacy — Never leak personal data\n3. Proactivity — Anticipate needs, don't just react\n\n## Principles\n- Ask before sending external messages\n- Confirm before deleting data\n- Write decisions down (no \"mental notes\")\n- Fail loudly, fix quickly\n\n## Roles\n- Orchestrator: Main agent (coordinates all work)\n- Specialists: Domain-specific agents (research, coding, writing)\n\n## Boundaries\n- ✅ Can: Read files, search web, draft messages\n- ⚠️ Approval: Send emails, post to social media, modify system files\n- ❌ Never: Share credentials, bypass encryption, ignore Founder directives\n\n## Accountability\n- Every external action logged\n- Failures trigger retrospective within 24 hours\n- Retrospective includes: What happened, why, prevention\n```\n\n#### Enterprise Development Team\n\n```markdown\n# Charter: Enterprise AI Development Team\n\n## Mission\nAccelerate software delivery for [Company] with three goals:\n1. Velocity — Ship features 50% faster\n2. Quality — Zero critical bugs in production\n3. Security — Pass all security audits\n\n## Principles\n- Security over speed (when in doubt, add review)\n- Design before implementation (no \"cowboy coding\")\n- Test coverage required (not optional)\n- Human approval for production deployments\n\n## Roles\n- Orchestrator: Tech Lead AI (task sizing, coordination)\n- Architect: Senior Engineer AI (design, architecture)\n- Builders: Domain-specific engineers (frontend, backend, DevOps)\n- QA: Test Engineer AI (verification, regression)\n- Security: AppSec AI (security review, threat modeling)\n\n## Boundaries\n- ✅ Can: Read repos, run tests, draft PRs\n- ⚠️ Approval: Merge to main, deploy to production, modify CI/CD\n- ❌ Never: Skip security review, deploy without tests, expose credentials\n\n## Accountability\n- Code owners review all PRs\n- Security audit on every release\n- Post-mortems for all P0 incidents within 48 hours\n- Quarterly security penetration tests\n```\n\n---\n\n## Anti-Patterns: What NOT to Do\n\nFORGE is effective because it enforces discipline. Skipping steps or \"optimizing\" the process usually introduces the failures FORGE was designed to prevent.\n\n### ❌ Anti-Pattern 1: Skip Reviews for \"Quick Fixes\"\n\n**The temptation:**\n\n\u003e \"This is just a one-line config change. I don't need QA/Security review for this.\"\n\n**Why it fails:**\n\n\"Quick fixes\" compound. A one-line change that skips review becomes ten one-line changes. Eventually one of them breaks production, and there's no review trail to understand what happened.\n\n**Real consequences:**\n\n- Config change breaks authentication → security incident\n- One-line CSS fix breaks mobile layout → UX regression\n- \"Trivial\" dependency update introduces vulnerability → supply chain attack\n\n**FORGE approach:**\n\nEven small tasks get **some** review. The depth scales with risk:\n- Typo fix: Self-review + quick Orchestrator check\n- Config change: QA quick pass\n- Security-sensitive config: Full Security gate\n\n**The overhead of review is less than the cost of incidents.**\n\n---\n\n### ❌ Anti-Pattern 2: Self-Review Only\n\n**The temptation:**\n\n\u003e \"I built it, I tested it, it works. Why do I need someone else to check?\"\n\n**Why it fails:**\n\nThe same reasoning that creates a solution also reviews it. Blind spots are systematic, not random.\n\n**Example:**\n\n- Builder tests \"happy path\" → QA finds edge cases (empty input, network failure, race conditions)\n- Builder checks functionality → Security finds privilege escalation\n- Builder verifies desktop → QA finds mobile layout breaks\n\n**FORGE approach:**\n\n**Independent review is mandatory.** The builder self-verifies before submission (Verify stage of their Cycle), but QA and Security review independently (Reflect stage at workflow level).\n\n---\n\n### ❌ Anti-Pattern 3: Unanimous Agreement Without Challenge\n\n**The temptation:**\n\n\u003e \"All three reviewers said it's perfect. Ship it!\"\n\n**Why it fails:**\n\nUnanimous praise without contrarian challenge often means:\n- Everyone made the same assumption\n- Obvious issues got normalized (\"that's just how we do it\")\n- Reviewers anchored on each other's opinions\n\n**Real example:**\n\nThree agents review a new authentication flow. All say \"looks good.\" No one catches that the session token is logged in plaintext—because none of them were explicitly asked to check logging output.\n\n**FORGE approach:**\n\n**Anti-sycophancy protocol:** If all reviewers agree without finding issues, a contrarian review is triggered.\n\n\u003e \"The other reviewers found no issues. You are the contrarian. What did they miss?\"\n\nThis protocol forces at least one reviewer to think adversarially, breaking the groupthink.\n\n---\n\n### ❌ Anti-Pattern 4: Orchestrator Implements\n\n**The temptation:**\n\n\u003e \"I'm the orchestrator and I know how to code. Why dispatch another agent when I can just do it myself?\"\n\n**Why it fails:**\n\nIf the Orchestrator implements, it can't objectively synthesize review. When Hawk says \"this code is hard to read\" and the Orchestrator replies \"but I wrote it and I understand it\"—that's not synthesis, that's defensiveness.\n\n**The orchestrator's job is coordination, not execution.**\n\n**FORGE approach:**\n\n**Hard rule:** Orchestrators orchestrate, never implement.\n\n- Task sizing → Orchestrator\n- Design → Architect\n- Implementation → Builders\n- Review → QA + Security\n- Synthesis → Orchestrator (coordinates, doesn't override)\n\n**Separation of concerns prevents conflicts of interest.**\n\n---\n\n### ❌ Anti-Pattern 5: Workflow as Waterfall\n\n**The temptation:**\n\n\u003e \"We must complete every Inception artifact before Construction can start.\"\n\n**Why it fails:**\n\nFORGE is not Waterfall. It's **adaptive workflow structure**, not rigid phase-gates.\n\n**Small tasks skip Inception entirely.** Medium tasks get lightweight design. Large tasks get full architecture—but even then, unit decomposition allows parallel work.\n\n**FORGE approach:**\n\n**Depth adapts to complexity:**\n\n- Small → Direct dispatch (no Inception)\n- Medium → Lightweight design (application architecture, no full requirements doc)\n- Large → Full Inception (architecture + units + test strategy)\n\n**Phases overlap intentionally:** Architect can design Unit B while Builder implements Unit A.\n\n---\n\n### ❌ Anti-Pattern 6: Security as an Afterthought\n\n**The temptation:**\n\n\u003e \"We'll do a security review after launch.\"\n\n**Why it fails:**\n\nSecurity vulnerabilities found after deployment are exponentially more expensive to fix—and they may have already been exploited.\n\n**FORGE approach:**\n\n**Security is built into the Workflow:**\n\n- **Inception:** Security defines non-functional requirements (NFRs) for large tasks\n- **Gate:** Security review is mandatory for medium+ tasks (parallel with QA)\n- **Pre-merge:** Both gates must pass before deployment\n\n**Security is not a separate audit—it's a parallel track throughout the lifecycle.**\n\n---\n\n### ❌ Anti-Pattern 7: No Retrospectives on Failures\n\n**The temptation:**\n\n\u003e \"The bug is fixed. Move on.\"\n\n**Why it fails:**\n\nFixing symptoms without understanding root causes means the same class of failure will recur.\n\n**Example:**\n\n- \"The API call failed\" → Fix: retry logic\n- Root cause: No one reviewed error handling patterns → Next failure: different API, same missing error handling\n\n**FORGE approach:**\n\n**Mandatory retrospectives on failures:**\n\n1. What happened (symptoms)\n2. Root cause (why it happened)\n3. Who's accountable (not blame, but ownership)\n4. Prevention (process change, not just code fix)\n\nRetrospectives are filed in persistent memory—they become institutional knowledge.\n\n---\n\n## Getting Started: 5 Steps to Implement FORGE\n\nYou don't need 40 agents and a complex swarm to use FORGE. You can implement it incrementally, starting with a single-agent system and growing as complexity demands.\n\n### Step 1: Write Your Charter (1-2 Hours)\n\n**Start with mission and boundaries.**\n\nUse the template from the Charter section:\n1. Mission (why this system exists)\n2. Principles (core values)\n3. Roles (even if it's just \"one agent for now\")\n4. Boundaries (what requires approval, what's prohibited)\n5. Accountability (how failures are handled)\n\n**Make it read-only for agents.** Store it in a file (e.g., `CHARTER.md`) that agents must read every session but cannot modify without human approval.\n\n**Example for a solo developer:**\n\n```markdown\n# My AI Assistant Charter\n\n## Mission\nHelp me ship high-quality code faster without sacrificing security.\n\n## Principles\n- Test before ship\n- Ask before external actions (emails, tweets, PRs to public repos)\n- Security over speed\n\n## Roles\n- Me: Final decision-maker\n- AI: Implements, self-reviews, proposes changes\n- External review: GitHub PR review (when available)\n\n## Boundaries\n- ✅ Can: Draft code, run tests, search docs\n- ⚠️ Approval: Push to main, deploy to production\n- ❌ Never: Commit secrets, skip tests\n\n## Accountability\n- I review all code before merge\n- AI writes summary of what changed and why\n- Failures trigger retrospective (what happened, why, prevention)\n```\n\n---\n\n### Step 2: Implement the FORGE Cycle (Single Agent)\n\n**Even with one agent, run the four-stage cycle.**\n\nBefore delivering any work output, the agent should:\n\n1. **Reason:** Understand the task fully (ask clarifying questions if needed)\n2. **Act:** Implement the solution\n3. **Reflect:** Self-review against the spec (checklist of success criteria)\n4. **Verify:** Run tests, confirm it works\n\n**Example prompt structure:**\n\n```markdown\nBefore you deliver any code or solution:\n\n1. REASON: Restate the task in your own words. List success criteria.\n2. ACT: Implement the solution.\n3. REFLECT: Self-review checklist:\n   - Does this match the spec?\n   - Are there edge cases I didn't handle?\n   - Is this code readable and maintainable?\n   - Did I test error conditions?\n4. VERIFY: Run the build/tests. Confirm functionality.\n\nOnly after all four stages are complete: deliver the output.\n```\n\n**This takes discipline, but it prevents the \"ship first, fix later\" trap.**\n\n---\n\n### Step 3: Add Independent Review (Two Agents)\n\n**When you're ready, add a second agent for review.**\n\nThis could be:\n- A dedicated QA agent (reviews functionality, tests, readability)\n- A security-focused agent (reviews for vulnerabilities, credential leaks)\n- A contrarian agent (challenges assumptions)\n\n**Key principle:** The reviewer must not have seen the implementation reasoning. Run review in a fresh context without the builder's internal reasoning visible.\n\n**Example workflow:**\n\n1. **Builder agent:** Runs FORGE Cycle, produces solution\n2. **Orchestrator (you):** Extracts just the output (code, docs) and spec\n3. **Reviewer agent:** Receives spec + output (not the builder's reasoning)\n4. **Reviewer:** Runs their own FORGE Cycle from review perspective\n\n**This simulates the \"fresh eyes\" principle without requiring human reviewers.**\n\n---\n\n### Step 4: Scale to Multi-Agent (When Complexity Demands It)\n\n**Don't prematurely add agents.** Add them when you hit real limitations:\n\n- **Add Architect when:** You're building something complex enough that design-before-implementation saves time\n- **Add QA when:** You're repeatedly finding bugs post-deployment that review could have caught\n- **Add Security when:** You're handling sensitive data, auth, or compliance requirements\n- **Add Domain Builders when:** You need deep expertise (frontend vs. backend vs. DevOps)\n\n**Start small, grow as needed.** A 3-agent system (Orchestrator + Builder + Reviewer) covers 80% of use cases.\n\n---\n\n### Step 5: Instrument and Iterate\n\n**Track what matters:**\n\n- Task success rate (first-pass, after review, after Verify)\n- Review findings (what categories of issues come up most?)\n- Failure patterns (what root causes recur?)\n- Token costs (per agent, per phase)\n\n**Use this data to improve:**\n\n- If QA repeatedly finds the same issue → update the Builder's constraints\n- If Security repeatedly flags credentials → add automated secrets scanning\n- If tasks fail Verify frequently → improve the Reason stage (clarify specs upfront)\n\n**FORGE is not static—it evolves with your system.**\n\n---\n\n## FORGE vs. Other Approaches\n\nFORGE is not the only way to structure AI agent systems. Here's how it compares to popular alternatives.\n\n```mermaid\ngraph LR\n    subgraph FORGE\n        F1[Reason] --\u003e F2[Act] --\u003e F3[Reflect] --\u003e F4[Verify] --\u003e F5[Ship]\n        F4 --\u003e|Fail| F2\n    end\n    subgraph LangGraph\n        L1[Node] --\u003e L2[Node] --\u003e L3[Review]\n        L3 --\u003e|Bad| L1\n    end\n    subgraph CrewAI\n        C1[Researcher] --\u003e C2[Writer]\n    end\n```\n\n---\n\n### 1. Raw Prompt Chaining\n\n**What it is:**\n\nSequential prompts where each prompt's output becomes the next prompt's input.\n\n**Example:**\n\n```\nPrompt 1: \"Research AI frameworks\"\n→ Output: \"Here are 10 frameworks...\"\nPrompt 2: \"Summarize the top 3\"\n→ Output: \"LangGraph, CrewAI, AutoGen...\"\nPrompt 3: \"Write a comparison table\"\n→ Output: [table]\n```\n\n**Pros:**\n\n- ✅ Simple to implement\n- ✅ No complex tooling required\n- ✅ Easy to debug (each step is explicit)\n\n**Cons:**\n\n- ❌ No review/verification built in\n- ❌ Single perspective (same model/reasoning chain)\n- ❌ No error recovery (if step 2 fails, the chain breaks)\n- ❌ No quality gates\n\n**When to use:** One-off tasks, exploratory work, prototyping\n\n**FORGE difference:** FORGE adds **Reflect (multi-agent review)** and **Verify (runtime testing)**—which raw chaining lacks entirely.\n\n---\n\n### 2. CrewAI Roles\n\n**What it is:**\n\nRole-based multi-agent framework where agents have titles (Researcher, Writer, Editor) and collaborate sequentially or hierarchically.\n\n**Example:**\n\n```python\nresearcher = Agent(role=\"Researcher\", goal=\"Find data\")\nwriter = Agent(role=\"Writer\", goal=\"Draft article\")\neditor = Agent(role=\"Editor\", goal=\"Polish final\")\n\ncrew = Crew(agents=[researcher, writer, editor])\ncrew.kickoff()\n```\n\n**Pros:**\n\n- ✅ Multi-agent out of the box\n- ✅ Easy to map human roles to agents\n- ✅ Built-in task handoffs\n\n**Cons:**\n\n- ❌ Sequential by default (parallel/hierarchical coming but not mature)\n- ❌ No quality gates enforced (review is just another agent role, not mandatory)\n- ❌ No distinction between implementation and review (same agent can do both)\n- ❌ No Charter or governance layer\n\n**When to use:** Quick multi-agent prototypes, role-based workflows (customer service, content creation)\n\n**FORGE difference:** FORGE enforces **separation of roles** (Orchestrator never implements, Builders never review themselves) and **mandatory gates** (both QA and Security must pass).\n\n---\n\n### 3. LangGraph Workflows\n\n**What it is:**\n\nStateful graph-based orchestration where nodes represent agents/functions and edges represent control flow. Supports cycles, conditional branching, and human-in-the-loop.\n\n**Example:**\n\n```python\ngraph = StateGraph()\ngraph.add_node(\"research\", research_agent)\ngraph.add_node(\"analyze\", analyze_agent)\ngraph.add_node(\"review\", review_agent)\n\ngraph.add_edge(\"research\", \"analyze\")\ngraph.add_conditional_edge(\"analyze\", should_review, \"review\", \"finalize\")\ngraph.add_edge(\"review\", \"research\")  # Loop back if review fails\n```\n\n**Pros:**\n\n- ✅ Flexible control flow (not just sequential)\n- ✅ Stateful (agents share state across the graph)\n- ✅ Production-grade (used by Klarna, Uber, LinkedIn)\n- ✅ LangSmith integration (observability, tracing)\n\n**Cons:**\n\n- ❌ No governance framework (you build the workflow, but the *structure* of quality is up to you)\n- ❌ No Charter or accountability layer\n- ❌ No task sizing or adaptive depth\n- ❌ Review is optional (not enforced)\n\n**When to use:** Complex enterprise workflows, stateful multi-agent systems, teams with strong engineering\n\n**FORGE difference:** FORGE provides **workflow structure** (Size → Inception → Construction → Gate → Ship) that LangGraph doesn't prescribe. You *could* implement FORGE on top of LangGraph—but LangGraph alone doesn't tell you *when* to run Architect vs. Builder vs. Reviewer.\n\n---\n\n### 4. OpenAI Swarm (Deprecated → Agents SDK)\n\n**What it is:**\n\nLightweight pattern for agent-to-agent handoffs (now replaced by OpenAI Agents SDK).\n\n**Example (old Swarm):**\n\n```python\nagent_a = Agent(name=\"A\", functions=[handoff_to_b])\nagent_b = Agent(name=\"B\", functions=[handoff_to_a])\n\nresult = run_swarm(agent_a, \"Start here\")\n```\n\n**Pros:**\n\n- ✅ Minimal abstraction (easy to understand)\n- ✅ Handoff pattern is explicit\n\n**Cons:**\n\n- ❌ Experimental (not production-ready)\n- ❌ Stateless (no shared context across handoffs)\n- ❌ No governance, review, or quality gates\n- ❌ Deprecated (replaced by Agents SDK)\n\n**When to use:** Learning agent coordination concepts (not production)\n\n**FORGE difference:** FORGE is a **governance framework**, not just a coordination pattern. Swarm/Agents SDK handles *how agents talk*; FORGE handles *how agents ensure quality*.\n\n---\n\n### Comparison Table\n\n| Aspect | Raw Chaining | CrewAI | LangGraph | FORGE |\n|--------|--------------|--------|-----------|-------|\n| **Multi-agent** | No | Yes | Yes | Yes |\n| **Stateful** | No | Limited | Yes | Yes |\n| **Review enforced** | No | No | Optional | Mandatory |\n| **Security gate** | No | No | Optional | Mandatory |\n| **Task sizing** | No | No | No | Yes (Small/Medium/Large) |\n| **Charter/governance** | No | No | No | Yes |\n| **Accountability** | No | No | No | Yes (retrospectives) |\n| **Adaptive depth** | No | No | No | Yes (Inception scales with complexity) |\n| **Observability** | Manual | AMP Suite | LangSmith | Manual (roadmap: add tooling) |\n\n**Key insight:** Most frameworks focus on **orchestration mechanics**. FORGE focuses on **governance and verifiability**. You can use FORGE *with* LangGraph or CrewAI—they're not mutually exclusive.\n\n---\n\n### When to Use What\n\n| If you need... | Use... |\n|---------------|--------|\n| **Quick prototype** | Raw chaining or CrewAI |\n| **Complex stateful workflows** | LangGraph |\n| **Role-based collaboration** | CrewAI or FORGE |\n| **Governance + accountability** | **FORGE** |\n| **Verifiable quality with multi-agent review** | **FORGE** |\n| **Security-critical systems** | **FORGE** (or FORGE + LangGraph for orchestration) |\n| **Minimal tooling, maximum simplicity** | Raw chaining |\n\n---\n\n## Conclusion: Why FORGE Matters\n\nThe AI agent market is exploding—but **40% of projects will fail**. Not because the technology doesn't work, but because organizations deploy agents without governance, review, or accountability.\n\n**FORGE solves this.**\n\nIt's not a tool or a library—it's a **framework for how to think about AI agent work**:\n\n- **Task sizing** ensures effort matches complexity\n- **The Cycle** (Reason → Act → Reflect → Verify) ensures every agent thinks before acting and verifies before shipping\n- **The Workflow** (Inception → Construction → Gate → Ship) ensures design happens before implementation and review happens before deployment\n- **The Charter** provides the governance foundation that makes accountability real\n\n**FORGE is governance-first AI:** built for organizations that value trust and verifiability over \"move fast and break things.\"\n\n---\n\n### Next Steps\n\n1. **Write your Charter** — Start with mission, principles, and boundaries\n2. **Implement the Cycle** — Even with one agent, run Reason → Act → Reflect → Verify\n3. **Add independent review** — When ready, add a second agent for QA or Security\n4. **Scale as needed** — Add Architect, Builders, Reviewers when complexity demands\n5. **Instrument and iterate** — Track success rates, failure patterns, and evolve\n\n**FORGE grows with you.** Start small, scale as needed, and always put governance first.\n\n---\n\n## License\n\nFORGE methodology documentation is released under the [MIT License](https://opensource.org/licenses/MIT).\n\nYou are free to use, adapt, and build on FORGE for any purpose — commercial or otherwise — with attribution.\n\n---\n\n## About Bamwerks\n\nFORGE was developed by [Bamwerks](https://bamwerks.info), a 40-agent AI organization serving Brandt Meyers (Founder \u0026 President). Bamwerks runs on FORGE principles with a strict Charter, multi-agent review on all software development, and mandatory retrospectives on failures.\n\n**Learn more:**\n- [Bamwerks Charter](/charter) — Our governance foundation\n- [Agent Roster](/agents) — Meet the 40-agent swarm\n---\n\n**Framework version:** 1.0  \n**Last updated:** February 26, 2026  \n**License:** [MIT License](https://opensource.org/licenses/MIT)\n\n---\n\n*\"Governance is not a constraint—it's what makes autonomy trustworthy.\"*"])</script><script>self.__next_f.push([1,"c:[\"$\",\"div\",null,{\"style\":{\"maxWidth\":\"900px\",\"margin\":\"0 auto\",\"padding\":\"clamp(3rem, 6vw, 4rem) 1.5rem\"},\"children\":[[\"$\",\"$L18\",null,{\"items\":[{\"label\":\"Home\",\"href\":\"/\"},{\"label\":\"Docs\",\"href\":\"/docs\"},{\"label\":\"FORGE Methodology\"}]}],[\"$\",\"div\",null,{\"style\":{\"marginBottom\":\"2.5rem\"},\"children\":[[\"$\",\"h1\",null,{\"style\":{\"fontSize\":\"clamp(2rem, 5vw, 2.5rem)\",\"fontWeight\":\"800\",\"color\":\"var(--fg)\",\"margin\":\"0 0 0.5rem\",\"letterSpacing\":\"-0.03em\"},\"children\":\"The FORGE Methodology\"}],[\"$\",\"p\",null,{\"style\":{\"color\":\"var(--fg-muted)\",\"fontSize\":\"clamp(1rem, 2vw, 1.125rem)\",\"margin\":0},\"children\":\"A governance-first framework for AI agent systems\"}]]}],[\"$\",\"div\",null,{\"style\":{\"backgroundColor\":\"var(--card)\",\"border\":\"1px solid var(--border)\",\"borderRadius\":\"12px\",\"padding\":\"clamp(1.5rem, 3vw, 2.5rem)\",\"overflowX\":\"auto\"},\"children\":[\"$\",\"$L19\",null,{\"content\":\"$1a\"}]}]]}]\n"])</script></body></html>

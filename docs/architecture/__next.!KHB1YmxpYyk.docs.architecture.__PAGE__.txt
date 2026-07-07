@@ -1,0 +1,281 @@
+1:"$Sreact.fragment"
+2:I[57144,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/3cy8g65x3kde0.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+3:I[58805,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/3cy8g65x3kde0.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T320f,> How Bamwerks is built — from the agent swarm to the static site.
+
+---
+
+## System Overview
+
+Bamwerks operates a **40-agent AI swarm** organized across 8 specialized swarms. Each swarm covers a distinct domain: engineering, quality assurance, security, operations, intelligence, business, and more.
+
+Agents are orchestrated by **Sir** (Chief Operating Officer), who receives tasks and dispatches them to the right specialists following the [FORGE process](/docs/forge-methodology). Sir coordinates — specialists execute.
+
+The entire agent system runs on **OpenClaw**, an open-source AI agent framework that handles session management, model routing, memory, and tool access.
+
+---
+
+## System Diagram
+
+```mermaid
+flowchart TD
+    CF[Cloudflare CDN] --> GHP[GitHub Pages]
+    GHP --> PUB[Public Site - bamwerks.info]
+    GHP --> DEV[Dev Instance - bamwerks.info/dev/]
+    PUB --> STATIC[Static HTML]
+    PUB --> |GitHub OAuth| AUTH[Auth Required]
+    DEV --> |GitHub OAuth| AUTH
+    AUTH --> |/tasks| GHAPI[GitHub Projects V2]
+    AUTH --> |/dashboard| JSON[GitHub Repo JSON]
+```
+
+---
+
+## Site Architecture
+
+### Static Next.js on GitHub Pages
+
+The bamwerks.info public site is a **fully static Next.js 15** application deployed to **GitHub Pages**, fronted by **Cloudflare** for DNS and CDN. The entire public site requires zero servers and zero databases.
+
+**$0 infrastructure.** No hosting bills. No servers to maintain. No database subscriptions. The public site is just HTML, CSS, and JavaScript files served from GitHub's CDN.
+
+### Public Pages
+
+Public pages (home, about, agents, charter, docs) are static HTML — no authentication required, no JavaScript needed to read the content. They load fast anywhere in the world thanks to Cloudflare's global CDN.
+
+### Operations Dashboard
+
+Authenticated users get access to a private operations dashboard backed by live data:
+
+- **Task management** — A kanban board powered by GitHub Projects V2, queried via GraphQL directly from the browser using the signed-in user's token
+- **Usage metrics** — AI token costs and model usage data, stored as JSON in a private GitHub repository and rendered client-side
+
+### GitHub OAuth
+
+Signing in uses **GitHub OAuth**. Because the site is fully static, there's no server to securely hold credentials. A small **Cloudflare Worker** (~30 lines of code) handles the one step that requires a secret: exchanging the OAuth authorization code for an access token.
+
+After the exchange, the token lives only in your browser's `sessionStorage`. It's cleared when the tab closes and is never sent to any server Bamwerks operates. All GitHub API calls go directly from your browser to GitHub.
+
+| Layer | Technology |
+|-------|------------|
+| Static hosting | GitHub Pages |
+| CDN / DNS | Cloudflare (free tier) |
+| OAuth token exchange | Cloudflare Worker |
+| Task backend | GitHub Projects V2 (GraphQL) |
+| Usage data store | JSON in private GitHub repo |
+| Framework | Next.js 15 (static export) |
+| Language | TypeScript |
+| Styling | Inline styles (CSS custom properties) |
+
+---
+
+## Agent Infrastructure
+
+### Runtime
+
+A **Mac mini** serves as the dedicated agent runtime. It runs the OpenClaw gateway continuously — accepting task dispatches, spawning agent sessions, and managing the lifecycle of sub-agents.
+
+The Mac mini's only job is running OpenClaw. It has no web server, no API server, and no involvement in serving the public site.
+
+**ClawMetry** provides operational observability at `ops.bamwerks.info` — a monitoring dashboard accessible via Cloudflare Tunnel without exposing the Mac mini to the public internet.
+
+OpenClaw runs as a **dedicated system user** (`openclaw`), isolated from personal user files and credentials. A service account migration script automates the transition from running as a login user to the dedicated account, handling data relocation, permission fixes, and LaunchDaemon configuration.
+
+```mermaid
+flowchart LR
+    MM[Mac mini] --> OC[OpenClaw + 40 Agents]
+    OC --> |Usage metrics| GH[GitHub]
+    MM -.- |No web server| NOTE[Site independent]
+```
+
+### Agent Isolation
+
+Agents run as **isolated sub-sessions**. Each session receives only the context its current task requires — no agent sees another agent's credentials, memory files, or outputs unless the orchestrator explicitly passes that information.
+
+This is enforced by design: session context is constructed fresh for each dispatch.
+
+### Model Routing
+
+Bamwerks routes work to different AI models based on task complexity and cost profile:
+
+| Model | Role |
+|-------|------|
+| **Claude Opus** | Orchestration, strategy, complex multi-step decisions |
+| **Claude Sonnet** | Engineering work, code generation, specialist reviews |
+| **Claude Haiku** | Monitoring, lightweight checks, high-frequency tasks |
+
+### Agent Memory
+
+Each agent maintains its own persistent memory:
+
+- **Daily operational logs** — raw notes from each session: decisions made, commands run, outcomes observed
+- **Long-term memory** — curated lessons, key patterns, and important context distilled from daily logs
+- **Anti-patterns file** — documented mistakes, so the same error isn't made twice
+
+Memory is file-based and version-controlled. If it wasn't written down, it didn't happen.
+
+### FORGE Enforcement
+
+Bamwerks enforces the [FORGE process](/docs/forge-methodology) through **programmatic controls**, not discipline alone. After tracking compliance through February 2026, the data was clear: **51.6% compliance with manual workflows**. That wasn't good enough.
+
+The solution: **defense-in-depth enforcement** across three layers. Each layer catches violations that bypass the previous one.
+
+#### Layer 1: Git Hooks (Deployed)
+
+**Pre-commit, commit-msg, and pre-push hooks** deployed across **6 project repositories** as of February 26, 2026:
+
+| Hook | Enforcement | Exit Behavior |
+|------|-------------|---------------|
+| **pre-commit** | Blocks direct commits to `main` branch | Exit 1 if current branch is `main` |
+| **commit-msg** | Requires `Closes #N`, `Refs #N`, `Fixes #N`, or `Resolves #N` in every commit message | Exit 1 if no issue reference found |
+| **pre-push** | Blocks direct push to `main` (must use PRs) | Exit 1 if pushing to `refs/heads/main` |
+
+These hooks run **client-side before Git accepts the operation**. Violations fail fast with clear, actionable error messages:
+
+```
+⛔ FORGE VIOLATION: Direct commits to main are not allowed.
+
+Use the develop branch:
+  git checkout develop
+```
+
+```
+⛔ FORGE VIOLATION: Commit message must reference an issue.
+
+Include one of:
+  Closes #123
+  Refs #123
+  Fixes #123
+  Resolves #123
+```
+
+**Deployed repositories:**
+- bamwerks-site
+- openclaw-hooks
+- openclaw-secrets-plugin
+- bamwerks-ops
+- steamgenie
+- tasks (GitHub Projects board repo)
+
+**Testing:** All three hooks validated on bamwerks-site repository. Pre-commit and commit-msg hooks confirmed blocking violations with exit code 1. Pre-push hook validated for correct behavior (not tested with actual push to avoid remote changes).
+
+**Bypass:** The hooks can be bypassed with `git commit --no-verify` or `git push --no-verify` for emergency use only. Layer 2 (GitHub branch protection) closes this gap by enforcing rules server-side.
+
+#### Layer 2: GitHub Branch Protection (Deployed)
+
+Server-side enforcement via **GitHub branch protection rules** is active across Bamwerks repositories:
+
+- Require pull request before merge
+- Block force pushes
+- Require status checks to pass (CI/builds)
+- Require review approval
+
+Even if a developer bypasses the client-side hooks with `--no-verify`, GitHub rejects the push. This layer makes `main` truly immutable.
+
+#### Layer 3: OpenClaw Runtime Hooks (Deployed)
+
+**Five custom hooks** running inside the OpenClaw session runtime enforce FORGE behavior at the agent layer — catching violations that Git hooks can't see:
+
+| Hook | Enforcement |
+|------|-------------|
+| **`sir-implements-detector`** 🚨 | Detects when the orchestrator writes code directly instead of dispatching. Graduated: soft nudge on first violation, hard warning on repeat. |
+| **`phase0-reminder`** ⚡ | Fires on every inbound message. Prompts the orchestrator to classify the request and verify understanding before acting. |
+| **`forge-phase-tracker`** 🔏 | Logs FORGE phase transitions to `memory/forge-activity.log`. Every session's workflow is on record. |
+| **`session-cost-alert`** 💸 | Alerts when session token spend crosses configurable thresholds. |
+| **`subagent-ping`** 🔔 | Notifies when sub-agents complete tasks. |
+
+All five are open-sourced at [bamwerks/openclaw-hooks](https://github.com/bamwerks/openclaw-hooks) (MIT license).
+
+#### Why Programmatic Enforcement?
+
+**Discipline alone failed.** The data showed 51.6% compliance — meaning nearly half of all commits violated FORGE rules. The problem wasn't malice; it was context switching, cognitive load, and human forgetfulness.
+
+Git hooks catch violations **at commit time** with immediate, actionable feedback. No retrospective cleanup. No broken audit trails. No merge conflicts from out-of-process fixes.
+
+**Defense-in-depth matters.** Multiple layers mean no single bypass defeats all controls. Client-side hooks catch most violations. Server-side rules stop anything that gets through. Framework-level enforcement closes the final gaps.
+
+**Automation scales; discipline doesn't.** As the agent swarm grows, manual compliance becomes unsustainable. Programmatic enforcement scales to 40 agents, 100 agents, or 1,000 agents — with zero marginal cost.
+
+---
+
+## Data Flow
+
+```mermaid
+flowchart TD
+    Projects[GitHub Projects V2]
+    MetricsRepo[Private metrics repo<br/>GitHub]
+    Browser[Browser]
+    OpsDash[Operations dashboard<br/>tasks, ideas, kanban]
+    UsageDash[Usage / cost dashboard]
+    MacMini[Mac mini / OpenClaw]
+    Swarm[40-agent swarm]
+    
+    Projects -->|GraphQL<br/>client-side, user token| Browser
+    Browser --> OpsDash
+    
+    MetricsRepo -->|JSON fetch<br/>client-side| Browser
+    Browser --> UsageDash
+    
+    MacMini -.Periodic push<br/>cron.-> MetricsRepo
+    Swarm -.FORGE cycle<br/>execution.-> MacMini
+    
+    style OpsDash fill:#2c5282
+    style UsageDash fill:#2c5282
+```
+
+1. **Tasks** live in GitHub Projects V2 — the canonical task management backend
+2. Agents execute work following the [FORGE cycle](/docs/forge-methodology): Reason → Act → Reflect → Verify
+3. QA and Security review gates run **in parallel** before any deliverable ships
+4. The Mac mini pushes usage metrics (token counts, costs by model and agent) to a private GitHub repository as JSON
+5. The site fetches and renders metrics entirely client-side — no server involved
+
+---
+
+## Security
+
+### No Secrets in the Static Site
+
+The bamwerks.info site contains no API keys, credentials, or secrets of any kind. The Cloudflare Worker is the only component that holds a sensitive value (the OAuth client secret), and it's stored in Cloudflare's encrypted secrets vault — not in the codebase or build artifacts.
+
+### GitHub App for Agent Access
+
+The OpenClaw agent swarm uses a **GitHub App** for programmatic access to repositories and APIs:
+
+- **Scoped tokens** — each installation token grants only the permissions needed for that operation
+- **Audit trail** — GitHub logs every API action taken by the app
+- **Automatic rotation** — installation tokens expire and rotate automatically
+
+### Browser Token Handling
+
+After GitHub OAuth sign-in:
+
+- Token stored in `sessionStorage` — automatically cleared when the browser tab closes
+- Token is never sent to any server Bamwerks operates
+- All GitHub API queries go directly from your browser to `api.github.com`
+
+### Secrets Management
+
+Bamwerks implements a **three-tier access model** for sensitive credentials:
+
+- **Open tier** — Low-sensitivity values (webhook URLs, app IDs) available without approval
+- **Controlled tier** — Medium-sensitivity tokens (API keys) require TOTP 2FA approval with 4-hour TTL
+- **Restricted tier** — High-sensitivity credentials (private keys, OAuth secrets) require TOTP approval with 15-minute TTL
+
+All secrets are encrypted in **macOS Keychain**, not stored as plaintext files. The agent must request approval via TOTP codes generated on a trusted device (phone). A service account migration script automates the transition from user-based to dedicated system account execution.
+
+For implementation details, see the [Security Hardening Guide](/docs/security-hardening).
+
+### Agent Isolation
+
+Each agent session is constructed with a minimal context slice — only the files, tools, and information that specific task requires. Agents cannot reach across session boundaries to access other agents' credentials, memory, or outputs.
+
+---
+
+*Architecture authored by Ada, Bamwerks Engineering Swarm.*
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","$L2",null,{"items":[{"label":"Home","href":"/"},{"label":"Docs","href":"/docs"},{"label":"Architecture"}]}],["$","div",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 0.5rem","letterSpacing":"-0.03em"},"children":"Architecture"}],["$","p",null,{"style":{"color":"var(--fg-muted)","fontSize":"clamp(1rem, 2vw, 1.125rem)","margin":0},"children":"System architecture and technical decisions"}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/3cy8g65x3kde0.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

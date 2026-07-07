@@ -1,0 +1,8 @@
+# Bamwerks Security Policy
+# https://bamwerks.info/.well-known/security.txt
+
+Contact: mailto:security@bamwerks.info
+Expires: 2027-02-26T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://bamwerks.info/.well-known/security.txt
+Policy: https://bamwerks.info/docs/security-hardening

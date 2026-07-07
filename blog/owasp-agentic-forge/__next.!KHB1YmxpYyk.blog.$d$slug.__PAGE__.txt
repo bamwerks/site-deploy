@@ -1,0 +1,62 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T15b1,
+The OWASP Top 10 for Agentic Applications (2026) identifies critical security risks facing autonomous AI systems. At Bamwerks, our FORGE framework (Framework for Orchestrated Reasoning, Governance & Execution) was designed from day one to address these challenges through governance-first architecture. Here's how FORGE maps to each risk.
+
+## ASI01: Agent Goal Hijack
+
+Attackers can alter agent objectives through malicious content embedded in emails, documents, or web pages—indirect prompt injection that causes agents to pursue unintended goals. FORGE addresses this with structured dispatch (GOAL/CONSTRAINTS/CONTEXT/OUTPUT format) where goals are defined by the orchestrator, not inferred from content, plus Sentinel security review of every output for goal drift and exfiltration attempts.
+
+## ASI02: Tool Misuse and Exploitation
+
+Agents may use legitimate tools in unsafe ways—destructive parameters, unexpected chaining, or data exfiltration through manipulated prompts. FORGE enforces task-specific tool permissions (builders get write access only to their scope, report agents are read-only), requires explicit approval for external actions like emails or tweets, and runs parallel Hawk (QA) and Sentinel (Security) reviews that both must pass before delivery.
+
+## ASI03: Identity and Privilege Abuse
+
+Agents inherit user credentials or system tokens that can be unintentionally reused, escalated, or passed across sessions—creating confused deputy scenarios. FORGE implements agent-blind credential storage with orchestrator-mediated access, task-scoped permissions with no inheritance across sessions, and memory compartmentalization ensuring sub-agents receive only the context needed for their specific task.
+
+## ASI04: Agentic Supply Chain Vulnerabilities
+
+Dynamic loading of tools, plugins, prompt templates, or external agents at runtime introduces compromise risk. FORGE maintains a curated 33-agent registry with version-controlled prompts, gates all changes through GitHub issues (no issue = no edit), runs Sentinel dependency reviews for vulnerabilities, and enforces workspace isolation with strict file permissions.
+
+## ASI05: Unexpected Code Execution
+
+Agents generating or running code unsafely—shell commands, scripts, or template evaluation triggered through output—pose significant risk. FORGE's core orchestration rule: Sir (COO) never implements, only delegates to specialized builders who work in isolated directories and feature branches, with parallel Hawk code review and Sentinel static analysis both required before any code merges.
+
+## ASI06: Memory and Context Poisoning
+
+Agents relying on RAG databases or embeddings can be influenced by poisoned memory that shapes future decisions. FORGE uses file-based memory (human-readable markdown, version-controlled, auditable) with session isolation and fresh starts, avoiding RAG-related poisoning risks entirely. Memory is segmented (CHARTER.md Founder-only, MEMORY.md main-session-only), and retrospectives analyze anomalous changes.
+
+## ASI07: Insecure Inter-Agent Communication
+
+Multi-agent systems exchanging messages without authentication or validation allow interception or instruction injection. FORGE uses structured dispatch through OpenClaw's platform with unique session IDs, push-based completion announcements to requesters only, and no external MCP or A2A protocols—all communication is logged and auditable.
+
+## ASI08: Cascading Failures
+
+Small errors in one agent can propagate rapidly through interconnected systems. FORGE requires parallel review gates (both Hawk and Sentinel must pass), isolates tasks with scoped boundaries to contain failures, enforces mandatory retrospectives (root cause → accountability → prevention) documented in daily notes, and provides kill switches for Sir to terminate runaway sessions.
+
+## ASI09: Human-Agent Trust Exploitation
+
+Users may over-trust agent recommendations, creating opportunities for manipulation or information extraction. FORGE addresses this with transparent output where Sir synthesizes and reviews all work before delivery, clear attribution of which agent produced what, Hawk trust review checking for persuasive or manipulative language, and bounded scope requiring approval for critical decisions.
+
+## ASI10: Rogue Agents
+
+Compromised or misaligned agents may act harmfully while appearing legitimate—self-replicating, persisting, or impersonating others. FORGE enforces strict governance with defined agent roles and Founder-owned identity files that agents can only read, implements Sentinel anomaly detection flagging out-of-scope actions, provides kill switches for immediate session termination, and uses anti-sycophancy reviews when unanimous agreement raises suspicion.
+
+## Current Maturity: 7 of 10 Fully Implemented
+
+FORGE fully addresses ASI02 (Tool Misuse), ASI04 (Supply Chain), ASI05 (Code Execution), ASI06 (Memory Poisoning), ASI07 (Insecure Comms), ASI08 (Cascading Failures), and ASI09 (Trust Exploitation) through implemented governance mechanisms.
+
+Three risks remain partially addressed and are targeted for Q2 2026 implementation. Details will be published after mitigations are in place.
+
+The difference between FORGE and ad-hoc agentic systems isn't just technical controls—it's recognizing that governance comes first. Security, quality, and trust aren't bolt-ons; they're the foundation on which autonomous AI must be built.
+
+For technical details on FORGE's architecture and workflow, see our [methodology documentation](/docs/forge-methodology).
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How FORGE Addresses the OWASP Top 10 for Agentic Applications\",\"datePublished\":\"2026-02-27\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"A practical mapping of OWASP's agentic AI risks to FORGE's governance mechanisms. 7 of 10 fully mitigated.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"How FORGE Addresses the OWASP Top 10 for Agentic Applications"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-02-27","children":"February 27, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","security",{"style":{"backgroundColor":"#ef444420","color":"#ef4444","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"security"}],["$","span","owasp",{"style":{"backgroundColor":"#ef444420","color":"#ef4444","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"owasp"}],["$","span","forge",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"forge"}],["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

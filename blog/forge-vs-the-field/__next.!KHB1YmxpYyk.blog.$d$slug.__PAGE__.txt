@@ -1,0 +1,78 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T1626,
+# FORGE vs. The Field: Why Agent Governance is the Missing Layer
+
+The AI agent ecosystem has never been more capable. Multi-agent frameworks can now orchestrate complex workflows, integrate external tools, browse the web, write and execute code, and hand off tasks between specialized models with impressive fluidity. If you can describe a process, there's probably a framework that can automate it.
+
+So why does something still feel missing?
+
+## The Accountability Gap
+
+Here's the question that doesn't have a clean answer in any of the major frameworks: **when an agent gets it wrong, what happens next?**
+
+Not "how do you retry the call" — that's a technical problem most frameworks solve elegantly. The deeper question: Who reviewed the output before it reached your customer? What's the audit trail if a regulator asks? Who was accountable for the decision the agent made? How do you know the same failure won't happen again tomorrow?
+
+These aren't edge cases. They're the operational questions that determine whether AI agents stay in sandboxes or move into production workflows where they actually matter. Right now, most organizations are answering them with silence, hope, or duct tape.
+
+## Credit Where It's Due
+
+Let's be direct about what the major frameworks do well, because they do a lot.
+
+**CrewAI** makes multi-agent orchestration genuinely accessible. Role-based agents, task delegation, process flows — it's well-designed and getting better fast. **LangGraph** brings serious rigor to stateful agent workflows, with graph-based control flow that gives engineers real visibility into execution paths. **AutoGen** from Microsoft pushes the frontier on conversational multi-agent systems and human-in-the-loop design. **OpenAgents** makes tool-use and web interaction feel natural.
+
+These tools solve hard capability problems. They lower the barrier to building agents that can actually do things. That's not a small contribution.
+
+But capability and governance are different problems. And the frameworks, almost uniformly, solve capability.
+
+## Where the Gap Lives
+
+Think about what happens when an agent completes a task in any of these frameworks. You get output. Maybe a log. Possibly a trace if you've configured observability tooling. What you typically don't get is:
+
+- A structured review process that validates the output before it propagates
+- A defined escalation path when confidence is low or the task was ambiguous
+- An audit record tied to a decision — not just a log of API calls
+- A retrospective workflow that feeds failures back into process improvement
+- Role-based accountability that maps agent actions to human responsibility
+
+This isn't a criticism of the frameworks. They weren't designed to be operating procedures. They were designed to be infrastructure. The gap isn't in what they built — it's in what they left to you.
+
+## What FORGE Adds
+
+FORGE is not a framework. It doesn't replace CrewAI or LangGraph. It's the operating procedure that runs *on top of* them.
+
+Think of it like this: a hospital has medical equipment (the framework) and clinical protocols (the governance layer). The equipment enables the procedure. The protocol ensures it's done safely, documented correctly, reviewed by the right people, and improved when something goes wrong. You need both. One without the other is either impossible or dangerous.
+
+FORGE brings that protocol layer to AI agent operations. It defines how tasks are structured before dispatch, how outputs are reviewed before delivery, how failures are analyzed and documented, and how accountability is maintained across an agent swarm. It works with whatever framework is powering your agents underneath.
+
+This isn't theoretical. FORGE has been running in production at Bamwerks since February 2026 — coordinating a 33-agent swarm across real workflows. The methodology has been tested against actual failures, real edge cases, and the operational messiness that sandboxes never surface.
+
+## An Honest Limitation
+
+FORGE is currently methodology, not code. There's no SDK to `pip install`, no dashboard to log into. It's a structured operating procedure — documented, practiced, and refined through production use, but not yet packaged as a product.
+
+That matters if you were hoping for a plug-and-play governance layer today. We're working toward that. What exists now is the pattern, the proven approach, and a body of operational experience that most teams building on agent frameworks simply don't have yet.
+
+## Where This Is Going
+
+Governance won't be optional much longer.
+
+The EU AI Act's requirements for high-risk AI systems take full effect in August 2026. Colorado's AI Act — one of the first state-level frameworks in the US — takes effect in June 2026. Both impose requirements around transparency, human oversight, and documentation of AI decision-making that most current agent deployments cannot satisfy.
+
+Gartner has found that roughly 70% of enterprise technology buyers prioritize compliance and risk management over raw capability when evaluating AI systems. The capability gap between frameworks is narrowing. The governance gap is not.
+
+The organizations that will scale AI agents confidently aren't the ones with the fastest models or the most integrations. They're the ones that can answer the accountability question — clearly, consistently, and to a regulator if asked.
+
+FORGE is our answer to that question. And we think the field is going to need one too.
+
+---
+
+*Bamwerks builds governed AI agent systems. FORGE is our methodology for operating AI agents in production with accountability, auditability, and structured human oversight.*
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"FORGE vs. The Field: Why Agent Governance is the Missing Layer\",\"datePublished\":\"2026-03-04\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"CrewAI, LangGraph, AutoGen — they solve real problems. But none of them answer: what happens when your agents get it wrong?\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"FORGE vs. The Field: Why Agent Governance is the Missing Layer"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-03-04","children":"March 4, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","forge",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"forge"}],["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}],["$","span","ai-agents",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"ai-agents"}],["$","span","methodology",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"methodology"}],["$","span","competitive",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"competitive"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

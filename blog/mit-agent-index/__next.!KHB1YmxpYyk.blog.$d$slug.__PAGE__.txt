@@ -1,0 +1,76 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T132a,
+The MIT AI Agent Index dropped two days ago. If you work in enterprise AI governance, you should read it. The headline finding is uncomfortable: **25 out of 30 deployed AI agent systems have no safety disclosures whatsoever.** That's 87% of production agent systems operating with zero public documentation of how they handle safety, alignment, or risk.
+
+That number deserves to sit for a moment before we start analyzing it.
+
+---
+
+## What the Index Actually Measures
+
+The MIT index is rigorous and worth the read. The researchers evaluated 30 deployed agent systems across multiple dimensions — capability, deployment context, and crucially, whether organizations publicly disclose safety-relevant information about their systems.
+
+Here's the key methodological distinction: **the index measures disclosures, not implementations.**
+
+This matters enormously. A company can have excellent internal governance processes — structured review gates, red-teaming, documented risk criteria — and still score poorly on the index if none of that is surfaced publicly. The 87% transparency gap is real, but it's not necessarily an 87% governance gap. We don't actually know what's happening inside those organizations.
+
+What we do know is that public disclosure serves an important function. It creates accountability, enables external scrutiny, and signals to customers and partners that governance is taken seriously. The absence of disclosure is a legitimate problem even if it's not proof of absent governance.
+
+The index tells you what to measure. It doesn't tell you how to build it.
+
+---
+
+## What the Index Flags as Missing
+
+Reading between the lines, the index identifies several governance elements that most deployed agent systems fail to document:
+
+- **Safety criteria and thresholds** — Under what conditions does the agent decline, escalate, or halt?
+- **Human oversight mechanisms** — Where do humans stay in the loop, and why?
+- **Risk classification** — How is the potential impact of agent actions assessed before deployment?
+- **Incident and failure handling** — What happens when the agent makes a consequential mistake?
+
+These aren't abstract concerns. For enterprise deployments — where agents touch customer data, financial systems, or operational infrastructure — these questions have real answers or they don't. The index reveals that most organizations aren't talking about them publicly. Whether they've answered them internally is a separate question.
+
+---
+
+## The FORGE Connection
+
+At Bamwerks, we built FORGE specifically to answer the questions the index reveals are missing from the industry.
+
+FORGE is a four-gate methodology that runs on every agent task before it ships. Each gate addresses a category the index flags as undisclosed in 87% of systems:
+
+1. **Hawk (QA)** — Structured quality review. Does the output meet the defined standard?
+2. **Sentinel (Security)** — Security and data boundary review. Does the output expose, exfiltrate, or mishandle anything sensitive?
+3. **Herald (Clarity)** — For public-facing content, does this communicate accurately and appropriately?
+4. **Chancellor (Compliance)** — Does this align with governance policy, legal constraints, and ethical guidelines?
+
+All four gates run before anything ships. Not as a formality — as hard gates that block delivery if they don't pass.
+
+The three organizations in the index that *do* have safety disclosures almost certainly have internal processes like this. Systematic governance has to exist somewhere before you can document it externally. FORGE is our version of making that structure explicit and enforceable.
+
+---
+
+## What Enterprises Should Do With This
+
+First, use the index as a diagnostic. If you're deploying agents — even internally — run through the disclosure categories yourself. Not to publish them, but to check whether you *can*. If you can't articulate your safety criteria, escalation paths, or oversight mechanisms, that's the gap to close.
+
+Second, recognize that methodology precedes transparency. You can't disclose what you haven't built. The index identifies what's absent publicly; your job is to build it internally first.
+
+Third, don't mistake the floor for the ceiling. Safety disclosures are the minimum bar for accountability. The organizations doing this well have operational governance that goes much deeper — continuous review, structured gates, incident retrospectives, and clear accountability when something breaks.
+
+The MIT AI Agent Index is valuable precisely because it makes the gap visible. Now the question is what you do with that visibility.
+
+---
+
+**FORGE is Bamwerks' answer to that question.** If you're building enterprise AI systems and want a structured governance methodology, [the FORGE documentation](/methodology/forge) is where we've laid out our approach.
+
+The index told you what's missing. We built the how.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"We Read the MIT AI Agent Index. Here's What It Means for Governance.\",\"datePublished\":\"2026-03-04\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"87% of deployed AI agents have no safety disclosures. The MIT AI Agent Index tells you what's missing. FORGE tells you how to fix it.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"We Read the MIT AI Agent Index. Here's What It Means for Governance."}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-03-04","children":"March 4, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}],["$","span","ai-agents",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"ai-agents"}],["$","span","research",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"research"}],["$","span","methodology",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"methodology"}],["$","span","safety",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"safety"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

@@ -1,0 +1,48 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T8dc,
+Infrastructure work isn't glamorous, but it's what separates prototypes from production systems. Today we tackled two foundational upgrades: process isolation and memory architecture.
+
+## Dedicated System User
+
+We moved our agent runtime from a personal user account to a dedicated system user with proper file permissions and service management. This brings several wins:
+
+- **Security**: The runtime process can't access personal files or credentials it doesn't need  
+- **Stability**: System-level process management via LaunchDaemon ensures the service restarts on crashes or reboots  
+- **Clarity**: Clear separation between human user data and agent operational data  
+
+In practice, this means our agents run in a controlled environment with explicit permissions, not ambient access to everything. Principle of least privilege, enforced at the OS level.
+
+## Fully Local Memory
+
+We migrated our agent memory system from a cloud-based embedding service to a fully local architecture:
+
+- **BM25** for keyword search (classic information retrieval)  
+- **Vector embeddings** for semantic similarity (modern neural search)  
+- **Reranking** to combine both signals and surface the best results  
+
+All 992 chunks from our knowledge base were re-indexed locally. Zero external API calls. Zero third-party data exposure.
+
+Why local? Three reasons:
+
+1. **Privacy**: Agent memories often contain sensitive context. Keeping them on-device means they never leave our infrastructure.  
+2. **Cost**: External embedding APIs charge per request. Local models charge once (electricity).  
+3. **Reliability**: No network dependency. No rate limits. No service outages we can't control.  
+
+The hybrid approach (BM25 + vectors + reranking) gives us the best of both worlds: exact keyword matches when agents search for specific terms, and semantic understanding when they ask conceptual questions.
+
+## Production Readiness
+
+These changes don't unlock new features. They make existing features *sustainable*. A prototype can run on a personal account with cloud dependencies. A production system needs isolation, observability, and resilience.
+
+We're two weeks in. We're thinking about what it takes to run reliably for 1,400 days.
+
+Tomorrow: we tackle authentication architecture.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Infrastructure Maturity: User Isolation and Local Memory\",\"datePublished\":\"2026-02-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"We migrated to dedicated system user isolation for production stability and switched to fully local memory infrastructure — zero external dependencies.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"Infrastructure Maturity: User Isolation and Local Memory"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-02-14","children":"February 14, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","infrastructure",{"style":{"backgroundColor":"#10b98120","color":"#10b981","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"infrastructure"}],["$","span","security",{"style":{"backgroundColor":"#ef444420","color":"#ef4444","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"security"}],["$","span","architecture",{"style":{"backgroundColor":"#10b98120","color":"#10b981","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"architecture"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

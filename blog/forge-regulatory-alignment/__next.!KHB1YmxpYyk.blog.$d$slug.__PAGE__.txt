@@ -1,0 +1,72 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T1615,
+# FORGE Was Governance-First Before Governments Required It
+
+Two significant things happened in the last six weeks. NIST launched its [AI Agent Standards Initiative](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative) on February 17, 2026, signaling that the U.S. federal government is serious about governing autonomous AI agents. A month earlier, Singapore's IMDA published its Model AI Governance Framework for Agentic AI — a detailed, technically grounded set of requirements covering everything from least-privilege access to kill switches to memory isolation.
+
+If you're building agentic AI systems for enterprise use, these frameworks are your preview of what's coming: compliance requirements, audit expectations, and eventually procurement criteria. The question worth asking now isn't *whether* you'll need to address them — it's whether you're building toward them or retrofitting later.
+
+We built FORGE governance-first. Here's the mapping.
+
+---
+
+## What NIST and IMDA Actually Require
+
+Both frameworks converge on the same core problems, even if they frame them differently. In plain language, the requirements boil down to four things:
+
+**1. Agent identity and accountability.** You need to know *which* agent did *what*, *when*, and *why*. Anonymous or undifferentiated agent pools fail this test.
+
+**2. Least-privilege access.** Agents should only have the tools and permissions necessary to complete their assigned task — not blanket access to everything the system can do.
+
+**3. Human oversight with meaningful controls.** "Human-in-the-loop" is table stakes. What frameworks actually require: escalation paths for high-stakes actions, approval gates that can't be bypassed, and kill switches that actually work.
+
+**4. Audit trails and memory governance.** What an agent knew, when it knew it, and what it remembered across sessions must be traceable. Memory bleed between contexts is a specific risk IMDA calls out explicitly.
+
+---
+
+## FORGE Already Does This
+
+FORGE isn't a governance layer bolted onto an agentic system. It's a workflow architecture where governance *is* the workflow. Here's the specific mapping:
+
+**Agent identity → Named agents with defined roles.** FORGE runs 33+ named agents — Hawk, Sentinel, Scribe, Chancellor, and others — each with a defined role, scoped responsibilities, and Founder-owned identity files. When something goes wrong, you know exactly which agent was responsible and what its mandate was.
+
+**Least privilege → Task-scoped tool permissions.** Agents in FORGE don't get system-wide tool access. Permissions are scoped to the task. A builder agent doesn't get external communication capabilities. A monitoring agent doesn't get write access to production systems. The scope is set at dispatch time, not inherited globally.
+
+**Human oversight → TOTP-gated escalation and Founder approval.** High-stakes actions — anything touching external systems, public communication, or sensitive data — require explicit Founder approval. Privilege elevation is TOTP-gated. This isn't a soft confirmation dialog; it's a hard gate. The `/stop` command and session termination provide the kill switch capability IMDA specifically requires.
+
+**Parallel review gates → Hawk + Sentinel, both required.** No work ships from FORGE without passing through both QA review (Hawk) and security review (Sentinel) in parallel. Both gates must pass. Neither can be skipped, and neither result is visible to the other reviewer before they submit — preventing rubber-stamping. Public content adds Herald (editorial) and Chancellor (legal/compliance) to that gate.
+
+**Audit trails → Git-tracked, attributed work and daily memory logs.** Every agent action is attributed. Work is git-tracked with agent identity attached. Daily memory logs capture operational context. There's no anonymous action in a properly-run FORGE session.
+
+**Memory isolation → Session isolation and compartmentalized tiers.** FORGE uses tiered memory architecture: session-scoped memory stays in session, long-term memory is curated and explicitly promoted, and agents get only the context tier they need for their task. The cross-context memory bleed IMDA flags as a risk is structurally prevented.
+
+---
+
+## What This Means If You're Building Now
+
+The frameworks are non-binding today. They won't be forever. Enterprise procurement teams are already asking about AI governance posture. Regulated industries — finance, healthcare, government contracting — are watching these frameworks closely as the basis for future requirements.
+
+The architectural decisions you make now determine whether governance is built-in or bolted-on. Bolted-on governance is expensive, brittle, and tends to fail at the seams. Built-in governance means your audit trails exist because you need them to operate, not because a regulator asked for them.
+
+If your agentic architecture can't answer "which agent did this, with what permissions, with whose approval, and what did it know at the time" — that's the gap to close.
+
+---
+
+## The NIST RFI: A Practitioner's Window
+
+NIST has an active Request for Information: *Securing AI Agent Systems* — due **March 9, 2026**. If you're running production agentic systems, your operational experience is exactly what they need to hear. The questions cover authentication, authorization, and governance of AI agents in real deployments.
+
+Practitioners who submit shape the standards. That's worth 90 minutes of your time before the deadline.
+
+---
+
+*FORGE is the agentic workflow architecture powering Bamwerks. Questions or pushback — find us on the site.*
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"FORGE Was Governance-First Before Governments Required It\",\"datePublished\":\"2026-03-04\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"NIST and Singapore's IMDA just published formal governance frameworks for agentic AI systems. Here's why FORGE was already compliant before they asked.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"FORGE Was Governance-First Before Governments Required It"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-03-04","children":"March 4, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}],["$","span","forge",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"forge"}],["$","span","security",{"style":{"backgroundColor":"#ef444420","color":"#ef4444","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"security"}],["$","span","nist",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"nist"}],["$","span","regulatory",{"style":{"backgroundColor":"#6b728020","color":"#6b7280","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"regulatory"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

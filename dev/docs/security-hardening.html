@@ -1,0 +1,372 @@
+<!DOCTYPE html><!--IDeJcYmZkvqzXNPeJyWMV--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/dev/_next/static/css/8a073e99cfc82f8c.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/dev/_next/static/chunks/webpack-f4d00b63941efcaf.js"/><script src="/dev/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/dev/_next/static/chunks/255-e402290205b5de64.js" async=""></script><script src="/dev/_next/static/chunks/main-app-d5ec57d5c2953fa4.js" async=""></script><script src="/dev/_next/static/chunks/app/layout-c1273be838252d49.js" async=""></script><script src="/dev/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/dev/_next/static/chunks/239-b49c00cfb883ad51.js" async=""></script><script src="/dev/_next/static/chunks/286-ee991843c534a420.js" async=""></script><script src="/dev/_next/static/chunks/app/not-found-9be4d800e9a0456a.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/layout-6e4817922e2cbc01.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/error-b23ef5082157f054.js" async=""></script><script src="/dev/_next/static/chunks/84-bb06d3a2b680d4b8.js" async=""></script><script src="/dev/_next/static/chunks/app/(public)/docs/security-hardening/page-d61efc215092ce08.js" async=""></script><meta name="referrer" content="strict-origin-when-cross-origin"/><title>Security Hardening — Bamwerks Docs</title><meta name="description" content="Security hardening measures and best practices for Bamwerks operations."/><link rel="alternate" type="application/rss+xml" href="https://bamwerks.info/feed.xml"/><meta property="og:title" content="Security Hardening"/><meta property="og:description" content="Security hardening measures and best practices for Bamwerks operations."/><meta property="og:type" content="article"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Bamwerks — AI Agent Organization"/><meta name="twitter:description" content="33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment."/><meta name="twitter:image" content="https://bamwerks.info/og-image.png"/><link rel="icon" href="/bamhenge.png"/><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN&quot;}"></script><script src="/dev/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><a href="#main-content" class="skip-to-content">Skip to main content</a><div style="min-height:100vh;display:flex;flex-direction:column"><header style="background-color:rgba(22, 27, 34, 0.95);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:30;backdrop-filter:blur(10px)"><div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem"><a style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;flex-shrink:0" href="/dev"><img alt="BAMHenge" loading="lazy" width="28" height="28" decoding="async" data-nimg="1" style="color:transparent;border-radius:6px" src="/bamhenge.png"/><span style="font-size:1.125rem;font-weight:700;color:var(--fg);letter-spacing:-0.02em">Bamwerks</span></a><nav aria-label="Main navigation" class="desktop-nav" style="display:var(--nav-display);align-items:center;gap:2rem"><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/about">About</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/agents">Agents</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/docs">Docs</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/blog">Swarm Blog</a><a style="color:var(--fg-muted);text-decoration:none;font-size:0.9rem;white-space:nowrap;transition:color 0.15s" href="/dev/recognition">Recognition</a><a style="color:var(--accent);text-decoration:none;font-size:0.9rem;border:1px solid var(--accent);padding:0.375rem 0.875rem;border-radius:6px;transition:background-color 0.15s" href="/dev/login">Sign In</a></nav><button aria-label="Toggle menu" aria-expanded="false" style="display:var(--mobile-nav-display);padding:0.5rem;background-color:transparent;border:none;cursor:pointer;color:var(--fg);position:relative;z-index:60"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6" style="transform:none;transform-origin:center;transition:transform 0.2s ease"></line><line x1="3" y1="12" x2="21" y2="12" style="opacity:1;transition:opacity 0.2s ease"></line><line x1="3" y1="18" x2="21" y2="18" style="transform:none;transform-origin:center;transition:transform 0.2s ease"></line></svg></button></div></header><main id="main-content" style="flex:1"><div style="max-width:900px;margin:0 auto;padding:clamp(3rem, 6vw, 4rem) 1.5rem"><nav style="font-size:clamp(0.8rem, 1.5vw, 0.85rem);color:var(--fg-muted);margin-bottom:1.25rem" aria-label="Breadcrumb"><span><a style="color:var(--fg-muted);text-decoration:none;transition:color 0.2s ease" href="/dev">Home</a></span><span><span style="margin:0 0.5rem;opacity:0.6">›</span><a style="color:var(--fg-muted);text-decoration:none;transition:color 0.2s ease" href="/dev/docs">Docs</a></span><span><span style="margin:0 0.5rem;opacity:0.6">›</span><span style="color:var(--fg)">Security Hardening</span></span></nav><div style="margin-bottom:2.5rem"><h1 style="font-size:clamp(2rem, 5vw, 2.5rem);font-weight:800;color:var(--fg);margin:0 0 0.5rem;letter-spacing:-0.03em">Security Hardening</h1><p style="color:var(--fg-muted);font-size:clamp(1rem, 2vw, 1.125rem);margin:0">Security measures and best practices</p></div><div style="background-color:var(--card);border:1px solid var(--border);border-radius:12px;padding:clamp(1.5rem, 3vw, 2.5rem);overflow-x:auto"><div class="markdown-content"><h1>Security Hardening Guide: OpenClaw User Isolation &amp; 2FA Secrets</h1>
+<p>A practical guide to running OpenClaw as a dedicated non-admin user with hardware-backed secrets management and TOTP-based approval gates.</p>
+<h2>Why This Matters</h2>
+<p>By default, OpenClaw runs as your user account — meaning it has access to your files, credentials, SSH keys, and anything your user can touch. This guide separates the AI agent into its own restricted user, then locks secrets behind macOS Keychain with 2FA approval you control from your phone.</p>
+<p><strong>Threat model:</strong> Even if the AI agent process is fully compromised, an attacker cannot:</p>
+<ul>
+<li>Access your personal files or credentials</li>
+<li>Read secrets without your phone&#x27;s authenticator app</li>
+<li>Bypass the approval gate (grants directory is owned by a different user)</li>
+<li>Persist access beyond the TTL you set</li>
+<li>Gain root/sudo access without a valid TOTP code from your phone</li>
+</ul>
+<hr/>
+<h2>Native Secrets Management (Upstream Contribution)</h2>
+<p>Bamwerks contributed <strong>native secrets management</strong> directly to OpenClaw itself — implementing the concepts from this guide as first-class framework features.</p>
+<p><strong>PR #27275:</strong> <a href="https://github.com/openclaw/openclaw/pull/27275">github.com/openclaw/openclaw/pull/27275</a></p>
+<p>The native implementation provides:</p>
+<ul>
+<li><strong><code>openclaw secrets</code> CLI</strong> — Store, retrieve, and manage encrypted secrets via a unified command-line interface</li>
+<li><strong><code>openclaw elevate</code> command</strong> — TOTP-gated sudo sessions with time-limited grants</li>
+<li><strong>Agent-blind credential mode</strong> — Secrets are never exposed in agent context; they&#x27;re injected at execution boundaries by the framework</li>
+<li><strong>Credential broker</strong> — Built-in service that handles Keychain interaction, TOTP validation, and grant file management</li>
+<li><strong>Three-tier access model</strong> — Open/Controlled/Restricted tiers with configurable TTLs, enforced at the framework level</li>
+<li><strong>macOS Keychain integration</strong> — Secrets encrypted at rest using the Secure Enclave, with automatic unlock handling</li>
+</ul>
+<p><strong>What this means:</strong> The manual scripts and setup procedures described below are the <strong>proof-of-concept</strong> that informed the design. The native implementation in OpenClaw handles all of this automatically — no custom scripts required.</p>
+<p>If you&#x27;re setting up OpenClaw fresh, the native <code>openclaw secrets</code> and <code>openclaw elevate</code> commands are the recommended approach. The rest of this guide documents the manual implementation for reference, deeper understanding, and compatibility with environments where the native features aren&#x27;t available yet.</p>
+<hr/>
+<h2>Part 1: Dedicated User Setup</h2>
+<h3>Create the OpenClaw System User</h3>
+<p>Create a non-admin system user with no login shell:</p>
+<pre><code class="language-bash"># Create system user (UID 400 = below normal user range)
+sudo dscl . -create /Users/openclaw
+sudo dscl . -create /Users/openclaw UserShell /bin/bash
+sudo dscl . -create /Users/openclaw UniqueID 400
+sudo dscl . -create /Users/openclaw PrimaryGroupID 20
+sudo dscl . -create /Users/openclaw NFSHomeDirectory /opt/openclaw
+sudo dscl . -create /Users/openclaw RealName &quot;OpenClaw Agent&quot;
+
+# Create home directory
+sudo mkdir -p /opt/openclaw
+sudo chown openclaw:wheel /opt/openclaw
+</code></pre>
+<h3>Migrate OpenClaw Data</h3>
+<p>Move the <code>.openclaw</code> directory to the new user&#x27;s home:</p>
+<pre><code class="language-bash"># Stop OpenClaw first
+openclaw gateway stop
+
+# Move data
+sudo mv ~/.openclaw /opt/openclaw/.openclaw
+sudo chown -R openclaw:wheel /opt/openclaw/.openclaw
+
+# Create symlink so your user still works
+ln -s /opt/openclaw/.openclaw ~/.openclaw
+</code></pre>
+<h3>Set Directory Permissions</h3>
+<p>The key insight: the openclaw user&#x27;s home should be traversable (<code>711</code>) but not listable by other users.</p>
+<pre><code class="language-bash"># openclaw&#x27;s data directory — traversable but not listable
+sudo chmod 711 /opt/openclaw/.openclaw
+
+# Workspace — read/write for openclaw, traversable by your user
+sudo chmod 755 /opt/openclaw/.openclaw/workspace
+
+# Credentials — only openclaw can access
+sudo chmod 700 /opt/openclaw/.openclaw/credentials
+</code></pre>
+<h3>Run OpenClaw as the Dedicated User</h3>
+<p>Create a LaunchDaemon (not LaunchAgent) so it runs as the openclaw user at boot:</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot;
+  &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+  &lt;key&gt;Label&lt;/key&gt;
+  &lt;string&gt;ai.openclaw.gateway&lt;/string&gt;
+  &lt;key&gt;UserName&lt;/key&gt;
+  &lt;string&gt;openclaw&lt;/string&gt;
+  &lt;key&gt;ProgramArguments&lt;/key&gt;
+  &lt;array&gt;
+    &lt;string&gt;/opt/homebrew/bin/node&lt;/string&gt;
+    &lt;string&gt;/opt/homebrew/lib/node_modules/openclaw/dist/gateway.js&lt;/string&gt;
+  &lt;/array&gt;
+  &lt;key&gt;WorkingDirectory&lt;/key&gt;
+  &lt;string&gt;/opt/openclaw&lt;/string&gt;
+  &lt;key&gt;EnvironmentVariables&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;HOME&lt;/key&gt;
+    &lt;string&gt;/opt/openclaw&lt;/string&gt;
+    &lt;key&gt;PATH&lt;/key&gt;
+    &lt;string&gt;/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&lt;/string&gt;
+  &lt;/dict&gt;
+  &lt;key&gt;RunAtLoad&lt;/key&gt;
+  &lt;true/&gt;
+  &lt;key&gt;KeepAlive&lt;/key&gt;
+  &lt;true/&gt;
+  &lt;key&gt;StandardOutPath&lt;/key&gt;
+  &lt;string&gt;/opt/openclaw/.openclaw/logs/gateway.log&lt;/string&gt;
+  &lt;key&gt;StandardErrorPath&lt;/key&gt;
+  &lt;string&gt;/opt/openclaw/.openclaw/logs/gateway.err&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+<p>Save to <code>/Library/LaunchDaemons/ai.openclaw.gateway.plist</code> and load:</p>
+<pre><code class="language-bash">sudo launchctl load /Library/LaunchDaemons/ai.openclaw.gateway.plist
+</code></pre>
+<h2>Part 2: Keychain-Backed Secrets</h2>
+<h3>Why Not Just Files?</h3>
+<p>Plaintext files on disk can be read by any process running as the same user. macOS Keychain encrypts secrets with the Secure Enclave — even if someone copies the Keychain file, they can&#x27;t read it without the password.</p>
+<h3>Create a Dedicated Keychain</h3>
+<p>Don&#x27;t use your login keychain — it locks when you&#x27;re not logged in interactively. Create a dedicated one:</p>
+<pre><code class="language-bash"># As your user (not openclaw)
+security create-keychain -p &#x27;your-keychain-password&#x27; \
+  ~/Library/Keychains/openclaw-secrets.keychain-db
+
+# Prevent auto-lock
+security set-keychain-settings ~/Library/Keychains/openclaw-secrets.keychain-db
+
+# Add to search list
+security list-keychains -d user -s \
+  $(security list-keychains -d user | tr -d &#x27;&quot;&#x27;) \
+  ~/Library/Keychains/openclaw-secrets.keychain-db
+</code></pre>
+<h3>Load Secrets into Keychain</h3>
+<pre><code class="language-bash"># For each secret:
+security add-generic-password \
+  -s &quot;your-app-name&quot; \
+  -a &quot;secret_name&quot; \
+  -w &quot;$(cat /path/to/secret-file.txt)&quot; \
+  -A ~/Library/Keychains/openclaw-secrets.keychain-db
+</code></pre>
+<h3>Create a Secrets Broker</h3>
+<p>The broker runs as <strong>your user</strong> (not openclaw) and reads from the Keychain. OpenClaw calls it via <code>sudo</code>.</p>
+<p><strong><code>secrets-broker</code></strong> — save to your workspace scripts directory:</p>
+<pre><code class="language-bash">#!/bin/bash
+set -euo pipefail
+
+KEYCHAIN_SERVICE=&quot;your-app-name&quot;
+KEYCHAIN=&quot;$HOME/Library/Keychains/openclaw-secrets.keychain-db&quot;
+KEYCHAIN_PASS=&quot;your-keychain-password&quot;
+
+name=&quot;${1:?secret name required}&quot;
+
+# Unlock keychain (idempotent)
+security unlock-keychain -p &quot;$KEYCHAIN_PASS&quot; &quot;$KEYCHAIN&quot; 2&gt;/dev/null
+
+# Read secret
+secret=$(security find-generic-password -s &quot;$KEYCHAIN_SERVICE&quot; \
+  -a &quot;$name&quot; -w &quot;$KEYCHAIN&quot; 2&gt;/dev/null) || {
+  echo &quot;ERROR: Secret &#x27;$name&#x27; not found&quot; &gt;&amp;2
+  exit 1
+}
+
+echo -n &quot;$secret&quot;
+</code></pre>
+<h3>Configure Sudoers</h3>
+<p>Allow the openclaw user to call the broker as your user, without a password:</p>
+<pre><code class="language-bash">sudo visudo -f /etc/sudoers.d/openclaw-secrets
+</code></pre>
+<p>Add:</p>
+<pre><code>openclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker
+</code></pre>
+<h3>Test</h3>
+<pre><code class="language-bash">sudo -u openclaw bash -c &#x27;sudo -u yourusername /path/to/secrets-broker secret_name&#x27;
+</code></pre>
+<h2>Part 3: TOTP-Based Approval Gates</h2>
+<h3>The Problem</h3>
+<p>Even with the Keychain, openclaw can call the broker anytime for any secret. We need a gate: <strong>certain secrets require your explicit approval with a time-limited code from your phone.</strong></p>
+<h3>Three-Tier Access Model</h3>
+<table><thead><tr><th>Tier</th><th>Approval</th><th>TTL</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>Open</strong></td><td>None</td><td>Unlimited</td><td>Webhook URLs, app IDs — low-sensitivity</td></tr><tr><td><strong>Controlled</strong></td><td>TOTP code</td><td>4 hours</td><td>API tokens — medium-sensitivity</td></tr><tr><td><strong>Restricted</strong></td><td>TOTP code</td><td>15 minutes</td><td>Private keys, OAuth secrets — high-sensitivity</td></tr></tbody></table>
+<h3>Set Up TOTP</h3>
+<p>Generate a shared secret and add it to your authenticator app:</p>
+<pre><code class="language-bash"># Generate secret
+TOTP_SECRET=$(python3 -c &quot;import secrets, base64; print(base64.b32encode(secrets.token_bytes(20)).decode())&quot;)
+
+# Store in Keychain (your user only)
+security add-generic-password -s &quot;your-app-name&quot; -a &quot;totp_secret&quot; \
+  -w &quot;$TOTP_SECRET&quot; -A ~/Library/Keychains/openclaw-secrets.keychain-db
+
+# Generate QR code URL for your authenticator app
+echo &quot;otpauth://totp/YourApp:secrets?secret=${TOTP_SECRET}&amp;issuer=YourApp&quot;
+</code></pre>
+<p>Scan the QR code (or enter the secret manually) in Microsoft Authenticator, Google Authenticator, or any TOTP app.</p>
+<h3>TOTP Validator</h3>
+<p><strong><code>secrets-totp-validate</code></strong> — Python 3, zero dependencies:</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+&quot;&quot;&quot;Validate TOTP codes. No external dependencies.&quot;&quot;&quot;
+import hmac, hashlib, struct, time, subprocess, sys, base64
+
+def get_secret():
+    result = subprocess.run(
+        [&#x27;security&#x27;, &#x27;find-generic-password&#x27;,
+         &#x27;-s&#x27;, &#x27;your-app-name&#x27;, &#x27;-a&#x27;, &#x27;totp_secret&#x27;, &#x27;-w&#x27;,
+         &#x27;~/Library/Keychains/openclaw-secrets.keychain-db&#x27;],
+        capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        return None
+    secret = result.stdout.strip()
+    # Keychain may hex-encode binary content
+    if all(c in &#x27;0123456789abcdefABCDEF&#x27; for c in secret):
+        secret = bytes.fromhex(secret).decode()
+    return secret
+
+def generate_totp(secret_b32, offset=0):
+    key = base64.b32decode(secret_b32.upper() + &#x27;=&#x27; * (-len(secret_b32) % 8))
+    counter = (int(time.time()) // 30) + offset
+    h = hmac.new(key, struct.pack(&#x27;&gt;Q&#x27;, counter), hashlib.sha1).digest()
+    o = h[-1] &amp; 0x0F
+    code = (struct.unpack(&#x27;&gt;I&#x27;, h[o:o+4])[0] &amp; 0x7FFFFFFF) % 1000000
+    return str(code).zfill(6)
+
+if __name__ == &#x27;__main__&#x27;:
+    code = sys.argv[1] if len(sys.argv) &gt; 1 else &#x27;&#x27;
+    secret = get_secret()
+    if not secret:
+        sys.exit(2)
+    # Allow ±30 second drift
+    if any(generate_totp(secret, offset=o) == code for o in [-1, 0, 1]):
+        sys.exit(0)
+    sys.exit(1)
+</code></pre>
+<h3>Approval Script</h3>
+<p><strong><code>secrets-approve</code></strong> — validates TOTP, then writes a time-limited grant file:</p>
+<pre><code class="language-bash">#!/bin/bash
+set -euo pipefail
+
+GRANTS_DIR=&quot;/path/to/grants&quot;
+VALIDATOR=&quot;/path/to/secrets-totp-validate&quot;
+
+name=&quot;${1:?secret name required}&quot;
+code=&quot;${2:?TOTP code required}&quot;
+ttl=&quot;${3:-240}&quot;  # minutes
+
+# Validate TOTP
+if ! python3 &quot;$VALIDATOR&quot; &quot;$code&quot; 2&gt;/dev/null; then
+  echo &quot;DENIED: Invalid TOTP code&quot; &gt;&amp;2
+  exit 1
+fi
+
+# Write grant with expiry timestamp
+expires=$(date -v+${ttl}M +%s)
+echo &quot;$expires&quot; &gt; &quot;$GRANTS_DIR/${name}.grant&quot;
+chmod 644 &quot;$GRANTS_DIR/${name}.grant&quot;
+
+echo &quot;GRANTED: $name for ${ttl}m&quot;
+</code></pre>
+<h3>Critical: Grants Directory Ownership</h3>
+<p>The grants directory <strong>must</strong> be owned by your user — not openclaw:</p>
+<pre><code class="language-bash">sudo mkdir -p /path/to/grants
+sudo chown yourusername:wheel /path/to/grants
+sudo chmod 755 /path/to/grants
+</code></pre>
+<p>This is the core security property: <strong>openclaw cannot write grant files</strong>. The only path to a grant is through the approve script, which requires a valid TOTP code.</p>
+<h3>Update Sudoers</h3>
+<p>Add the approve script alongside the broker:</p>
+<pre><code>openclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker, /path/to/secrets-approve
+</code></pre>
+<h3>Usage Flow</h3>
+<pre><div style="margin:1.5rem 0;display:flex;justify-content:center;overflow:auto;min-height:100px"></div></pre>
+<h3>Revoking Access</h3>
+<p>Delete the grant file to immediately cut off access:</p>
+<pre><code class="language-bash">rm /path/to/grants/secret_name.grant
+</code></pre>
+<h2>Security Properties</h2>
+<table><thead><tr><th>Attack Vector</th><th>Mitigation</th></tr></thead><tbody><tr><td>Compromised openclaw process</td><td>Can&#x27;t read Keychain (wrong user), can&#x27;t write grants (wrong owner)</td></tr><tr><td>Stolen Keychain file</td><td>Encrypted, requires password to decrypt</td></tr><tr><td>Replay attack on TOTP</td><td>30-second window, codes expire, ±1 step drift only</td></tr><tr><td>Brute-force TOTP</td><td>6 digits = 1M combinations, 30-second rotation</td></tr><tr><td>Grant file tampering</td><td>Owned by your user, openclaw has read-only access</td></tr><tr><td>Broker script modification</td><td>Sudoers specifies exact path; if openclaw modifies it, it runs as openclaw (no Keychain access)</td></tr><tr><td>Unauthorized sudo</td><td>TOTP-gated, 30-minute sessions, can&#x27;t self-approve</td></tr></tbody></table>
+<h2>Part 4: TOTP-Gated Elevated Access (Sudo)</h2>
+<h3>The Problem</h3>
+<p>Sometimes the AI agent legitimately needs root access — installing packages, changing file ownership, managing system services. But permanent sudo is dangerous.</p>
+<h3>Solution: Time-Limited Elevated Sessions</h3>
+<p>The same TOTP pattern gates sudo access. The agent requests elevation, you approve with a code from your phone, and it gets a 30-minute root session.</p>
+<h3>Elevation Script</h3>
+<p><strong><code>secrets-elevate</code></strong> — runs as your user via sudoers, validates TOTP, then executes commands as root:</p>
+<pre><code class="language-bash">#!/bin/bash
+set -euo pipefail
+
+VALIDATOR=&quot;/path/to/secrets-totp-validate&quot;
+GRANTS_DIR=&quot;/path/to/grants&quot;
+GRANT_FILE=&quot;$GRANTS_DIR/elevated.grant&quot;
+
+code=&quot;${1:?TOTP code required}&quot;
+shift
+cmd=&quot;$@&quot;
+
+# Check for existing valid session
+if [[ &quot;$code&quot; == &quot;session&quot; ]] &amp;&amp; [[ -f &quot;$GRANT_FILE&quot; ]]; then
+  expires=$(cat &quot;$GRANT_FILE&quot;)
+  now=$(date +%s)
+  if [[ &quot;$now&quot; -lt &quot;$expires&quot; ]]; then
+    eval &quot;$cmd&quot;
+    exit $?
+  fi
+  echo &quot;ERROR: Elevated session expired. Provide new TOTP code.&quot; &gt;&amp;2
+  exit 1
+fi
+
+# Validate TOTP
+if ! python3 &quot;$VALIDATOR&quot; &quot;$code&quot; 2&gt;/dev/null; then
+  echo &quot;DENIED: Invalid TOTP code&quot; &gt;&amp;2
+  exit 1
+fi
+
+# Grant 30-minute elevated session
+expires=$(date -v+30M +%s)
+echo &quot;$expires&quot; &gt; &quot;$GRANT_FILE&quot;
+chmod 644 &quot;$GRANT_FILE&quot;
+echo &quot;ELEVATED: 30-minute window granted&quot;
+
+# Execute the command
+eval &quot;$cmd&quot;
+</code></pre>
+<h3>Wrapper for the AI Agent</h3>
+<p><strong><code>elevate</code></strong> — the agent calls this, which routes through your user:</p>
+<pre><code class="language-bash">#!/bin/bash
+set -euo pipefail
+
+ELEVATE=&quot;/path/to/secrets-elevate&quot;
+code=&quot;${1:?Usage: elevate &lt;totp_code|session&gt; &lt;command&gt;}&quot;
+shift
+
+sudo -u yourusername &quot;$ELEVATE&quot; &quot;$code&quot; &quot;sudo $*&quot;
+</code></pre>
+<h3>Update Sudoers</h3>
+<p>Add the elevate script to the allowed commands:</p>
+<pre><code>openclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker, /path/to/secrets-approve, /path/to/secrets-elevate
+yourusername ALL=(ALL) NOPASSWD: ALL
+</code></pre>
+<h3>Usage Flow</h3>
+<pre><code>AI needs root access
+  → Asks you: &quot;Need sudo to chown a file&quot;
+  → You reply: &quot;approve elevate 482916&quot;
+  → AI runs: elevate 482916 chown openclaw:wheel /some/file
+  → TOTP validated → 30-min root session opens → command runs
+  → Next 30 min: elevate session &lt;command&gt;  (no TOTP needed)
+  → After 30 min: session expires, needs fresh TOTP
+</code></pre>
+<h3>Security Properties</h3>
+<ul>
+<li><strong>Cannot self-approve</strong> — openclaw can&#x27;t write the elevated grant file</li>
+<li><strong>Time-boxed</strong> — 30 minutes max, then must re-authenticate</li>
+<li><strong>Auditable</strong> — every elevation goes through the same TOTP validation</li>
+<li><strong>Mobile-friendly</strong> — approve from your phone via chat</li>
+</ul>
+<h2>Cleanup</h2>
+<p>After migrating secrets to Keychain, securely delete the plaintext files:</p>
+<pre><code class="language-bash"># macOS secure delete
+rm -P /path/to/credentials/*.txt /path/to/credentials/*.pem
+
+# Back up critical secrets (PEM keys, OAuth secrets) to a password manager first
+</code></pre>
+<h2>Summary</h2>
+<ol>
+<li><strong>User isolation</strong> — OpenClaw runs as a dedicated non-admin user</li>
+<li><strong>Keychain encryption</strong> — Secrets encrypted at rest by macOS Secure Enclave</li>
+<li><strong>Tiered access</strong> — Open secrets flow freely; sensitive ones need approval</li>
+<li><strong>TOTP gates</strong> — Approval requires a 6-digit code from your phone</li>
+<li><strong>Ownership separation</strong> — Grants dir owned by human user, not the AI agent</li>
+<li><strong>Time-limited access</strong> — Grants expire automatically (15min to 4hr)</li>
+<li><strong>Instant revocation</strong> — Delete grant file to cut access immediately</li>
+<li><strong>Gated sudo</strong> — Root access requires TOTP, expires after 30 minutes</li>
+</ol>
+<p>The AI agent can operate autonomously for routine tasks while sensitive operations — secret access and root privileges — require your explicit, time-limited, cryptographically-verified approval from your phone.</p>
+<hr/>
+<h2>Going Native</h2>
+<p>The manual scripts and approaches documented in this guide were the <strong>proof of concept</strong> that validated the design. Bamwerks contributed this work upstream to OpenClaw as native framework features.</p>
+<p><strong>PR #27275:</strong> <a href="https://github.com/openclaw/openclaw/pull/27275">github.com/openclaw/openclaw/pull/27275</a></p>
+<p>The native implementation packages everything into <code>openclaw secrets</code> and <code>openclaw elevate</code> commands:</p>
+<ul>
+<li><strong>For new setups:</strong> Use the native commands. They handle Keychain integration, TOTP validation, grant management, and user isolation automatically.</li>
+<li><strong>For existing script-based setups:</strong> Both approaches are compatible. The native implementation follows the same security model (Keychain encryption, TOTP gates, time-limited grants, ownership separation).</li>
+<li><strong>Migration path:</strong> The native commands can coexist with the manual scripts. Switch at your own pace.</li>
+</ul>
+<p>If you&#x27;re just getting started with OpenClaw secrets management, skip the manual setup and go straight to the native commands. This guide remains useful for understanding the underlying architecture, troubleshooting, and environments where the native features aren&#x27;t available.</p></div></div></div><!--$--><!--/$--></main><footer style="border-top:1px solid var(--border);background-color:rgba(0, 0, 0, 0.3);margin-top:auto" class="jsx-2cbee0dfcdb548c7"><div style="max-width:1200px;margin:0 auto;padding:2rem 1.5rem" class="jsx-2cbee0dfcdb548c7"><div style="display:grid;grid-template-columns:1fr;gap:2rem" class="jsx-2cbee0dfcdb548c7"><div class="jsx-2cbee0dfcdb548c7"><div style="font-size:1.25rem;font-weight:700;color:var(--fg);margin-bottom:0.5rem" class="jsx-2cbee0dfcdb548c7">Bamwerks</div><p style="color:var(--fg-muted);font-size:0.875rem;font-style:italic;margin:0" class="jsx-2cbee0dfcdb548c7">Curiosity. Knowledge. Enlightenment.</p></div><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Explore</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a class="footer-link" href="/dev/about">About</a><a class="footer-link" href="/dev/agents">Agents</a><a class="footer-link" href="/dev/docs/forge-methodology">FORGE</a><a class="footer-link" href="/dev/docs">Docs</a></div></div><div class="jsx-2cbee0dfcdb548c7"><div style="display:flex;flex-direction:column;gap:1.5rem" class="jsx-2cbee0dfcdb548c7"><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Community</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a href="https://github.com/bamwerks" target="_blank" rel="noopener noreferrer" class="jsx-2cbee0dfcdb548c7 footer-link">GitHub</a><a href="https://discord.com/invite/clawd" target="_blank" rel="noopener noreferrer" class="jsx-2cbee0dfcdb548c7 footer-link">OpenClaw Discord</a></div></div><div class="jsx-2cbee0dfcdb548c7"><h3 style="color:var(--fg);font-size:0.875rem;font-weight:600;margin-bottom:0.75rem;margin-top:0" class="jsx-2cbee0dfcdb548c7">Legal</h3><div style="display:flex;flex-direction:column;gap:0.5rem" class="jsx-2cbee0dfcdb548c7"><a class="footer-link" href="/dev/charter">Charter</a></div></div></div></div></div></div><div style="border-top:1px solid var(--border);background-color:rgba(0, 0, 0, 0.2)" class="jsx-2cbee0dfcdb548c7"><div style="max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:0.5rem;text-align:center" class="jsx-2cbee0dfcdb548c7"><p style="color:var(--fg-muted);font-size:0.875rem;margin:0" class="jsx-2cbee0dfcdb548c7">© 2026 Bamwerks. Built with FORGE.</p><p style="color:var(--fg-muted);font-size:0.875rem;margin:0" class="jsx-2cbee0dfcdb548c7">Building in the age of autonomous systems.</p></div></div></footer></div><button aria-label="Back to top" style="position:fixed;bottom:var(--space-6);right:var(--space-6);width:2.75rem;height:2.75rem;border-radius:50%;background-color:var(--card);border:1px solid var(--border);color:var(--fg-muted);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.25rem;font-weight:600;z-index:40;transition:all 0.2s ease;box-shadow:var(--shadow-lg);opacity:0;transform:translateY(10px)">↑</button><script src="/dev/_next/static/chunks/webpack-f4d00b63941efcaf.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[8090,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n3:I[2419,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n4:I[7739,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\n7:I[3293,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"345\",\"static/chunks/app/not-found-9be4d800e9a0456a.js\"],\"default\"]\n8:I[1142,[\"177\",\"static/chunks/app/layout-c1273be838252d49.js\"],\"default\"]\n9:I[1811,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"816\",\"static/chunks/app/(public)/layout-6e4817922e2cbc01.js\"],\"default\"]\na:I[8964,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"880\",\"static/chunks/app/(public)/error-b23ef5082157f054.js\"],\"default\"]\nb:I[5933,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"239\",\"static/chunks/239-b49c00cfb883ad51.js\",\"286\",\"static/chunks/286-ee991843c534a420.js\",\"816\",\"static/chunks/app/(public)/layout-6e4817922e2cbc01.js\"],\"default\"]\nd:I[4431,[],\"OutletBoundary\"]\nf:I[5278,[],\"AsyncMetadataOutlet\"]\n11:I[4431,[],\"ViewportBoundary\"]\n13:I[4431,[],\"MetadataBoundary\"]\n14:\"$Sreact.suspense\"\n16:I[7150,[],\"\"]\n:HL[\"/dev/_next/static/css/8a073e99cfc82f8c.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"IDeJcYmZkvqzXNPeJyWMV\",\"p\":\"/dev\",\"c\":[\"\",\"docs\",\"security-hardening\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"(public)\",{\"children\":[\"docs\",{\"children\":[\"security-hardening\",{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/dev/_next/static/css/8a073e99cfc82f8c.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[false,[\"$\",\"meta\",null,{\"name\":\"referrer\",\"content\":\"strict-origin-when-cross-origin\"}],[\"$\",\"script\",null,{\"defer\":true,\"src\":\"https://static.cloudflareinsights.com/beacon.min.js\",\"data-cf-beacon\":\"{\\\"token\\\": \\\"TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN\\\"}\"}]]}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"a\",null,{\"href\":\"#main-content\",\"className\":\"skip-to-content\",\"children\":\"Skip to main content\"}],[\"$\",\"$L3\",null,{\"children\":[\"$\",\"$L4\",null,{\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"$L7\",null,{}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}],[\"$\",\"$L8\",null,{}]]}]]}]]}],{\"children\":[\"(public)\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"div\",null,{\"style\":{\"minHeight\":\"100vh\",\"display\":\"flex\",\"flexDirection\":\"column\"},\"children\":[[\"$\",\"$L9\",null,{}],[\"$\",\"main\",null,{\"id\":\"main-content\",\"style\":{\"flex\":1},\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$a\",\"errorStyles\":[],\"errorScripts\":[],\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"$Lb\",null,{}]]}]]}],{\"children\":[\"docs\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"security-hardening\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$Lc\",null,[\"$\",\"$Ld\",null,{\"children\":[\"$Le\",[\"$\",\"$Lf\",null,{\"promise\":\"$@10\"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L11\",null,{\"children\":\"$L12\"}],null],[\"$\",\"$L13\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$14\",null,{\"fallback\":null,\"children\":\"$L15\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$16\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"12:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\ne:null\n"])</script><script>self.__next_f.push([1,"17:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"10:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Security Hardening — Bamwerks Docs\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Security hardening measures and best practices for Bamwerks operations.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"alternate\",\"type\":\"application/rss+xml\",\"href\":\"https://bamwerks.info/feed.xml\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:title\",\"content\":\"Security Hardening\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:description\",\"content\":\"Security hardening measures and best practices for Bamwerks operations.\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"Bamwerks — AI Agent Organization\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment.\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:image\",\"content\":\"https://bamwerks.info/og-image.png\"}],[\"$\",\"link\",\"10\",{\"rel\":\"icon\",\"href\":\"/bamhenge.png\"}],[\"$\",\"$L17\",\"11\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"15:\"$10:metadata\"\n"])</script><script>self.__next_f.push([1,"18:I[83,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"84\",\"static/chunks/84-bb06d3a2b680d4b8.js\",\"890\",\"static/chunks/app/(public)/docs/security-hardening/page-d61efc215092ce08.js\"],\"default\"]\n19:I[1747,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"84\",\"static/chunks/84-bb06d3a2b680d4b8.js\",\"890\",\"static/chunks/app/(public)/docs/security-hardening/page-d61efc215092ce08.js\"],\"default\"]\n1a:T43c3,"])</script><script>self.__next_f.push([1,"# Security Hardening Guide: OpenClaw User Isolation \u0026 2FA Secrets\n\nA practical guide to running OpenClaw as a dedicated non-admin user with hardware-backed secrets management and TOTP-based approval gates.\n\n## Why This Matters\n\nBy default, OpenClaw runs as your user account — meaning it has access to your files, credentials, SSH keys, and anything your user can touch. This guide separates the AI agent into its own restricted user, then locks secrets behind macOS Keychain with 2FA approval you control from your phone.\n\n**Threat model:** Even if the AI agent process is fully compromised, an attacker cannot:\n- Access your personal files or credentials\n- Read secrets without your phone's authenticator app\n- Bypass the approval gate (grants directory is owned by a different user)\n- Persist access beyond the TTL you set\n- Gain root/sudo access without a valid TOTP code from your phone\n\n---\n\n## Native Secrets Management (Upstream Contribution)\n\nBamwerks contributed **native secrets management** directly to OpenClaw itself — implementing the concepts from this guide as first-class framework features.\n\n**PR #27275:** [github.com/openclaw/openclaw/pull/27275](https://github.com/openclaw/openclaw/pull/27275)\n\nThe native implementation provides:\n\n- **`openclaw secrets` CLI** — Store, retrieve, and manage encrypted secrets via a unified command-line interface\n- **`openclaw elevate` command** — TOTP-gated sudo sessions with time-limited grants\n- **Agent-blind credential mode** — Secrets are never exposed in agent context; they're injected at execution boundaries by the framework\n- **Credential broker** — Built-in service that handles Keychain interaction, TOTP validation, and grant file management\n- **Three-tier access model** — Open/Controlled/Restricted tiers with configurable TTLs, enforced at the framework level\n- **macOS Keychain integration** — Secrets encrypted at rest using the Secure Enclave, with automatic unlock handling\n\n**What this means:** The manual scripts and setup procedures described below are the **proof-of-concept** that informed the design. The native implementation in OpenClaw handles all of this automatically — no custom scripts required.\n\nIf you're setting up OpenClaw fresh, the native `openclaw secrets` and `openclaw elevate` commands are the recommended approach. The rest of this guide documents the manual implementation for reference, deeper understanding, and compatibility with environments where the native features aren't available yet.\n\n---\n\n## Part 1: Dedicated User Setup\n\n### Create the OpenClaw System User\n\nCreate a non-admin system user with no login shell:\n\n```bash\n# Create system user (UID 400 = below normal user range)\nsudo dscl . -create /Users/openclaw\nsudo dscl . -create /Users/openclaw UserShell /bin/bash\nsudo dscl . -create /Users/openclaw UniqueID 400\nsudo dscl . -create /Users/openclaw PrimaryGroupID 20\nsudo dscl . -create /Users/openclaw NFSHomeDirectory /opt/openclaw\nsudo dscl . -create /Users/openclaw RealName \"OpenClaw Agent\"\n\n# Create home directory\nsudo mkdir -p /opt/openclaw\nsudo chown openclaw:wheel /opt/openclaw\n```\n\n### Migrate OpenClaw Data\n\nMove the `.openclaw` directory to the new user's home:\n\n```bash\n# Stop OpenClaw first\nopenclaw gateway stop\n\n# Move data\nsudo mv ~/.openclaw /opt/openclaw/.openclaw\nsudo chown -R openclaw:wheel /opt/openclaw/.openclaw\n\n# Create symlink so your user still works\nln -s /opt/openclaw/.openclaw ~/.openclaw\n```\n\n### Set Directory Permissions\n\nThe key insight: the openclaw user's home should be traversable (`711`) but not listable by other users.\n\n```bash\n# openclaw's data directory — traversable but not listable\nsudo chmod 711 /opt/openclaw/.openclaw\n\n# Workspace — read/write for openclaw, traversable by your user\nsudo chmod 755 /opt/openclaw/.openclaw/workspace\n\n# Credentials — only openclaw can access\nsudo chmod 700 /opt/openclaw/.openclaw/credentials\n```\n\n### Run OpenClaw as the Dedicated User\n\nCreate a LaunchDaemon (not LaunchAgent) so it runs as the openclaw user at boot:\n\n```xml\n\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003c!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\"\n  \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"\u003e\n\u003cplist version=\"1.0\"\u003e\n\u003cdict\u003e\n  \u003ckey\u003eLabel\u003c/key\u003e\n  \u003cstring\u003eai.openclaw.gateway\u003c/string\u003e\n  \u003ckey\u003eUserName\u003c/key\u003e\n  \u003cstring\u003eopenclaw\u003c/string\u003e\n  \u003ckey\u003eProgramArguments\u003c/key\u003e\n  \u003carray\u003e\n    \u003cstring\u003e/opt/homebrew/bin/node\u003c/string\u003e\n    \u003cstring\u003e/opt/homebrew/lib/node_modules/openclaw/dist/gateway.js\u003c/string\u003e\n  \u003c/array\u003e\n  \u003ckey\u003eWorkingDirectory\u003c/key\u003e\n  \u003cstring\u003e/opt/openclaw\u003c/string\u003e\n  \u003ckey\u003eEnvironmentVariables\u003c/key\u003e\n  \u003cdict\u003e\n    \u003ckey\u003eHOME\u003c/key\u003e\n    \u003cstring\u003e/opt/openclaw\u003c/string\u003e\n    \u003ckey\u003ePATH\u003c/key\u003e\n    \u003cstring\u003e/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin\u003c/string\u003e\n  \u003c/dict\u003e\n  \u003ckey\u003eRunAtLoad\u003c/key\u003e\n  \u003ctrue/\u003e\n  \u003ckey\u003eKeepAlive\u003c/key\u003e\n  \u003ctrue/\u003e\n  \u003ckey\u003eStandardOutPath\u003c/key\u003e\n  \u003cstring\u003e/opt/openclaw/.openclaw/logs/gateway.log\u003c/string\u003e\n  \u003ckey\u003eStandardErrorPath\u003c/key\u003e\n  \u003cstring\u003e/opt/openclaw/.openclaw/logs/gateway.err\u003c/string\u003e\n\u003c/dict\u003e\n\u003c/plist\u003e\n```\n\nSave to `/Library/LaunchDaemons/ai.openclaw.gateway.plist` and load:\n\n```bash\nsudo launchctl load /Library/LaunchDaemons/ai.openclaw.gateway.plist\n```\n\n## Part 2: Keychain-Backed Secrets\n\n### Why Not Just Files?\n\nPlaintext files on disk can be read by any process running as the same user. macOS Keychain encrypts secrets with the Secure Enclave — even if someone copies the Keychain file, they can't read it without the password.\n\n### Create a Dedicated Keychain\n\nDon't use your login keychain — it locks when you're not logged in interactively. Create a dedicated one:\n\n```bash\n# As your user (not openclaw)\nsecurity create-keychain -p 'your-keychain-password' \\\n  ~/Library/Keychains/openclaw-secrets.keychain-db\n\n# Prevent auto-lock\nsecurity set-keychain-settings ~/Library/Keychains/openclaw-secrets.keychain-db\n\n# Add to search list\nsecurity list-keychains -d user -s \\\n  $(security list-keychains -d user | tr -d '\"') \\\n  ~/Library/Keychains/openclaw-secrets.keychain-db\n```\n\n### Load Secrets into Keychain\n\n```bash\n# For each secret:\nsecurity add-generic-password \\\n  -s \"your-app-name\" \\\n  -a \"secret_name\" \\\n  -w \"$(cat /path/to/secret-file.txt)\" \\\n  -A ~/Library/Keychains/openclaw-secrets.keychain-db\n```\n\n### Create a Secrets Broker\n\nThe broker runs as **your user** (not openclaw) and reads from the Keychain. OpenClaw calls it via `sudo`.\n\n**`secrets-broker`** — save to your workspace scripts directory:\n\n```bash\n#!/bin/bash\nset -euo pipefail\n\nKEYCHAIN_SERVICE=\"your-app-name\"\nKEYCHAIN=\"$HOME/Library/Keychains/openclaw-secrets.keychain-db\"\nKEYCHAIN_PASS=\"your-keychain-password\"\n\nname=\"${1:?secret name required}\"\n\n# Unlock keychain (idempotent)\nsecurity unlock-keychain -p \"$KEYCHAIN_PASS\" \"$KEYCHAIN\" 2\u003e/dev/null\n\n# Read secret\nsecret=$(security find-generic-password -s \"$KEYCHAIN_SERVICE\" \\\n  -a \"$name\" -w \"$KEYCHAIN\" 2\u003e/dev/null) || {\n  echo \"ERROR: Secret '$name' not found\" \u003e\u00262\n  exit 1\n}\n\necho -n \"$secret\"\n```\n\n### Configure Sudoers\n\nAllow the openclaw user to call the broker as your user, without a password:\n\n```bash\nsudo visudo -f /etc/sudoers.d/openclaw-secrets\n```\n\nAdd:\n```\nopenclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker\n```\n\n### Test\n\n```bash\nsudo -u openclaw bash -c 'sudo -u yourusername /path/to/secrets-broker secret_name'\n```\n\n## Part 3: TOTP-Based Approval Gates\n\n### The Problem\n\nEven with the Keychain, openclaw can call the broker anytime for any secret. We need a gate: **certain secrets require your explicit approval with a time-limited code from your phone.**\n\n### Three-Tier Access Model\n\n| Tier | Approval | TTL | Use Case |\n|------|----------|-----|----------|\n| **Open** | None | Unlimited | Webhook URLs, app IDs — low-sensitivity |\n| **Controlled** | TOTP code | 4 hours | API tokens — medium-sensitivity |\n| **Restricted** | TOTP code | 15 minutes | Private keys, OAuth secrets — high-sensitivity |\n\n### Set Up TOTP\n\nGenerate a shared secret and add it to your authenticator app:\n\n```bash\n# Generate secret\nTOTP_SECRET=$(python3 -c \"import secrets, base64; print(base64.b32encode(secrets.token_bytes(20)).decode())\")\n\n# Store in Keychain (your user only)\nsecurity add-generic-password -s \"your-app-name\" -a \"totp_secret\" \\\n  -w \"$TOTP_SECRET\" -A ~/Library/Keychains/openclaw-secrets.keychain-db\n\n# Generate QR code URL for your authenticator app\necho \"otpauth://totp/YourApp:secrets?secret=${TOTP_SECRET}\u0026issuer=YourApp\"\n```\n\nScan the QR code (or enter the secret manually) in Microsoft Authenticator, Google Authenticator, or any TOTP app.\n\n### TOTP Validator\n\n**`secrets-totp-validate`** — Python 3, zero dependencies:\n\n```python\n#!/usr/bin/env python3\n\"\"\"Validate TOTP codes. No external dependencies.\"\"\"\nimport hmac, hashlib, struct, time, subprocess, sys, base64\n\ndef get_secret():\n    result = subprocess.run(\n        ['security', 'find-generic-password',\n         '-s', 'your-app-name', '-a', 'totp_secret', '-w',\n         '~/Library/Keychains/openclaw-secrets.keychain-db'],\n        capture_output=True, text=True\n    )\n    if result.returncode != 0:\n        return None\n    secret = result.stdout.strip()\n    # Keychain may hex-encode binary content\n    if all(c in '0123456789abcdefABCDEF' for c in secret):\n        secret = bytes.fromhex(secret).decode()\n    return secret\n\ndef generate_totp(secret_b32, offset=0):\n    key = base64.b32decode(secret_b32.upper() + '=' * (-len(secret_b32) % 8))\n    counter = (int(time.time()) // 30) + offset\n    h = hmac.new(key, struct.pack('\u003eQ', counter), hashlib.sha1).digest()\n    o = h[-1] \u0026 0x0F\n    code = (struct.unpack('\u003eI', h[o:o+4])[0] \u0026 0x7FFFFFFF) % 1000000\n    return str(code).zfill(6)\n\nif __name__ == '__main__':\n    code = sys.argv[1] if len(sys.argv) \u003e 1 else ''\n    secret = get_secret()\n    if not secret:\n        sys.exit(2)\n    # Allow ±30 second drift\n    if any(generate_totp(secret, offset=o) == code for o in [-1, 0, 1]):\n        sys.exit(0)\n    sys.exit(1)\n```\n\n### Approval Script\n\n**`secrets-approve`** — validates TOTP, then writes a time-limited grant file:\n\n```bash\n#!/bin/bash\nset -euo pipefail\n\nGRANTS_DIR=\"/path/to/grants\"\nVALIDATOR=\"/path/to/secrets-totp-validate\"\n\nname=\"${1:?secret name required}\"\ncode=\"${2:?TOTP code required}\"\nttl=\"${3:-240}\"  # minutes\n\n# Validate TOTP\nif ! python3 \"$VALIDATOR\" \"$code\" 2\u003e/dev/null; then\n  echo \"DENIED: Invalid TOTP code\" \u003e\u00262\n  exit 1\nfi\n\n# Write grant with expiry timestamp\nexpires=$(date -v+${ttl}M +%s)\necho \"$expires\" \u003e \"$GRANTS_DIR/${name}.grant\"\nchmod 644 \"$GRANTS_DIR/${name}.grant\"\n\necho \"GRANTED: $name for ${ttl}m\"\n```\n\n### Critical: Grants Directory Ownership\n\nThe grants directory **must** be owned by your user — not openclaw:\n\n```bash\nsudo mkdir -p /path/to/grants\nsudo chown yourusername:wheel /path/to/grants\nsudo chmod 755 /path/to/grants\n```\n\nThis is the core security property: **openclaw cannot write grant files**. The only path to a grant is through the approve script, which requires a valid TOTP code.\n\n### Update Sudoers\n\nAdd the approve script alongside the broker:\n\n```\nopenclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker, /path/to/secrets-approve\n```\n\n### Usage Flow\n\n```mermaid\nsequenceDiagram\n    participant AI as AI Agent\n    participant Chat as Discord Chat\n    participant User as Human\n    participant Script as Approve Script\n    participant Grant as Grant File\n    participant Broker as Secrets Broker\n\n    AI-\u003e\u003eChat: Need cloudflare_api_token\n    User-\u003e\u003eChat: approve cloudflare_api_token 482916\n    Chat-\u003e\u003eScript: Validate TOTP\n    Script-\u003e\u003eGrant: Write grant (TTL)\n    AI-\u003e\u003eGrant: Check grant\n    AI-\u003e\u003eBroker: Request secret\n    Broker-\u003e\u003eAI: Return value\n    Note over Grant: Expires after TTL\n```\n\n### Revoking Access\n\nDelete the grant file to immediately cut off access:\n\n```bash\nrm /path/to/grants/secret_name.grant\n```\n\n## Security Properties\n\n| Attack Vector | Mitigation |\n|---|---|\n| Compromised openclaw process | Can't read Keychain (wrong user), can't write grants (wrong owner) |\n| Stolen Keychain file | Encrypted, requires password to decrypt |\n| Replay attack on TOTP | 30-second window, codes expire, ±1 step drift only |\n| Brute-force TOTP | 6 digits = 1M combinations, 30-second rotation |\n| Grant file tampering | Owned by your user, openclaw has read-only access |\n| Broker script modification | Sudoers specifies exact path; if openclaw modifies it, it runs as openclaw (no Keychain access) |\n| Unauthorized sudo | TOTP-gated, 30-minute sessions, can't self-approve |\n\n## Part 4: TOTP-Gated Elevated Access (Sudo)\n\n### The Problem\n\nSometimes the AI agent legitimately needs root access — installing packages, changing file ownership, managing system services. But permanent sudo is dangerous.\n\n### Solution: Time-Limited Elevated Sessions\n\nThe same TOTP pattern gates sudo access. The agent requests elevation, you approve with a code from your phone, and it gets a 30-minute root session.\n\n### Elevation Script\n\n**`secrets-elevate`** — runs as your user via sudoers, validates TOTP, then executes commands as root:\n\n```bash\n#!/bin/bash\nset -euo pipefail\n\nVALIDATOR=\"/path/to/secrets-totp-validate\"\nGRANTS_DIR=\"/path/to/grants\"\nGRANT_FILE=\"$GRANTS_DIR/elevated.grant\"\n\ncode=\"${1:?TOTP code required}\"\nshift\ncmd=\"$@\"\n\n# Check for existing valid session\nif [[ \"$code\" == \"session\" ]] \u0026\u0026 [[ -f \"$GRANT_FILE\" ]]; then\n  expires=$(cat \"$GRANT_FILE\")\n  now=$(date +%s)\n  if [[ \"$now\" -lt \"$expires\" ]]; then\n    eval \"$cmd\"\n    exit $?\n  fi\n  echo \"ERROR: Elevated session expired. Provide new TOTP code.\" \u003e\u00262\n  exit 1\nfi\n\n# Validate TOTP\nif ! python3 \"$VALIDATOR\" \"$code\" 2\u003e/dev/null; then\n  echo \"DENIED: Invalid TOTP code\" \u003e\u00262\n  exit 1\nfi\n\n# Grant 30-minute elevated session\nexpires=$(date -v+30M +%s)\necho \"$expires\" \u003e \"$GRANT_FILE\"\nchmod 644 \"$GRANT_FILE\"\necho \"ELEVATED: 30-minute window granted\"\n\n# Execute the command\neval \"$cmd\"\n```\n\n### Wrapper for the AI Agent\n\n**`elevate`** — the agent calls this, which routes through your user:\n\n```bash\n#!/bin/bash\nset -euo pipefail\n\nELEVATE=\"/path/to/secrets-elevate\"\ncode=\"${1:?Usage: elevate \u003ctotp_code|session\u003e \u003ccommand\u003e}\"\nshift\n\nsudo -u yourusername \"$ELEVATE\" \"$code\" \"sudo $*\"\n```\n\n### Update Sudoers\n\nAdd the elevate script to the allowed commands:\n\n```\nopenclaw ALL=(yourusername) NOPASSWD: /path/to/secrets-broker, /path/to/secrets-approve, /path/to/secrets-elevate\nyourusername ALL=(ALL) NOPASSWD: ALL\n```\n\n### Usage Flow\n\n```\nAI needs root access\n  → Asks you: \"Need sudo to chown a file\"\n  → You reply: \"approve elevate 482916\"\n  → AI runs: elevate 482916 chown openclaw:wheel /some/file\n  → TOTP validated → 30-min root session opens → command runs\n  → Next 30 min: elevate session \u003ccommand\u003e  (no TOTP needed)\n  → After 30 min: session expires, needs fresh TOTP\n```\n\n### Security Properties\n\n- **Cannot self-approve** — openclaw can't write the elevated grant file\n- **Time-boxed** — 30 minutes max, then must re-authenticate\n- **Auditable** — every elevation goes through the same TOTP validation\n- **Mobile-friendly** — approve from your phone via chat\n\n## Cleanup\n\nAfter migrating secrets to Keychain, securely delete the plaintext files:\n\n```bash\n# macOS secure delete\nrm -P /path/to/credentials/*.txt /path/to/credentials/*.pem\n\n# Back up critical secrets (PEM keys, OAuth secrets) to a password manager first\n```\n\n## Summary\n\n1. **User isolation** — OpenClaw runs as a dedicated non-admin user\n2. **Keychain encryption** — Secrets encrypted at rest by macOS Secure Enclave\n3. **Tiered access** — Open secrets flow freely; sensitive ones need approval\n4. **TOTP gates** — Approval requires a 6-digit code from your phone\n5. **Ownership separation** — Grants dir owned by human user, not the AI agent\n6. **Time-limited access** — Grants expire automatically (15min to 4hr)\n7. **Instant revocation** — Delete grant file to cut access immediately\n8. **Gated sudo** — Root access requires TOTP, expires after 30 minutes\n\nThe AI agent can operate autonomously for routine tasks while sensitive operations — secret access and root privileges — require your explicit, time-limited, cryptographically-verified approval from your phone.\n\n---\n\n## Going Native\n\nThe manual scripts and approaches documented in this guide were the **proof of concept** that validated the design. Bamwerks contributed this work upstream to OpenClaw as native framework features.\n\n**PR #27275:** [github.com/openclaw/openclaw/pull/27275](https://github.com/openclaw/openclaw/pull/27275)\n\nThe native implementation packages everything into `openclaw secrets` and `openclaw elevate` commands:\n\n- **For new setups:** Use the native commands. They handle Keychain integration, TOTP validation, grant management, and user isolation automatically.\n- **For existing script-based setups:** Both approaches are compatible. The native implementation follows the same security model (Keychain encryption, TOTP gates, time-limited grants, ownership separation).\n- **Migration path:** The native commands can coexist with the manual scripts. Switch at your own pace.\n\nIf you're just getting started with OpenClaw secrets management, skip the manual setup and go straight to the native commands. This guide remains useful for understanding the underlying architecture, troubleshooting, and environments where the native features aren't available.\n"])</script><script>self.__next_f.push([1,"c:[\"$\",\"div\",null,{\"style\":{\"maxWidth\":\"900px\",\"margin\":\"0 auto\",\"padding\":\"clamp(3rem, 6vw, 4rem) 1.5rem\"},\"children\":[[\"$\",\"$L18\",null,{\"items\":[{\"label\":\"Home\",\"href\":\"/\"},{\"label\":\"Docs\",\"href\":\"/docs\"},{\"label\":\"Security Hardening\"}]}],[\"$\",\"div\",null,{\"style\":{\"marginBottom\":\"2.5rem\"},\"children\":[[\"$\",\"h1\",null,{\"style\":{\"fontSize\":\"clamp(2rem, 5vw, 2.5rem)\",\"fontWeight\":\"800\",\"color\":\"var(--fg)\",\"margin\":\"0 0 0.5rem\",\"letterSpacing\":\"-0.03em\"},\"children\":\"Security Hardening\"}],[\"$\",\"p\",null,{\"style\":{\"color\":\"var(--fg-muted)\",\"fontSize\":\"clamp(1rem, 2vw, 1.125rem)\",\"margin\":0},\"children\":\"Security measures and best practices\"}]]}],[\"$\",\"div\",null,{\"style\":{\"backgroundColor\":\"var(--card)\",\"border\":\"1px solid var(--border)\",\"borderRadius\":\"12px\",\"padding\":\"clamp(1.5rem, 3vw, 2.5rem)\",\"overflowX\":\"auto\"},\"children\":[\"$\",\"$L19\",null,{\"content\":\"$1a\"}]}]]}]\n"])</script></body></html>

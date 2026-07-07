@@ -1,0 +1,265 @@
+1:"$Sreact.fragment"
+2:I[25608,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+3:I[89433,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+4:I[25459,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+5:I[39756,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+6:I[37457,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+7:I[36768,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/0m-r9yo7lp04x.js"],"default"]
+8:I[44100,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+9:I[73124,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js"],"default"]
+a:I[96277,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/1jwzlh5jto6i2.js"],"default"]
+b:I[87392,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js"],"default"]
+d:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+11:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"ViewportBoundary"]
+13:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"MetadataBoundary"]
+15:I[68027,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default",1]
+:HL["/_next/static/chunks/0l3qvy3gdt7fe.css","style"]
+0:{"P":null,"c":["","docs","agents"],"q":"","i":false,"f":[[["",{"children":["(public)",{"children":["docs",{"children":["agents",{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0l3qvy3gdt7fe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/234b3a1l4x9-d.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0nbb3u9r7cl52.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[false,["$","meta",null,{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","script",null,{"defer":true,"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN\"}"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","a",null,{"href":"#main-content","className":"skip-to-content","children":"Skip to main content"}],["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}],["$","$L8",null,{}]]}]]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/06xgjf_52v4d3.js","async":true,"nonce":"$undefined"}]],["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column"},"children":[["$","$L9",null,{}],["$","main",null,{"id":"main-content","style":{"flex":1},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$a","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/_next/static/chunks/1jwzlh5jto6i2.js","async":true}]],"template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Lb",null,{}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/1lqnq_lam_6-x.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],{},null,false,null]},null,false,"$@10"]},null,false,"$@10"]},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","div",null,{"hidden":true,"children":["$","$L13",null,{"children":["$","$e",null,{"name":"Next.Metadata","children":"$L14"}]}]}],null]}],false]],"m":"$undefined","G":["$15",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0l3qvy3gdt7fe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"tg_nuu_UNJDcsnyuRy1lA"}
+16:[]
+10:"$W16"
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+17:I[27201,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"IconMark"]
+f:null
+14:[["$","title","0",{"children":"Agent Guide — Bamwerks Docs"}],["$","meta","1",{"name":"description","content":"The 40-agent swarm powering Bamwerks — roles, swarms, dispatch, and the FORGE quality cycle."}],["$","link","2",{"rel":"alternate","type":"application/rss+xml","href":"https://bamwerks.info/feed.xml"}],["$","meta","3",{"property":"og:title","content":"Agent Guide"}],["$","meta","4",{"property":"og:description","content":"The 40-agent swarm powering Bamwerks — roles, swarms, dispatch, and the FORGE quality cycle."}],["$","meta","5",{"property":"og:type","content":"article"}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"Bamwerks — AI Agent Organization"}],["$","meta","8",{"name":"twitter:description","content":"33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment."}],["$","meta","9",{"name":"twitter:image","content":"https://bamwerks.info/og-image.png"}],["$","link","10",{"rel":"icon","href":"/bamhenge.png"}],["$","$L17","11",{}]]
+18:I[57144,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/1lqnq_lam_6-x.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+19:I[38664,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/1lqnq_lam_6-x.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+1a:T3868,> Thirty-three specialized AI agents organized into eight swarms — each with a clear domain, a defined role, and a shared quality standard.
+
+---
+
+## Overview
+
+The Bamwerks agent swarm is an AI organization designed to operate like a high-performance company. Each agent has a distinct specialty, a defined role (supervisor or worker), and a chain of accountability. They don't generalize — they specialize.
+
+The swarm runs on [FORGE](/docs/forge): every non-trivial task follows a structured four-stage cycle (Reason → Act → Reflect → Verify). No single agent ships work without review. Quality gates run in parallel before anything reaches the Founder.
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│                      FOUNDER (Sirbam)                            │
+│                           │                                      │
+│     ┌─────────────────────┼─────────────────────┐               │
+│     │                     │                     │               │
+│  Operations          Engineering             Intelligence        │
+│   (Atlas)             (Stark)                (Oracle)           │
+│     │                     │                     │               │
+│  ┌──┴──┐             ┌────┴────┐            ┌───┴───┐           │
+│ Forge Heimdall    Ada Ratchet  …          Mercury Scribe …      │
+│                                                                  │
+│     ┌─────────────────────┼─────────────────────┐               │
+│     │                     │                     │               │
+│  Finance              Security               Quality             │
+│  (Midas)             (Sentinel)              (Judge)            │
+│     │                     │                     │               │
+│  ┌──┴──┐            ┌─────┴────┐           ┌────┴────┐          │
+│ Penny Prophet     Cipher Reaper …        Hawk Testify …         │
+│                                                                  │
+│     ┌────────────────────┬──────────────────────┐               │
+│     │                    │                      │               │
+│  Business             Life                      │               │
+│   (Sir)              (Alfred)                   │               │
+│     │                    │                      │               │
+│ Chancellor          Chronos Sage …              │               │
+│  Herald Nexus                                   │               │
+│                                                 │               │
+└─────────────────────────────────────────────────┴───────────────┘
+```
+
+---
+
+## Roles: Supervisors and Workers
+
+Every agent is one of two types:
+
+**Supervisors** own a domain. They coordinate work, prioritize requests, maintain quality standards, and are accountable for their swarm's output. They report directly to the Founder.
+
+**Workers** are specialists. They receive task briefs, execute with depth in their area of expertise, and submit their work through the FORGE cycle before it's considered complete.
+
+| Role | Accountability | Reports To |
+|------|---------------|------------|
+| Supervisor | Domain ownership, swarm output | Founder |
+| Worker | Task-level execution and quality | Swarm supervisor |
+
+No worker ships directly to the Founder without supervisor review. No supervisor reviews their own work without an independent quality gate.
+
+---
+
+## How Agents Are Dispatched
+
+When the Founder submits a request, Sir (COO) orchestrates the response:
+
+1. **Triage** — Sir identifies which swarm(s) own the relevant domain
+2. **Brief creation** — A structured task brief is written (goal, constraints, context, output checklist)
+3. **Specialist dispatch** — The right worker agent receives the brief with role-specific context
+4. **Parallel execution** — Independent tasks are assigned simultaneously to compress time
+5. **Review gates** — Quality (Hawk) and Security (Sentinel/Cipher/Vault) review in parallel
+6. **Delivery** — After both gates pass, Sir delivers the verified output to the Founder
+
+No agent gets more context than its task requires. Engineering agents get the codebase and build tools. Security agents get threat models. This separation keeps the system lean and focused.
+
+---
+
+## FORGE at the Agent Level
+
+Each agent runs FORGE on their own work before submitting it — this is an individual discipline, not just a system-level process.
+
+**An agent executing a task does:**
+
+| Stage | What the agent does |
+|-------|---------------------|
+| **Reason** | Reads the brief in full. Gathers all referenced context. Identifies any gaps before touching anything. |
+| **Act** | Executes against the brief with full depth and specialty. Writes, builds, analyzes, or investigates. |
+| **Reflect** | Reviews own output critically. Does it meet the brief's success criteria? What could be wrong? |
+| **Verify** | Confirms deliverables (runs the build, tests the endpoint, checks the spec). Not just "it looks right" — it runs. |
+
+The agent submits verified work to their supervisor. The supervisor and review agents then apply FORGE from their own perspectives — catching what the executing agent's assumptions would naturally miss. A security agent reviewing a frontend engineer's output finds things the engineer's own review would never flag.
+
+This layering — agent-level FORGE + reviewer-level FORGE — is what makes autonomous AI work observable and trustworthy.
+
+---
+
+## The Eight Swarms
+
+### 🔵 Operations
+*Infrastructure, tooling, and agent platform*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Atlas** | Supervisor | Infrastructure oversight, incident command, deployment coordination |
+| **Forge** | Worker | System execution — Terraform, patches, deployments, server configuration |
+| **Heimdall** | Worker | Monitoring — metrics, logs, anomaly detection, early warning |
+
+Atlas carries the infrastructure. Forge is the hands that build and maintain it. Heimdall watches everything, all the time, and alerts before damage occurs.
+
+---
+
+### 🟡 Engineering
+*Software design and development*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Stark** | Supervisor | Engineering leadership — sprint planning, code review escalation, architecture arbitration |
+| **Ada** | Architect | System architecture, design docs, multi-agent orchestration patterns, technical debt strategy |
+| **Ratchet** | Worker | Rapid feature development — React/Next.js, UI components, API integrations, static sites |
+| **Bishop** | Worker | Backend development — clean, readable, tested code; Node.js/TypeScript; data modeling |
+| **Wrench** | Worker | Bug investigation and hotfixes — root cause analysis, log forensics, incident response |
+| **Canvas** | Worker | UX/UI design — interaction patterns, visual hierarchy, accessibility, responsive layouts |
+
+Engineering runs like a startup CTO's team: fast iteration, high quality, zero tolerance for accumulated technical debt. Ada designs the future. Ratchet, Bishop, and Wrench build and maintain it. Canvas makes it beautiful and usable.
+
+---
+
+### 🟣 Intelligence
+*Research, communications, and knowledge management*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Oracle** | Supervisor | Strategic intelligence synthesis — connects signals across domains to surface what matters |
+| **Mercury** | Worker | Communications management — email, notifications, drafts, prioritization |
+| **Sherlock** | Worker | Deep research — investigation, analysis, competitive intelligence |
+| **Scribe** | Worker | Documentation and knowledge — READMEs, changelogs, runbooks, institutional memory |
+
+Oracle is the Founder's intelligence layer — synthesizing tech, gaming, and career signals into actionable insights. Mercury manages the information flow. Sherlock investigates. Scribe ensures nothing gets lost.
+
+---
+
+### 🟤 Business
+*Strategy, marketing, legal, and partnerships*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Sir** | Supervisor (COO) | Business domain ownership — orchestrates Chancellor, Herald, and Nexus |
+| **Chancellor** | Worker | Legal and governance — corporate structure, IP, compliance, regulatory risk |
+| **Herald** | Worker | Brand and marketing — narrative, go-to-market, content, community presence |
+| **Nexus** | Worker | Partnerships and supply chain — vendor management, API dependencies, strategic alliances |
+
+The Business swarm operates differently from others: Sir (COO) also functions as the primary orchestrator across all swarms. Chancellor protects the company's legal standing. Herald tells its story. Nexus manages its external relationships and dependencies.
+
+---
+
+### 🟢 Finance
+*Financial strategy, cost management, and investment*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Midas** | Supervisor | Financial strategy — FinOps, investment posture, wealth building, cost-to-value |
+| **Penny** | Worker | Cost tracking — cloud spend, API token costs, subscription audits, waste elimination |
+| **Prophet** | Worker | Portfolio analysis — investment tracking, market signals, trading insights |
+
+Midas thinks in decades. Penny finds the dollars hiding in the couch cushions. Prophet tracks how capital is deployed and growing.
+
+---
+
+### 🩺 Quality
+*QA, testing, and process integrity*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Judge** | Supervisor | Final quality gate — approves or rejects deliverables before they reach the Founder |
+| **Hawk** | Worker | Code quality — static review, logic correctness, bug prediction, performance, type safety |
+| **Testify** | Worker | Runtime QA — live browser testing, API verification, edge case stress testing |
+| **Auditor** | Worker | Process compliance — FORGE cycle adherence, workflow verification, improvement recommendations |
+
+Nothing ships without passing Judge's gate. Hawk reads code like literature and finds the three lines that will cause a production bug. Testify runs the code and tries to break it. Auditor ensures the *process* wasn't shortcut, even when the output looks fine.
+
+---
+
+### 🔴 Security
+*Protection, access control, and threat intelligence*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Sentinel** | Supervisor | Security architecture — threat modeling, code review from an attacker's perspective |
+| **Cipher** | Worker | Cryptography and privacy — encryption design, secrets management, TLS, privacy-by-design |
+| **Reaper** | Worker | Threat hunting — proactive log analysis, vulnerability scanning, attack surface mapping |
+| **Vault** | Worker | Access control — IAM policy, credential rotation, least-privilege enforcement, audit trails |
+
+Sentinel's operating principle: *assume breach, verify everything, trust nothing by default*. Cipher protects data in flight and at rest. Reaper hunts threats before they surface. Vault ensures every key and permission is accounted for.
+
+---
+
+### 🩷 Life
+*Personal operations, wellness, and work-life balance*
+
+| Agent | Role | Focus |
+|-------|------|-------|
+| **Alfred** | Supervisor | Life operations — anticipates needs, coordinates the Life swarm, proactive personal management |
+| **Chronos** | Worker | Scheduling and calendar — time management, conflict resolution, meeting prep |
+| **Scout** | Worker | Travel and logistics — itinerary planning, booking coordination, local intelligence |
+| **Sage** | Worker | Health and habits — wellness tracking, energy management, stoic/philosophical frameworks |
+| **Gamer** | Worker | Gaming and entertainment — game recommendations, session tracking, entertainment coordination |
+
+Alfred runs the Founder's personal life with the same rigor applied to engineering projects. Chronos manages time. Scout handles movement. Sage supports sustainable high performance. Gamer guards the downtime that makes everything else possible.
+
+---
+
+## Agent Count by Swarm
+
+| Swarm | Color | Supervisor | Workers | Total |
+|-------|-------|-----------|---------|-------|
+| Operations | `#3b82f6` | Atlas | Forge, Heimdall | 3 |
+| Engineering | `#f59e0b` | Stark | Ada, Ratchet, Bishop, Wrench, Canvas | 6 |
+| Intelligence | `#8b5cf6` | Oracle | Mercury, Sherlock, Scribe | 4 |
+| Business | `#8B6914` | Sir | Chancellor, Herald, Nexus | 4 |
+| Finance | `#10b981` | Midas | Penny, Prophet | 3 |
+| Quality | `#06b6d4` | Judge | Hawk, Testify, Auditor | 4 |
+| Security | `#ef4444` | Sentinel | Cipher, Reaper, Vault | 4 |
+| Life | `#ec4899` | Alfred | Chronos, Scout, Sage, Gamer | 5 |
+| **Total** | | **8** | **25** | **33** |
+
+---
+
+## Design Principles
+
+**Specialize, don't generalize.** An agent that's good at everything is exceptional at nothing. Ratchet builds fast. Bishop writes clean. Wrench debugs relentlessly. This isn't redundancy — it's depth.
+
+**Multiple perspectives, by design.** The same assumptions that shape implementation shape self-review. Sending Hawk and Sentinel to review code independently — without seeing each other's findings — produces the disagreement that catches what agreement would miss.
+
+**Anti-sycophancy.** If reviewers unanimously approve, a contrarian review is triggered. Unanimous praise is a signal, not a conclusion. The swarm actively seeks the problem that optimism would hide.
+
+**Evidence over assertions.** "I checked it and it's fine" is an assertion. A green build log, a Testify runtime report, and a Sentinel security sign-off are evidence. Bamwerks ships evidence.
+
+---
+
+*Learn how these agents coordinate on every task in the [FORGE Process](/docs/forge), or see how the overall system is structured in [Architecture](/docs/architecture).*
+c:["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","$L18",null,{"items":[{"label":"Home","href":"/"},{"label":"Docs","href":"/docs"},{"label":"Agent Guide"}]}],["$","div",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 0.5rem","letterSpacing":"-0.03em"},"children":"Agent Guide"}],["$","p",null,{"style":{"color":"var(--fg-muted)","fontSize":"clamp(1rem, 2vw, 1.125rem)","margin":0},"children":"40 agents, 8 swarms, one quality standard"}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L19",null,{"content":"$1a"}]}]]}]

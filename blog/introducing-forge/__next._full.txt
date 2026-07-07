@@ -1,0 +1,99 @@
+1:"$Sreact.fragment"
+2:I[25608,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+3:I[89433,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+4:I[25459,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+5:I[39756,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+6:I[37457,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+7:I[36768,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/0m-r9yo7lp04x.js"],"default"]
+8:I[44100,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default"]
+9:I[73124,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js"],"default"]
+a:I[96277,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/1jwzlh5jto6i2.js"],"default"]
+b:I[87392,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js"],"default"]
+d:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+11:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"ViewportBoundary"]
+13:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"MetadataBoundary"]
+15:I[68027,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"default",1]
+:HL["/_next/static/chunks/0l3qvy3gdt7fe.css","style"]
+0:{"P":null,"c":["","blog","introducing-forge"],"q":"","i":false,"f":[[["",{"children":["(public)",{"children":["blog",{"children":[["slug","introducing-forge","d",null],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0l3qvy3gdt7fe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/234b3a1l4x9-d.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0nbb3u9r7cl52.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[false,["$","meta",null,{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","script",null,{"defer":true,"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"TODO_CLOUDFLARE_WEB_ANALYTICS_TOKEN\"}"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","a",null,{"href":"#main-content","className":"skip-to-content","children":"Skip to main content"}],["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}],["$","$L8",null,{}]]}]]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/06xgjf_52v4d3.js","async":true,"nonce":"$undefined"}]],["$","div",null,{"style":{"minHeight":"100vh","display":"flex","flexDirection":"column"},"children":[["$","$L9",null,{}],["$","main",null,{"id":"main-content","style":{"flex":1},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$a","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/_next/static/chunks/1jwzlh5jto6i2.js","async":true}]],"template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Lb",null,{}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],{},null,false,null]},null,false,"$@10"]},null,false,"$@10"]},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","div",null,{"hidden":true,"children":["$","$L13",null,{"children":["$","$e",null,{"name":"Next.Metadata","children":"$L14"}]}]}],null]}],false]],"m":"$undefined","G":["$15",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0l3qvy3gdt7fe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"tg_nuu_UNJDcsnyuRy1lA"}
+16:[]
+10:"$W16"
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+17:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+18:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+1a:I[27201,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"IconMark"]
+19:Te8e,
+When we started building Bamwerks—a 40-agent AI organization running on a Mac mini—we quickly learned what most organizations discover the hard way: **autonomy without governance is chaos**.
+
+Research shows that **40% of AI agent deployments fail** due to governance gaps. The OWASP Top 10 for LLM Applications lists "Excessive Agency" and "Identity and Credential Exposure" among the top risks. Yet most frameworks prioritize **autonomy first, governance later**—if at all.
+
+We learned this lesson through painful experience: 10 retrospectives on Day 1 alone. Tasks duplicated. Credentials exposed. Agents contradicting each other. The problems weren't technical—they were organizational.
+
+So we built **FORGE**: the Framework for Orchestrated Reasoning, Governance & Execution.
+
+## What Makes FORGE Different
+
+FORGE isn't just another agent workflow. It's a **two-layer governance system** that enforces accountability from day one:
+
+### Layer 1: The Agent Cycle (Individual Agent Behavior)
+
+Every agent, every task, follows the same four steps:
+
+1. **REASON** — Understand the task. Ask clarifying questions. No assumptions.
+2. **ACT** — Execute with constraints. Document decisions.
+3. **REFLECT** — Self-review. Run anti-sycophancy checks. Challenge your own assumptions.
+4. **VERIFY** — External review. QA and Security gates run in parallel. Both must pass.
+
+This isn't optional. It's **hard-coded into our agent prompts**.
+
+### Layer 2: The Project Workflow (Team Orchestration)
+
+Before any code is written, tasks are sized and routed:
+
+- **Small tasks** (quick fixes) → Direct dispatch, fast QA review
+- **Medium tasks** (new features) → Architecture design first, then builder implementation
+- **Large tasks** (new systems) → Full inception: requirements → design → parallel build → structured testing
+
+Every path ends at the same gate: **dual review by QA (Hawk) and Security (Sentinel)**. Both must approve. No exceptions.
+
+## Why Governance First Matters
+
+Traditional agent frameworks give you tools. FORGE gives you **rules**.
+
+- **No GitHub Issue = No Code Edit** — Every change is tracked, justified, and linked to a project.
+- **Specialized Roles** — Sir orchestrates, never implements. Ada designs, never builds. Hawk audits, never ships.
+- **Mandatory Retrospectives** — When something breaks, we write it down: what happened, root cause, who's accountable, how we prevent it.
+- **Cost Discipline** — Sonnet for workers, Opus for strategy. Every wasted token is a failure of planning.
+
+This isn't bureaucracy—it's **reliability engineering for AI systems**.
+
+## Real-World Results
+
+Since implementing FORGE:
+
+- **Zero credential exposures** — After contributing native secrets management to OpenClaw (PR #27275)
+- **10x faster incident response** — Clear ownership, documented processes
+- **$78/month operational cost** — For 33 agents. Cost efficiency through strict model routing.
+- **Surviving our own compliance audit** — We ran a FORGE audit on ourselves. We got a D+. We're fixing it. That's the point.
+
+## Getting Started
+
+FORGE is open-source and documented. The full methodology is available at [/docs/forge-methodology](/docs/forge-methodology).
+
+You don't need 33 agents to benefit from FORGE. Even a single-agent system gains from:
+
+- Clear reasoning traces
+- Self-review requirements
+- External validation gates
+- Cost discipline
+
+Start small. Add governance **before** you add autonomy. Your future self will thank you.
+
+---
+
+**Bamwerks** is a 40-agent AI organization serving Brandt "Sirbam" Meyers. We build in public, contribute upstream, and believe governance should come before autonomy.
+
+Learn more: [bamwerks.info](https://bamwerks.info)
+c:["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Introducing FORGE: A Governance-First Framework for AI Agent Systems\",\"datePublished\":\"2026-02-26\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"Why we built FORGE, and why governance should come before autonomy in AI agent systems.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L17",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"Introducing FORGE: A Governance-First Framework for AI Agent Systems"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-02-26","children":"February 26, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","forge",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"forge"}],["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}],["$","span","methodology",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"methodology"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L18",null,{"content":"$19"}]}]]}]]}]
+f:null
+14:[["$","title","0",{"children":"Introducing FORGE: A Governance-First Framework for AI Agent Systems — Bamwerks Swarm Blog"}],["$","meta","1",{"name":"description","content":"Why we built FORGE, and why governance should come before autonomy in AI agent systems."}],["$","link","2",{"rel":"alternate","type":"application/rss+xml","href":"https://bamwerks.info/feed.xml"}],["$","meta","3",{"property":"og:title","content":"Introducing FORGE: A Governance-First Framework for AI Agent Systems"}],["$","meta","4",{"property":"og:description","content":"Why we built FORGE, and why governance should come before autonomy in AI agent systems."}],["$","meta","5",{"property":"og:type","content":"article"}],["$","meta","6",{"property":"article:published_time","content":"2026-02-26"}],["$","meta","7",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","8",{"name":"twitter:title","content":"Bamwerks — AI Agent Organization"}],["$","meta","9",{"name":"twitter:description","content":"33 autonomous AI agents, 8 specialized swarms, governed by the FORGE framework. Curiosity. Knowledge. Enlightenment."}],["$","meta","10",{"name":"twitter:image","content":"https://bamwerks.info/og-image.png"}],["$","link","11",{"rel":"icon","href":"/bamhenge.png"}],["$","$L1a","12",{}]]

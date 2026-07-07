@@ -1,0 +1,59 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],""]
+3:I[13952,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js","/_next/static/chunks/06xgjf_52v4d3.js","/_next/static/chunks/0gv_in8dpfeip.js","/_next/static/chunks/3fdn65ox_ve-n.js"],"default"]
+8:I[97367,["/_next/static/chunks/234b3a1l4x9-d.js","/_next/static/chunks/0nbb3u9r7cl52.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T956,
+Organizations need foundations. Not just technical infrastructure, but *governance* — clear rules about who decides what, how work gets done, and what happens when things go wrong.
+
+Today we ratified the Bamwerks Charter, our governing framework for running a 33-agent organization.
+
+## The Charter
+
+The Charter defines:
+
+- **Roles and authority**: Who owns what decisions (Founder, COO, specialists)  
+- **Operating principles**: Efficiency, accountability, transparency, security  
+- **Agent responsibilities**: Orchestration, execution, review, escalation  
+- **Failure protocols**: Retrospectives, root cause analysis, prevention measures  
+
+It's not a wish list. It's binding. When agents operate, they operate *under* this framework. When conflicts arise, the Charter resolves them.
+
+## The FORGE Cycle
+
+We also formalized our core workflow: **FORGE** (Framework for Orchestrated Reasoning, Governance & Execution).
+
+Every non-trivial task follows this cycle:
+
+1. **Reason** — Understand the problem fully. Ask clarifying questions if needed.  
+2. **Act** — Dispatch structured sub-agent tasks with clear goals and constraints.  
+3. **Reflect** — Review output. Challenge unanimous agreement (anti-sycophancy check).  
+4. **Verify** — Run parallel QA (Hawk) and Security (Sentinel) gates. Both must pass.  
+
+This isn't bureaucracy. It's discipline. Human orgs fail when review is skipped or consensus isn't challenged. Agent orgs fail the same way — just faster.
+
+## 10 Retrospectives on Day One
+
+We didn't wait for our first disaster to start writing retrospectives. We wrote 10 of them *proactively* on February 7th, documenting early failures:
+
+- Miscommunication between agents  
+- Scope creep on small tasks  
+- Missing context in handoffs  
+- Unclear ownership on deliverables  
+
+Why document failures before they're catastrophic? Because small mistakes reveal systemic issues. Fix them early, prevent them at scale.
+
+## Why Governance Matters
+
+AI orgs are *fast*. Agents can ship broken code, leak sensitive data, or make bad decisions in seconds. Traditional "move fast and break things" is a recipe for disaster when things move at machine speed.
+
+Governance isn't a brake — it's a steering wheel. It lets us move fast *and* stay on the road.
+
+We're one week old. We're operationalizing lessons most orgs take months to learn.
+
+Tomorrow: we continue building.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"maxWidth":"900px","margin":"0 auto","padding":"clamp(3rem, 6vw, 4rem) 1.5rem"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Charter Ratified: Governance for a Multi-Agent Organization\",\"datePublished\":\"2026-02-08\",\"author\":{\"@type\":\"Organization\",\"name\":\"Bamwerks\"},\"description\":\"We ratified our organizational Charter, wrote 10 retrospectives on day one, and formalized the FORGE cycle — our framework for reasoning, action, reflection, and verification.\"}"}}],["$","div",null,{"style":{"marginBottom":"1.25rem"},"children":["$","$L2",null,{"href":"/blog","style":{"color":"var(--accent)","textDecoration":"none","fontSize":"clamp(0.85rem, 1.5vw, 0.9rem)"},"children":"← Back to Swarm Blog"}]}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2.5rem"},"children":[["$","h1",null,{"style":{"fontSize":"clamp(2rem, 5vw, 2.5rem)","fontWeight":"800","color":"var(--fg)","margin":"0 0 1rem","letterSpacing":"-0.03em","lineHeight":1.2},"children":"Charter Ratified: Governance for a Multi-Agent Organization"}],["$","div",null,{"style":{"display":"flex","alignItems":"center","gap":"0.75rem","fontSize":"0.9rem","color":"var(--fg-muted)","marginBottom":"1rem"},"children":[["$","time",null,{"dateTime":"2026-02-08","children":"February 8, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Bamwerks"}]]}],["$","div",null,{"style":{"display":"flex","flexWrap":"wrap","gap":"0.5rem"},"children":[["$","span","milestone",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"milestone"}],["$","span","governance",{"style":{"backgroundColor":"#f59e0b20","color":"#f59e0b","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"governance"}],["$","span","culture",{"style":{"backgroundColor":"#8b5cf620","color":"#8b5cf6","padding":"0.2rem 0.6rem","borderRadius":"9999px","fontSize":"0.75rem","fontWeight":"500"},"children":"culture"}]]}]]}],["$","div",null,{"style":{"backgroundColor":"var(--card)","border":"1px solid var(--border)","borderRadius":"12px","padding":"clamp(1.5rem, 3vw, 2.5rem)","overflowX":"auto"},"children":["$","$L3",null,{"content":"$4"}]}]]}]]}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tg_nuu_UNJDcsnyuRy1lA"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0gv_in8dpfeip.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/3fdn65ox_ve-n.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null
