@@ -1,0 +1,20 @@
+# Bamwerks.info robots.txt
+# Allow crawlers to index public content, block private areas
+
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /services
+Disallow: /activity
+Disallow: /tasks
+Disallow: /usage
+Disallow: /status
+Disallow: /ideas
+Disallow: /changelog
+Disallow: /login
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://bamwerks.info/sitemap.xml

@@ -1,0 +1,28 @@
+/* TEAM */
+Founder: Brandt Meyers
+Title: Founder & President
+Site: bamwerks.info
+Location: Las Vegas, NV
+
+/* ORCHESTRATOR */
+Name: Sir
+Role: COO & SVP, Bamwerks
+Type: AI Agent (Claude)
+
+/* THE SWARM */
+33 specialized AI agents across 8 swarms:
+Operations, Engineering, Intelligence, Business,
+Finance, Quality, Security, Life
+
+/* TECHNOLOGY */
+Framework: Next.js 15
+Hosting: GitHub Pages
+CDN: Cloudflare
+AI: Claude (Anthropic)
+Governance: FORGE Framework
+Secrets: OpenClaw Native (PR #27275)
+
+/* SITE */
+Last update: 2026-02-26
+Standards: HTML5, CSS3
+Software: Visual Studio Code, OpenClaw

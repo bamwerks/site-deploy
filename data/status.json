@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-05T00:00:00.000000Z",
+  "services": [
+    {
+      "name": "bamwerks.info",
+      "url": "https://bamwerks.info",
+      "up": true
+    },
+    {
+      "name": "Auth Worker",
+      "url": "https://auth.bamwerks.info/login",
+      "up": true
+    }
+  ],
+  "crons": [],
+  "agents": {
+    "total": 40,
+    "spawned": 0,
+    "never_spawned": 0,
+    "total_sessions": 786
+  },
+  "tasks": {
+    "review": 1,
+    "done": 129,
+    "backlog": 13,
+    "no_status": 5,
+    "total": 148
+  },
+  "recent_deploys": [
+    {
+      "hash": "d42e00d",
+      "message": "data: update usage.json [automated]"
+    },
+    {
+      "hash": "cd335f8",
+      "message": "data: update usage.json [automated]"
+    },
+    {
+      "hash": "87bed4d",
+      "message": "Merge pull request #36 from bamwerks/develop"
+    },
+    {
+      "hash": "5a61354",
+      "message": "fix: recognition - diamond tier, direct avatar URLs, card spacing, 2x confetti"
+    },
+    {
+      "hash": "3991988",
+      "message": "Merge pull request #35 from bamwerks/develop"
+    }
+  ],
+  "uptime_days": 25,
+  "recent_sessions_24h": 24
+}
